@@ -15,17 +15,17 @@ export default function Navbar() {
           {t('home')}
         </NavLink>
         <NavLink className={isActive} to='/contact'>
-        {t('contact')}
+          {t('contact')}
         </NavLink>
         <NavLink className={isActive} to='/donations'>
-        {t('donations')}
+          {t('donations')}
         </NavLink>
         <NavLink className={isActive} to='/project'>
-        {t('project')}
+          {t('project')}
         </NavLink>
-      </div>
-      <div>
         <LanguageSelection />
+      </div>
+      <div id='language'>
       </div>
     </nav>
   );

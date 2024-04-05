@@ -1,7 +1,11 @@
+import { useTranslation } from 'react-i18next';
+
 export default function Donations () {
+  const [t] = useTranslation();
+
   return (
     <>
-      <h1>Donations</h1>
+      <h1>{t('donations')}</h1>
     </>
   )
 }

@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
 
   color-scheme: light dark;
@@ -8,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 * {
   /* border: 0.5px solid white; */
@@ -97,17 +102,6 @@ ul {
   list-style: none;
 }
 
-nav {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-}
-#nav-links {
-  display: flex;
-  gap: 1rem;
-}
-
-
 a {
   color: #646cff;
   text-decoration: inherit;
@@ -152,3 +146,48 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
+/* ========= NAVEGACIÓN ========= */
+/* ========= ========= ========= */
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-block: 1.5rem;
+}
+#nav-links {
+  display: flex;
+  justify-content: space-around;
+  gap: 8rem;
+  width: 90%;
+  padding: 1rem;
+
+}
+#language{
+  display: flex;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ========= HOME ========= */
+/* ========= ========= ========= */
+/* #main-img {
+  width: 100px;
+  height: 100px;
+  background-color: #213547;
+} */
+
+
+
+
+
+
