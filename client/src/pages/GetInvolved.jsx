@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
-export default function Donations () {
+export default function GetInvolved () {
   const [t] = useTranslation();
 
   return (
     <>
-      <h1>{t('donations')}</h1>
+      <h1>{t('get_involved')}</h1>
     </>
   )
 }

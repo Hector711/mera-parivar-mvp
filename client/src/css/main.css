@@ -161,7 +161,6 @@ nav {
 #nav-links {
   display: flex;
   justify-content: space-around;
-  gap: 8rem;
   width: 90%;
   padding: 1rem;
 
@@ -180,14 +179,19 @@ section {
 
 /* ========= HOME ========= */
 /* ========= ========= ========= */
-/* #main-img {
-  width: 100px;
-  height: 100px;
-  background-color: #213547;
-} */
 
 
 
+.navLinks, #language-selector {
+  /* background-color: #213547; */
+  padding: 7px 12px;
+}
 
 
 
+.active {
+  font-weight: bold;
+  background-color: #383737;
+  border-radius: 3px;
+  /* padding: 10px; */
+}

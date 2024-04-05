@@ -1,10 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Donations from './pages/Donations';
-import Project from './pages/Project';
-import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import WhatWeDo from './pages/WhatWeDo'
+import Donate from './pages/Donate';
+import Contact from './pages/Contact';
+import GetInvolved from './pages/GetInvolved';
 
 export default function App() {
   return (
@@ -13,9 +15,12 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/project' element={<Project />} />
-          <Route path='/donations' element={<Donations />} />
+          <Route path='/aboutus' element={<AboutUs />} />
+          <Route path='/whatwedo' element={<WhatWeDo />} />
+          <Route path='/getinvolved' element={<GetInvolved />} />
+          <Route path='/donate' element={<Donate />} />
           <Route path='/contact' element={<Contact />} />
+          
         </Routes>
       </BrowserRouter>
     </>

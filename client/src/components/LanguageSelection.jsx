@@ -14,7 +14,7 @@ export default function LanguageSelection() {
     i18n.changeLanguage(lang_code);
   };
   return (
-    <select defaultValue={i18n.language} onChange={onChangeLang}>
+    <select defaultValue={i18n.language} onChange={onChangeLang} id='language-selector'>
       {LANGUAGES.map(({ code, label }) => (
         <option key={code} value={code}>
           {label}

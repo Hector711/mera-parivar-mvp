@@ -21,17 +21,21 @@ export default i18n
       en: {
         translation: {
           home: 'Home',
-          contact: 'Contact',
-          donations: 'Donations',
-          project: 'Proyect',
+          about_us: 'About Us',
+          what_we_do: 'What We Do',
+          get_involved: 'Get Involved',
+          donate: 'Donate',
+          contact: 'Contact'
         },
       },
       es: {
         translation: {
           home: 'Inicio',
-          contact: 'Contacto',
-          donations: 'Donaciones',
-          project: 'Proyecto',
+          about_us: 'Quienes Somos',
+          what_we_do: 'Nuestra Labor',
+          get_involved: 'Participa',
+          donate: 'Dona',
+          contact: 'Contacto'
         },
       },
     },
