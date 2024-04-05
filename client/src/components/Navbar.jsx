@@ -55,7 +55,7 @@ export default function Navbar() {
       <div
         id='menu-backdrop'
         className={`
-        absolute bg-slate-400 backdrop-blur-lg rounded
+        absolute bg-slate-900 backdrop-blur-lg rounded
         translate-x-[var(--left)] translate-y-[var(--top)]
         left-0 top-0
         w-[var(--width)] h-[var(--height)]

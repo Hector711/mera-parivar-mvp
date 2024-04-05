@@ -186,7 +186,9 @@ section {
   /* background-color: #213547; */
   padding: 7px 12px;
 }
-
+#language-selector {
+  border-radius: 3px;
+}
 
 
 .active {
