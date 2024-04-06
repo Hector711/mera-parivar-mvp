@@ -5,7 +5,7 @@ export default function WhatWeDo() {
 
   return (
     <>
-    <h1>{t('what_we_do')}</h1>
+      <h1>{t('what_we_do')}</h1>
     </>
-  )
+  );
 }

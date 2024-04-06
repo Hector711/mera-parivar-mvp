@@ -5,3 +5,5 @@ coverage
 **/.svn
 **/.hg
 **/node_modules
+
+reset.css

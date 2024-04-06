@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
     <nav id='landing-header'>
-      <div id='nav-links'>
+      <div>
         <NavLink className='{isActive} navLinks' to='/'>
           {t('home')}
         </NavLink>
@@ -47,20 +47,20 @@ export default function Navbar() {
         <NavLink className='{isActive} navLinks' to='/donate'>
           {t('donate')}
         </NavLink>
+      </div>
+      <div>
         <NavLink className='{isActive} navLinks' to='/contact'>
           {t('contact')}
         </NavLink>
         <LanguageSelection />
       </div>
+
       <div
         id='menu-backdrop'
         className={`
-        absolute bg-slate-900 backdrop-blur-lg rounded
-        translate-x-[var(--left)] translate-y-[var(--top)]
-        left-0 top-0
-        w-[var(--width)] h-[var(--height)]
-        transition-all duration-300
-        ease-in-out opacity-0 -z-10
+        absolute bg-slate-400  bg-opacity-50 backdrop-blur-lg rounded 
+        translate-x-[var(--left)] translate-y-[var(--top)] left-0 top-0 w-[var(--width)] h-[var(--height)]
+        transition-all duration-300 ease-in-out opacity-0 -z-10 
         `}
       ></div>
     </nav>

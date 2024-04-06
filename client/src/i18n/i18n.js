@@ -25,7 +25,7 @@ export default i18n
           what_we_do: 'What We Do',
           get_involved: 'Get Involved',
           donate: 'Donate',
-          contact: 'Contact'
+          contact: 'Contact',
         },
       },
       es: {
@@ -35,7 +35,7 @@ export default i18n
           what_we_do: 'Nuestra Labor',
           get_involved: 'Participa',
           donate: 'Dona',
-          contact: 'Contacto'
+          contact: 'Contacto',
         },
       },
     },
