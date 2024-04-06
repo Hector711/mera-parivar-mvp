@@ -6,6 +6,8 @@ export default function AboutUs() {
   return (
     <>
       <h1>{t('about_us')}</h1>
+
+     
     </>
   );
 }

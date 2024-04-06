@@ -1,16 +1,22 @@
 :root {
   color-scheme: light dark;
   color: #1c1b1b;
-  background-color: #d9d9d9;
+  background-color: var(--main-color);
 
   --black0: #000000;
   --black1: #1d1d1d;
   --white0: #ffffff;
   --white1: #eaeaea;
+  
+  --main-color: #eaeaea;
+  --hover-color: #a8a8a8;
+  --hover-color-t: #252525;
+  --active-color: #df4545;
+  --border: 5px;
 }
 
 * {
-  border: 0.5px solid rgb(47, 47, 47);
+  /* border: 0.5px solid rgb(47, 47, 47); */
 }
 
 /* ========= NAVEGACIÓN ========= */
@@ -22,20 +28,28 @@ nav {
   padding: 1rem 4rem;
 }
 
-#language-selector {
-  border-radius: 3px;
-  background-color: #8a8a8c;
+.logo {
+  width: 70px;
+  height: 100%;
+  /* background-color: var(--active-color); */
+  border-radius: var(--border);
 }
 
-.navLinks,
-#language-selector {
-  padding: 7px 12px;
+.nav-links-container{
+  display: flex;
+  gap: 1rem;
 }
 
 .active {
   font-weight: bold;
-  background-color: #383737;
-  border-radius: 3px;
+  background-color: var(--hover-color);
+  border-radius: var(--border);
+}
+
+#language-selector{
+  border-radius: var(--border);
+  padding: 10px;
+  background-color: var(--hover-color);
 }
 
 /* ========= SECTION ========= */
@@ -51,5 +65,5 @@ section {
 /* ========= ========= ========= */
 footer {
   bottom: 0;
-  background-color: #333;
+  background-color: var(--hover-color);
 }

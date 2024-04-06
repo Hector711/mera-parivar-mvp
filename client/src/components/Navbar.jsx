@@ -1,12 +1,17 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import LanguageSelection from './LanguageSelection';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
+import AboutDrop from './AboutDrop';
+import WhatWeDoDrop from './WhatWeDoDrop';
+import GetInvolvedDrop from './GetInvolvedDrop';
+import logo from '../../public/logo.png'
 
 const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
 
-const listItem = document.querySelectorAll('#landing-header .navLinks');
+const listItem = document.querySelectorAll('#nav-header .navLinks');
 const menuBackDrop = document.querySelector('#menu-backdrop');
+
 listItem.forEach(item => {
   item.addEventListener('mouseenter', () => {
     const { left, top, width, height } = item.getBoundingClientRect();
@@ -27,30 +32,25 @@ listItem.forEach(item => {
 });
 
 export default function Navbar() {
-  const [t] = useTranslation();
+  // const [t] = useTranslation();
 
   return (
-    <nav id='landing-header'>
-      <div>
+    <nav id='nav-header'>
+      <div className='nav-links-container'>
         <NavLink className='{isActive} navLinks' to='/'>
-          {t('home')}
-        </NavLink>
-        <NavLink className='{isActive} navLinks' to='/aboutus'>
-          {t('about_us')}
-        </NavLink>
-        <NavLink className='{isActive} navLinks' to='/whatwedo'>
-          {t('what_we_do')}
-        </NavLink>
-        <NavLink className='{isActive} navLinks' to='/getinvolved'>
-          {t('get_involved')}
-        </NavLink>
+          <img src={logo} alt='HOME' className='logo' />
+        </NavLink >
+        <AboutDrop className='navLinks' header='ABOUT US'/>
+        <WhatWeDoDrop className='navLinks' header='WHAT WE DO'/>
+        <GetInvolvedDrop className='navLinks' header='GET INVOLVED'/>
         <NavLink className='{isActive} navLinks' to='/donate'>
-          {t('donate')}
+        <h4>DONATE</h4>
+          
         </NavLink>
       </div>
-      <div>
+      <div className='flex gap-4'>
         <NavLink className='{isActive} navLinks' to='/contact'>
-          {t('contact')}
+          <h4>CONTACT</h4>
         </NavLink>
         <LanguageSelection />
       </div>
