@@ -1,5 +1,6 @@
 import React from 'react';
+import logo from '../../public/logo.png'
 
 export default function Logo() {
-  return <img src='#' alt='LOGO' className='w-[200px] h-[60px]' />;
+  return <img src={logo} alt='Mera Parivar' className='w-[100px] h-[30px]' />;
 }

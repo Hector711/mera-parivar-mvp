@@ -1,5 +1,10 @@
 import React from 'react';
 
-export default function Card() {
-  return <div className='w-[235px] h-[294px] bg-slate-700'></div>;
+export default function Card(props) {
+  return (
+    <div className='card shadow'>
+      <header className='card-header'>{props.header}</header>
+      <img src={props.img} alt={props.imgName} className='card-img' />
+    </div>
+  );
 }

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import { Suspense } from 'react';
 import './i18n/i18n.js';
+import '@fontsource/caveat-brush';
 
 // CSS
 import './css/reset.css';

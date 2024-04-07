@@ -1,3 +1,4 @@
+
 html {
   font-family:
     'Onest Variable',
@@ -27,8 +28,26 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3rem;
-  font-weight: 300;
+  text-align: center;
+  color: black;
+  font-size: 42px;
+  font-family: 'Caveat Brush';
+  font-weight: 400;
+  word-wrap: break-word;
+  width: 100%;
+}
+h4 {
+  align-items: center;
+  padding: 15px 14px;
+  display: flex;
+    gap: 0.5rem;
+}
+h5{
+  font-size: 16px;
+  background-color: var(--hover-color);
+  width: max-content;
+  padding: 5px 40px;
+  border-radius: var(--border-max);
 }
 
 p {
@@ -37,6 +56,7 @@ p {
   text-wrap: pretty;
   word-wrap: break-word;
   padding-inline: auto;
+  width: 100%;
 }
 
 ol,
@@ -52,6 +72,8 @@ a {
 a:hover {
   color: var(--hover-color-t);
 }
+
+
 
 button {
   border-radius: var(--border);

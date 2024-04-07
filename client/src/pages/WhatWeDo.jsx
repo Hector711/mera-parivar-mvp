@@ -1,11 +1,81 @@
 import { useTranslation } from 'react-i18next';
+import HorizontalScroll from '../components/HorizontalScroll';
+import Section from '../components/Section';
 
 export default function WhatWeDo() {
   const [t] = useTranslation();
 
   return (
     <>
-      <h1>{t('what_we_do')}</h1>
+      <HorizontalScroll>
+        <img
+          className=' shadow'
+          src='https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='1'
+          id='img'
+        />
+        <img
+          className=' shadow'
+          src='https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='2'
+          id='img'
+        />
+        <img
+          className=' shadow'
+          src='https://images.unsplash.com/photo-1712312938983-676e2cdbb9d6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='3'
+          id='img'
+        />
+        <img
+          className=' shadow'
+          src='https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          alt='4'
+          id='img'
+        />
+      </HorizontalScroll>
+      <Section>
+        <article>
+          <h3>EDUCATION FOR CHILDREN PLANS</h3>
+          <div>
+            <p>
+              Meraparivar apuesta por la educación como forma para construir un
+              futuro mejor para los niños y niñas de la comunidad rural de
+              Gurgaon.
+            </p>
+            <ul>
+              <p>¿Qué tipo de proyectos impulsa?</p>
+              <li>
+                Programas educativos para menores no escolarizados de entre 3 y
+                17 años{' '}
+              </li>
+              <li>
+                Programas de clases de refuerzo para menores de escuelas
+                públicas, por la desigualdad que supone,con respecto a la
+                educación privada.
+              </li>
+            </ul>
+            <ul>
+              <p>
+                ¿Cuántos menores se benefician de estos programas actualmente?
+              </p>
+              <li>
+                Actualmente, dirigimos 3 escuelas con 1.250 niños y niñas a los
+                que puedes ayudar a cambiar su suerte, esta cifra esperamos
+                seguir incrementándola.{' '}
+              </li>
+            </ul>
+            <ul>
+              <p>¿Cómo puedes hacerlo?</p>
+              <li>
+                Es muy sencillo, si eres un particular aportando una pequeña
+                cantidad de dinero y si eres una organización, ponte en contacto
+                con nosotros y te diremos las formas que tienes de colaborar.
+              </li>
+              <p>Un pequeño gesto puede suponer un gran cambio.</p>
+            </ul>
+          </div>
+        </article>
+      </Section>
     </>
   );
 }
