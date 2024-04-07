@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-//const CC = require('currency-converter-lt'); //Para convertir las cantidades en EUR, GBP y USD a INR
+const CC = require('currency-converter-lt'); //Para convertir las cantidades en EUR, GBP y USD a INR
 
 router.get('/', (req, res) => {
   res.json({ message: 'Donation' });

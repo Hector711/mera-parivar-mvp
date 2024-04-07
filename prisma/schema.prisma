@@ -50,7 +50,7 @@ model Benefactors {
   is_partner          Boolean
   company_name        String
   company_role        String
-  message             String?
+  message             String
   Donations           Donations[]
 }
 
