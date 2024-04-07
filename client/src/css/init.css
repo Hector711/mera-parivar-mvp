@@ -37,17 +37,13 @@ h3 {
   width: 100%;
 }
 h4 {
-  align-items: center;
-  padding: 15px 14px;
   display: flex;
-    gap: 0.5rem;
+  gap: 0.5rem;
 }
 h5{
   font-size: 16px;
-  background-color: var(--hover-color);
   width: max-content;
-  padding: 5px 40px;
-  border-radius: var(--border-max);
+  
 }
 
 p {
@@ -75,16 +71,21 @@ a:hover {
 
 
 
-button {
-  border-radius: var(--border);
-  border: var(--border) solid transparent;
+/* button {
+  border-radius: var(--border-s);
+  border: var(--border-s) solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--);
+  background-color: var(--sec-color);
   transition: border-color 0.25s;
-}
+  padding: 5px 40px;
+  border-radius: var(--border-l);
+  width: min-content;
+} */
+
+
 
 button:hover {
   background-color: var(--hover-color);

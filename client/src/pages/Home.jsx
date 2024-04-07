@@ -1,10 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import Card from '../components/Card';
 import Section from '../components/Section';
-import Logo from '../components/Logo';
+import ActionButton from '../components/ActionButton';
+
 
 export default function Home() {
-  const [t] = useTranslation();
+  // const [t] = useTranslation();
 
   return (
     <>
@@ -25,13 +26,14 @@ export default function Home() {
         <Card header='Card 4' img='https://plus.unsplash.com/premium_photo-1674677530889-72b7cf7f1450?q=80&w=2706&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' imgName='' />
       </Section>
       <Section>
-        <img src='https://images.unsplash.com/photo-1711658364398-b7b697baf4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D shadow' alt='' className='w-[550px] h-[240px] shadow' />
+        <img src='https://images.unsplash.com/photo-1711658364398-b7b697baf4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D shadow' alt='home-img' className='w-[550px] h-[240px] shadow' />
 
         <div
           className='w-[550px] h-[max] flex flex-col
           gap-3 '
-        >
-          <h5>BECOME A PARTNER</h5>
+        > 
+        <ActionButton>BECOME A PARTNER</ActionButton>
+      
           <p>
             Lorem ipsum dolor sit amet consectetur. Pellentesque ac vitae
             malesuada integer in commodo magnis maecenas. Proin leo interdum

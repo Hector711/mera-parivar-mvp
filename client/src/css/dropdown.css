@@ -1,17 +1,12 @@
 #dropdown {
-  min-width: auto;
+  margin: auto;
 }
 
 #dropdown:has(:hover) {
   --rows: 1fr;
   --rotate: rotate(-90deg);
 }
-.dd_head {
-  text-decoration: none;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
+
 
 #dd_content {
   display: grid;
@@ -19,7 +14,7 @@
   transition: 0.3s grid-template-rows;
   position: absolute;
   background-color: var(--main-color);
-  border-radius: 0px 0px var(--border) var(--border);
+  border-radius: 0px 0px var(--border-s) var(--border-s);
 
 
 }

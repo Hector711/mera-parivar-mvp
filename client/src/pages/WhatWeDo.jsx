@@ -1,40 +1,42 @@
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import HorizontalScroll from '../components/HorizontalScroll';
 import Section from '../components/Section';
 
-export default function WhatWeDo() {
-  const [t] = useTranslation();
+const horizontalScrollImages = [
+  {
+    src:'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: '1',
+  },
+  {
+    src:'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: '2',
+  },
+  {
+    src:'https://images.unsplash.com/photo-1712312938983-676e2cdbb9d6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: '3',
+  },
+  {
+    src:'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: '4',
+  },
+  {
+    src:'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: '5',
+  },
+  {
+    src:'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    alt: '6',
+  }
+]
 
+export default function WhatWeDo() {
+  // const [t] = useTranslation();
+  
   return (
     <>
-      <HorizontalScroll>
-        <img
-          className=' shadow'
-          src='https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='1'
-          id='img'
-        />
-        <img
-          className=' shadow'
-          src='https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='2'
-          id='img'
-        />
-        <img
-          className=' shadow'
-          src='https://images.unsplash.com/photo-1712312938983-676e2cdbb9d6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='3'
-          id='img'
-        />
-        <img
-          className=' shadow'
-          src='https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-          alt='4'
-          id='img'
-        />
-      </HorizontalScroll>
+      <HorizontalScroll images={horizontalScrollImages} />
       <Section>
-        <article>
+        <div>
           <h3>EDUCATION FOR CHILDREN PLANS</h3>
           <div>
             <p>
@@ -74,7 +76,7 @@ export default function WhatWeDo() {
               <p>Un pequeño gesto puede suponer un gran cambio.</p>
             </ul>
           </div>
-        </article>
+        </div>
       </Section>
     </>
   );
