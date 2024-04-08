@@ -1,6 +1,6 @@
 // import { useTranslation } from 'react-i18next';
-import Section from '../components/Section';
-import HorizontalScroll from '../components/HorizontalScroll';
+import Section from '@/components/Section';
+import HorizontalScroll from '@/components/HorizontalScroll';
 
 const horizontalScrollImages = [
   {

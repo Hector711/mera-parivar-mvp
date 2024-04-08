@@ -1,4 +1,3 @@
-
 html {
   font-family:
     'Onest Variable',
@@ -13,27 +12,23 @@ html {
     'Open Sans',
     'Helvetica Neue',
     sans-serif;
-
   letter-spacing: -0.0025rem;
+  word-wrap: break-word;
 }
-
 h1 {
   font-size: 2rem;
   font-weight: 700;
 }
-
 h2 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-
 h3 {
   text-align: center;
   color: black;
   font-size: 42px;
   font-family: 'Caveat Brush';
   font-weight: 400;
-  word-wrap: break-word;
   width: 100%;
 }
 h4 {
@@ -43,9 +38,7 @@ h4 {
 h5{
   font-size: 16px;
   width: max-content;
-  
 }
-
 p {
   font-size: 1rem;
   line-height: 1.5;
@@ -54,43 +47,20 @@ p {
   padding-inline: auto;
   width: 100%;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 a {
   color: var(--black0);
   text-decoration: inherit;
 }
-
 a:hover {
   color: var(--hover-color-t);
 }
-
-
-
-/* button {
-  border-radius: var(--border-s);
-  border: var(--border-s) solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: var(--sec-color);
-  transition: border-color 0.25s;
-  padding: 5px 40px;
-  border-radius: var(--border-l);
-  width: min-content;
-} */
-
-
-
 button:hover {
   background-color: var(--hover-color);
 }
-
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

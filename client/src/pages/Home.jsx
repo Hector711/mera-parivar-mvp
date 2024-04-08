@@ -1,7 +1,7 @@
-import { useTranslation } from 'react-i18next';
-import Card from '../components/Card';
-import Section from '../components/Section';
-import ActionButton from '../components/ActionButton';
+// import { useTranslation } from 'react-i18next';
+import Card from '@/components/Card';
+import Section from '@/components/Section';
+import ActionButton from '@/components/ActionButton';
 
 
 export default function Home() {

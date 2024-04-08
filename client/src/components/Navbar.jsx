@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import LanguageSelection from './LanguageSelection';
 // import { useTranslation } from 'react-i18next';
-import Dropdown from './Dropdown';
-import Logo from './Logo';
-import ActionButton from './ActionButton';
+import LanguageSelection from '@/components/LanguageSelection.jsx';
+import Dropdown from '@/components/Dropdown';
+import Logo from '@/components/Logo';
+import ActionButton from '@/components/ActionButton';
 
 const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
 

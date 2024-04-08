@@ -1,5 +1,5 @@
 // import { useTranslation } from 'react-i18next';
-import Section from '../components/Section';
+import Section from '@/components/Section';
 
 export default function Donate() {
   // const [t] = useTranslation();

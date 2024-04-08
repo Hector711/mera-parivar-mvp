@@ -1,13 +1,10 @@
 #dropdown {
   margin: auto;
 }
-
 #dropdown:has(:hover) {
   --rows: 1fr;
   --rotate: rotate(-90deg);
 }
-
-
 #dd_content {
   display: grid;
   grid-template-rows: var(--rows, 0fr);
@@ -15,22 +12,17 @@
   position: absolute;
   background-color: var(--main-color);
   border-radius: 0px 0px var(--border-s) var(--border-s);
-
-
 }
-
 .dd_ul {
   overflow: hidden;
   width: 100%;
 }
-
 .dd_li {
   width: 100%;
   list-style: none;
   margin-left: auto;
   padding-inline: 0.9em;
 }
-
 .dd_anchor {
   padding: 1em 0;
   display: block;
