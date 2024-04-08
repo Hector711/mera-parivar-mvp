@@ -28,8 +28,6 @@ export default function LanguageSelection() {
   );
 }
 
-
-
 // {{props.pages}.map(({ header, link }) => (
 //   <li className='dd_li'>
 //   <a href={link} className='dd_anchor'>

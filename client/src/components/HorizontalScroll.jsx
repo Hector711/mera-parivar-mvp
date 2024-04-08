@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function HorizontalScroll({images}) {
+export default function HorizontalScroll({ images }) {
   return (
     <div id='horizontal-scroll'>
       {images.map(({ src, alt }) => (

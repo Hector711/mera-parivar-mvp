@@ -1,7 +1,6 @@
 import { IoIosArrowDown } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 
-
 export default function Dropdown(props) {
   const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
 

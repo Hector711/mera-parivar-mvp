@@ -8,7 +8,6 @@ form {
   gap: 10px;
   padding: 0 10px 0 0;
 }
-
 form * {
   border: 1px solid rgb(87, 87, 87);
   border-radius: var(--border-m);
@@ -17,9 +16,7 @@ form * {
 }
 form {
   /* border: 1px solid rgb(87, 87, 87); */
-
 }
-
 #name,
 #company,
 #companyrole,
@@ -28,9 +25,6 @@ form {
   width: 95%;
   height: 95%;
 }
-
-
-
 #form-message {
   grid-area: 1 / 2 / 5 / 4; /* Ajusta estas líneas según tu diseño */
   vertical-align: top;
@@ -43,7 +37,3 @@ form {
 form > button {
   grid-column: 3/4;
 }
-
-
-
-

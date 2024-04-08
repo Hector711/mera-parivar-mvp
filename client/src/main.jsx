@@ -10,7 +10,7 @@ import '@/css/reset/reset.css';
 import '@/css/init.css';
 import '@/css/styles.css';
 import '@/css/comp-dropdown.css';
-import '@/css/comp-form.css'
+import '@/css/comp-form.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -91,7 +91,7 @@ export default function GetInvolved() {
             placeholder='Company Role'
           />
           <select id='type-donation'>
-            <option value=''  selected>
+            <option value='' selected>
               Type of donation
             </option>
             <option value='opcion1'>Opción 1</option>
