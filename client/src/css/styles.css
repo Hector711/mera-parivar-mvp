@@ -27,7 +27,7 @@
 
   --shadow-xs: 0px 1px 2px #29292980;
   --shadow-s: 0 0 5px 0 #6c6b6bed;
-  --shadow-m: 2px 0 10px #212121ed;
+  --shadow-m: 2px 0 10px 0 #212121ed;
   --shadow-l: 2px 0 10px #212121ed;
 }
 * {
@@ -121,7 +121,7 @@ section {
   /* aspect-ratio: 9/14; */
   width: 220px;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .card-header {
   text-align: left;
@@ -129,6 +129,7 @@ section {
 }
 .card-img {
   background-color: var(--black1);
+  border-radius: var(--border-m);
   width: 100%;
   height: 310px;
 }
@@ -150,9 +151,10 @@ section {
   height: 100%;
   object-fit: cover;
   scroll-snap-align: center;
+  border-radius: var(--border-m);
 }
 .shadow {
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--shadow-m);
 }
 
 /* ========= FOOTER ========= */

@@ -3,6 +3,7 @@ import Section from '@/components/Section';
 import HorizontalScroll from '@/components/HorizontalScroll';
 import Card from '@/components/Card';
 import CarruselLogos from '@/components/CarruselLogos';
+import CallToAction from '../components/CallToAction';
 
 const horizontalScrollImages = [
   {
@@ -37,7 +38,7 @@ export default function GetInvolved() {
     <>
       <HorizontalScroll images={horizontalScrollImages} />
       <Section>
-        <div>
+        <div className='flex flex-col justify-center items-center'>
           <h1 className='small'>BECOME A PARTNER</h1>
           <p>
             ¿Eres una empresa comprometida con erradicar la desigualdad social?
@@ -75,6 +76,7 @@ export default function GetInvolved() {
               zonas más humildes, es una buena manera de colaborar.
             </li>
           </ul>
+          <CallToAction to='/donate'>DONATE</CallToAction>
         </div>
       </Section>
       <Section>
@@ -93,37 +95,40 @@ export default function GetInvolved() {
         />
       </Section>
       <Section>
-        <form action='submit'>
-          <input type='text' id='name' name='name' placeholder='Name' />
-          <input
-            type='text'
-            id='company'
-            name='company'
-            placeholder='Company'
-          />
-          <input
-            type='text'
-            id='companyrole'
-            name='companyrole'
-            placeholder='Company Role'
-          />
-          <select id='type-donation'>
-            <option value='' selected>
-              Type of donation
-            </option>
-            <option value='opcion1'>Opción 1</option>
-            <option value='opcion2'>Opción 2</option>
-            <option value='opcion3'>Opción 3</option>
-          </select>
+        <div className='flex justify-center w-full'>
+          <form action='submit' id='form-get-involved'>
+            <input type='text' id='name' name='name' placeholder='Name' />
+            <input type='email' id='email' name='email' placeholder='Email' />
+            <input
+              type='text'
+              id='company'
+              name='company'
+              placeholder='Company'
+            />
+            <input
+              type='text'
+              id='companyrole'
+              name='companyrole'
+              placeholder='Company Role'
+            />
+            <select id='type-donation'>
+              <option value='' selected>
+                Type of donation
+              </option>
+              <option value='opcion1'>Opción 1</option>
+              <option value='opcion2'>Opción 2</option>
+              <option value='opcion3'>Opción 3</option>
+            </select>
 
-          <input
-            type='text'
-            id='form-message'
-            name='message'
-            placeholder='Message'
-          />
-          <button type='submit'>Submit</button>
-        </form>
+            <input
+              type='text'
+              id='message'
+              name='message'
+              placeholder='Message'
+            />
+            <button type='submit' id='send'>Send</button>
+          </form>
+        </div>
       </Section>
     </>
   );

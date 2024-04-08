@@ -1,0 +1,67 @@
+form * {
+  border: 2px solid var(--color-main-1);
+  border-radius: var(--border-s);
+  background-color: var(--white-1);
+  padding: 0 20px;
+}
+form {
+  /* border: 0.5px solid #2f2f2f; */
+}
+
+/* FORMULARIO 1 */
+/* =============== */
+#form-get-involved {
+  display: grid;
+  /* grid-template-columns: 40% 30% 30%; */
+  grid-template-columns: 10% 10% 10% 10% 20% 10% 20%;
+  /* max-width: 800px; */
+  width: 985px;
+  height: 300px;
+  gap: 1rem;
+  padding: 0 18px 0 18px;
+}
+#form-get-involved > #name,
+#company{
+  grid-column: 1 / 3;
+}
+#form-get-involved > #email, #companyrole {
+  grid-column: 3 / 5;
+}
+#form-get-involved > #type-donation {
+  grid-column: 2 / 4;
+}
+#form-get-involved > #message {
+  grid-column: 5 / 8;
+  grid-row: 1 / 4;
+}
+#form-get-involved > #send {
+  grid-column: 7/8;
+}
+
+
+/* FORMULARIO 1 */
+/* =============== */
+#form-contact {
+  display: grid;
+  /* grid-template-columns: 40% 30% 30%; */
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto auto auto auto ;
+  /* max-width: 800px; */
+  width: 526px;
+  height: 500px;
+  /* gap: 1rem;
+  padding: 0 18px 0 18px; */
+}
+#form-contact > #name,
+#email, #subject{
+  grid-column: 1 / 2;
+}
+
+#form-contact > #message {
+  grid-column: 1 / 4;
+  grid-row: 4 / 8;
+}
+#form-contact > #send {
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+}

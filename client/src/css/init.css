@@ -56,10 +56,10 @@ a {
   text-decoration: inherit;
 }
 button:hover {
-  background-color: black;
+  background-color: var(--color-main-2);
 }
 button {
-  background-color: black;
+  /* background-color: black; */
 }
 button:focus,
 button:focus-visible {
