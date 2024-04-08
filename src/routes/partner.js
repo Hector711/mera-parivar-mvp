@@ -4,14 +4,16 @@ const prisma = require('../../prisma');
 
 router.post('/', async (req, res) => {
   try {
-    const { name, email, company_name, company_role } = req.body;
+    const { name, email, company_name, company_role, message } = req.body;
 
     await prisma.Benefactors.create({
       data: {
         name,
+        email,
         company_name,
         company_role,
-        email,
+        message,
+        Donation_frequency: false,
         Subscription_status: false, //Predefined as false
         is_partner: true, // Predefined as true
       },

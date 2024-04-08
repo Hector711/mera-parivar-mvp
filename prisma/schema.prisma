@@ -32,7 +32,7 @@ model Method_pay {
 }
 
 model contact_form {
-  IDcontact      String       @id @default(uuid())
+  IDcontact      BigInt       @id @default(autoincrement())
   contact_name   String
   contact_email  String
   Text           String
@@ -41,7 +41,7 @@ model contact_form {
 }
 
 model Benefactors {
-  IDBenefactor        String      @id @default(uuid())
+  IDBenefactor        BigInt      @id @default(autoincrement())
   email               String
   name                String
   Donation_frequency  Boolean
@@ -55,10 +55,10 @@ model Benefactors {
 }
 
 model Donations {
-  IDDonacion      String        @id @default(uuid())
+  IDDonacion      BigInt        @id @default(autoincrement())
   Amount_in_rup   BigInt
   date            DateTime      @default(now())
-  IDBenefactor    String
+  IDBenefactor    BigInt
   IDmethod_pay    Int
   IDdonation_type Int
   Benefactor      Benefactors   @relation(fields: [IDBenefactor], references: [IDBenefactor])
