@@ -12,3 +12,56 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model subject_type {
+  IDsubject_type Int            @id
+  subject_name   String
+  contact_forms  contact_form[]
+}
+
+model Donation_type {
+  IDdonation_type Int         @id
+  donation_name   String
+  Donations       Donations[]
+}
+
+model Method_pay {
+  IDmethod_pay    Int         @id
+  method_pay_name String
+  Donations       Donations[]
+}
+
+model contact_form {
+  IDcontact      String       @id @default(uuid())
+  contact_name   String
+  contact_email  String
+  Text           String
+  IDSubject_type Int
+  subject_type   subject_type @relation(fields: [IDSubject_type], references: [IDsubject_type])
+}
+
+model Benefactors {
+  IDBenefactor        String      @id @default(uuid())
+  email               String
+  name                String
+  Donation_frequency  Boolean
+  Registration_date   DateTime    @default(now())
+  Subscription_status Boolean
+  is_partner          Boolean
+  company_name        String
+  company_role        String
+  message             String
+  Donations           Donations[]
+}
+
+model Donations {
+  IDDonacion      String        @id @default(uuid())
+  Amount_in_rup   BigInt
+  date            DateTime      @default(now())
+  IDBenefactor    String
+  IDmethod_pay    Int
+  IDdonation_type Int
+  Benefactor      Benefactors   @relation(fields: [IDBenefactor], references: [IDBenefactor])
+  Method_pay      Method_pay    @relation(fields: [IDmethod_pay], references: [IDmethod_pay])
+  Donation_type   Donation_type @relation(fields: [IDdonation_type], references: [IDdonation_type])
+}
