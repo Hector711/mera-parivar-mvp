@@ -1,15 +1,15 @@
 // import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
+import DonateCard from '@/components/DonateCard';
 
 export default function Donate() {
   // const [t] = useTranslation();
 
   return (
     <>
-      <div className='w-[100%] h-[264px] bg-slate-400 flex p-[5rem]'>
-        {/* <img src='' alt=''  /> */}
+      <div className='w-[100%] h-[264px] flex p-[5rem] img-wide'>
         <div className='flex flex-col justify-start align-top'>
-          <h3>DONATE NOW</h3>
+          <h1 className='small'>DONATE NOW</h1>
           <p>
             Thanks to your contribution, thousands of people will have a better
             life.
@@ -36,7 +36,8 @@ export default function Donate() {
               Leo ut egestas nec tortor pellentesque.
             </p>
           </div>
-          <div className='w-[600px] h-[300px] bg-slate-400'> DONATE </div>
+          <DonateCard />
+          {/* <div className='w-[600px] h-[300px] img-wide'> DONATE </div> */}
         </div>
       </Section>
     </>

@@ -1,6 +1,8 @@
 // import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
 import HorizontalScroll from '@/components/HorizontalScroll';
+import Card from '@/components/Card';
+import CarruselLogos from '@/components/CarruselLogos';
 
 const horizontalScrollImages = [
   {
@@ -36,7 +38,7 @@ export default function GetInvolved() {
       <HorizontalScroll images={horizontalScrollImages} />
       <Section>
         <div>
-          <h3>BECOME A PARTNER</h3>
+          <h1 className='small'>BECOME A PARTNER</h1>
           <p>
             ¿Eres una empresa comprometida con erradicar la desigualdad social?
             ¿Estás buscando un proyecto que contribuya a que los niños y niñas
@@ -74,6 +76,21 @@ export default function GetInvolved() {
             </li>
           </ul>
         </div>
+      </Section>
+      <Section>
+        <CarruselLogos />
+        <Card
+          header='Titulo 1'
+          img='https://images.unsplash.com/photo-1712371963569-84c6f650a558?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          imgName=''
+          text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+        />
+        <Card
+          header='Titulo 2'
+          img='https://plus.unsplash.com/premium_photo-1664970900224-6c67df73191a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          imgName=''
+          text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+        />
       </Section>
       <Section>
         <form action='submit'>

@@ -5,6 +5,7 @@ import App from '@/App.jsx';
 import '@/i18n/i18n.js';
 import '@fontsource/caveat-brush';
 import '@fontsource-variable/onest';
+import '@fontsource/lato';
 // CSS
 import '@/css/reset/reset.css';
 import '@/css/init.css';

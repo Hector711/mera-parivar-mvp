@@ -5,14 +5,13 @@ import { FaYoutube } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
-import { NavLink } from 'react-router-dom';
-import ActionButton from '../components/ActionButton';
+import CallToAction from './CallToAction';
 
 import SocialLink from './SocialLink';
 
 export default function Footer() {
   return (
-    <footer className='w-full h-[7rem] flex justify-around items-center bg-slate-400'>
+    <footer>
       <Logo />
       <div>
         <p>Location</p>
@@ -21,8 +20,8 @@ export default function Footer() {
           India
         </p>
       </div>
-      <ActionButton>DONATE</ActionButton>
-      <ActionButton>CONTACT US</ActionButton>
+      <CallToAction to='/donate'>DONATE</CallToAction>
+      <CallToAction to='/contactus'>CONTACT US</CallToAction>
 
       <div id='social-links-container'>
         <IconContext.Provider value={{ className: 'global-class-name' }}>

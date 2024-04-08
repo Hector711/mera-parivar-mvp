@@ -1,6 +1,14 @@
 import React from 'react';
-import logo from '@/assets/logo.png';
+// import logo from '@/assets/logo.png';
+import logo_svg from '@/assets/logo_svg.svg';
+import { NavLink } from 'react-router-dom';
+
+const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
 
 export default function Logo() {
-  return <img src={logo} alt='Mera Parivar' className='w-[100px] h-[50px]' />;
+  return (
+    <NavLink className='{isActive} nav-link' id='logo-container' to='/'>
+      <img src={logo_svg} alt='Mera Parivar' id='logo' />
+    </NavLink>
+  );
 }

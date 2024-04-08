@@ -1,12 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 // import { useTranslation } from 'react-i18next';
 import LanguageSelection from '@/components/LanguageSelection.jsx';
 import Dropdown from '@/components/Dropdown';
 import Logo from '@/components/Logo';
-import ActionButton from '@/components/ActionButton';
-
-const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
+import CallToAction from '@/components/CallToAction';
 
 const aboutUsLinks = [
   { header: 'Our Mission', link: '/aboutus' },
@@ -33,9 +30,7 @@ export default function Navbar() {
   return (
     <nav id='nav-header'>
       <div className='nav-containers'>
-        <NavLink className={isActive} to='/'>
-          <Logo />
-        </NavLink>
+        <Logo />
         <Dropdown header='ABOUT US' to='/aboutus' pages={aboutUsLinks} />
         <Dropdown header='WHAT WE DO' to='/whatwedo' pages={whatWeDoLinks} />
         <Dropdown
@@ -43,21 +38,13 @@ export default function Navbar() {
           to='/getinvolved'
           pages={getInvolvedLinks}
         />
-        <ActionButton className={isActive}>DONATE</ActionButton>
+        <CallToAction to='/donate'>DONATE</CallToAction>
       </div>
-      <div className='nav-containers'>
-        <ActionButton className={isActive}>CONTACT</ActionButton>
 
+      <div className='nav-containers'>
+        <CallToAction to='/contact'>CONTACT</CallToAction>
         <LanguageSelection />
       </div>
-      <div
-        id='menu-backdrop'
-        className={`
-        absolute bg-slate-400  bg-opacity-50 backdrop-blur-lg rounded 
-        translate-x-[var(--left)] translate-y-[var(--top)] left-0 top-0 w-[var(--width)] h-[var(--height)]
-        transition-all duration-300 ease-in-out opacity-0 -z-10 
-        `}
-      ></div>
     </nav>
   );
 }

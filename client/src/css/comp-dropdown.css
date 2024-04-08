@@ -10,7 +10,7 @@
   grid-template-rows: var(--rows, 0fr);
   transition: 0.3s grid-template-rows;
   position: absolute;
-  background-color: var(--main-color);
+  background-color: var(--white-0);
   border-radius: 0px 0px var(--border-s) var(--border-s);
 }
 .dd_ul {

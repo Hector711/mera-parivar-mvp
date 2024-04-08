@@ -1,6 +1,5 @@
 import { useTranslation } from 'react-i18next';
 
-// Método 2
 export const LANGUAGES = [
   { label: 'Spanish', code: 'es' },
   { label: 'English', code: 'en' },
@@ -27,14 +26,3 @@ export default function LanguageSelection() {
     </select>
   );
 }
-
-// {{props.pages}.map(({ header, link }) => (
-//   <li className='dd_li'>
-//   <a href={link} className='dd_anchor'>
-//     {header}
-//   </a>
-// </li>
-//   <option key={code} value={code}>
-//     {label}
-//   </option>
-// ))}

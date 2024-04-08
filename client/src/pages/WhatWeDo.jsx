@@ -37,7 +37,7 @@ export default function WhatWeDo() {
       <HorizontalScroll images={horizontalScrollImages} />
       <Section>
         <div>
-          <h3>EDUCATION FOR CHILDREN PLANS</h3>
+          <h1 className='small'>EDUCATION FOR CHILDREN PLANS</h1>
           <div>
             <p>
               Meraparivar apuesta por la educación como forma para construir un
@@ -48,7 +48,7 @@ export default function WhatWeDo() {
               <p>¿Qué tipo de proyectos impulsa?</p>
               <li>
                 Programas educativos para menores no escolarizados de entre 3 y
-                17 años{' '}
+                17 años.
               </li>
               <li>
                 Programas de clases de refuerzo para menores de escuelas
@@ -63,7 +63,7 @@ export default function WhatWeDo() {
               <li>
                 Actualmente, dirigimos 3 escuelas con 1.250 niños y niñas a los
                 que puedes ayudar a cambiar su suerte, esta cifra esperamos
-                seguir incrementándola.{' '}
+                seguir incrementándola.
               </li>
             </ul>
             <ul>
