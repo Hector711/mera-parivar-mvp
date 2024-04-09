@@ -33,6 +33,12 @@ h2 {
   width: 100%;
   text-shadow: var(--shadow-xs);
 }
+h3 {
+  font-size: 19px;
+  font-weight: 500;
+  width: 100%;
+  text-shadow: var(--shadow-xs);
+}
 
 p {
   font-size: 16px;
@@ -42,8 +48,8 @@ p {
   padding-inline: auto;
   width: 100%;
 }
-p.bold {
-  font-weight: 700;
+p.bold, span.bold {
+  font-weight: 900;
 }
 p.caption {
   font-size: 12px;

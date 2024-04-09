@@ -1,6 +1,7 @@
 // import { useTranslation } from 'react-i18next';
 import HorizontalScroll from '@/components/HorizontalScroll';
 import Section from '@/components/Section';
+import CallToAction from '@/components/CallToAction';
 
 const horizontalScrollImages = [
   {
@@ -35,47 +36,48 @@ export default function WhatWeDo() {
   return (
     <>
       <HorizontalScroll images={horizontalScrollImages} />
-      <Section>
-        <div>
+      {/* EDUCATION FOR CHILDREN PLANS */}
+      <Section tail='flex flex-col gap-4' id='education-section'>
           <h1 className='small'>EDUCATION FOR CHILDREN PLANS</h1>
-          <div>
             <p>
               Meraparivar apuesta por la educación como forma para construir un
               futuro mejor para los niños y niñas de la comunidad rural de
               Gurgaon.
             </p>
             <ul>
-              <p>¿Qué tipo de proyectos impulsa?</p>
+              <p className='bold'>¿Qué tipo de proyectos impulsa?</p>
               <li>
-                Programas educativos para menores no escolarizados de entre 3 y
+              &#8226;  Programas educativos para menores no escolarizados de entre 3 y
                 17 años.
               </li>
               <li>
-                Programas de clases de refuerzo para menores de escuelas
+              &#8226;  Programas de clases de refuerzo para menores de escuelas
                 públicas, por la desigualdad que supone,con respecto a la
                 educación privada.
               </li>
             </ul>
             <ul>
-              <p>
+              <p className='bold'>
                 ¿Cuántos menores se benefician de estos programas actualmente?
               </p>
               <li>
-                Actualmente, dirigimos 3 escuelas con 1.250 niños y niñas a los
+              &#8226; Actualmente, dirigimos 3 escuelas con 1.250 niños y niñas a los
                 que puedes ayudar a cambiar su suerte, esta cifra esperamos
                 seguir incrementándola.
               </li>
             </ul>
             <ul>
-              <p>¿Cómo puedes hacerlo?</p>
+              <p className='bold'>¿Cómo puedes hacerlo?</p>
               <li>
-                Es muy sencillo, si eres un particular aportando una pequeña
+              &#8226; Es muy sencillo, si eres un particular aportando una pequeña
                 cantidad de dinero y si eres una organización, ponte en contacto
                 con nosotros y te diremos las formas que tienes de colaborar.
               </li>
-              <p>Un pequeño gesto puede suponer un gran cambio.</p>
             </ul>
-          </div>
+              <p>Un pequeño gesto puede suponer un gran cambio.</p>
+        <div className='flex justify-center gap-10'>
+          <CallToAction to='/donate'>DONATE NOW</CallToAction>
+          <CallToAction to='/getinvolved'>BECOME A PARTNER</CallToAction>
         </div>
       </Section>
     </>

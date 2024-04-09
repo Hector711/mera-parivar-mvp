@@ -6,7 +6,7 @@ export default function Contact() {
 
   return (
     <>
-      <Section>
+      <Section tail=''>
         <div className='flex flex-col bg-slate-300 items-start w-[100%]'>
           <h1 className='small'>Contact Us</h1>
 

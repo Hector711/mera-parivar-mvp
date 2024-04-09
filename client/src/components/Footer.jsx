@@ -14,8 +14,8 @@ export default function Footer() {
     <footer>
       <Logo />
       <div>
-        <p>Location</p>
-        <p className='w-[400px]'>
+        <p className='bold text-white'>Location</p>
+        <p className='w-[400px] text-white'>
           Bihari Sabji Mandi near Raj boutique Rajiv Nagar Gurgaon Haryana -
           India
         </p>

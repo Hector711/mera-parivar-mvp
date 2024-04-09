@@ -46,6 +46,27 @@ nav {
   margin: 0 auto;
   padding: 1rem 0;
 }
+
+/* ========= EDUCATION SECTION ========= */
+/* ========= ========= ========= */
+#education-section > ul {
+  padding: 0 0 0 10px;
+}
+#education-section > ul> li {
+  padding: 0 0 0 10px;
+  margin: 5px
+}
+/* ========= PARTNER SECTION ========= */
+/* ========= ========= ========= */
+#partner-section > ul {
+  padding: 0 0 0 10px;
+}
+#partner-section > ul> li {
+  padding: 0 0 0 10px;
+  margin: 10px
+}
+
+
 .nav-containers {
   display: flex;
   align-items: center;
@@ -103,16 +124,11 @@ nav {
 /* ========= SECTION ========= */
 /* ========= ========= ========= */
 section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-
+  margin: 4.5rem auto;
   max-width: var(--width-section);
-  margin-block: 60px;
-  margin-inline: auto;
-  height: max-content;
+
 }
+/* flex justify-center items-center gap-[40px] mx-[60px] my-[auto] h-[max-content] */
 
 /* ========= ========= ========= */
 /* ========= CARD ========= */
@@ -169,8 +185,9 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
+  color: var(--color-main-1);
 
   background-color: var(--white-1);
   border: 1px solid var(--white-1);
