@@ -52,12 +52,12 @@ form {
   /* gap: 1rem;
   padding: 0 18px 0 18px; */
 }
-#form-contact > #name,
-#email, #subject{
+#form-contact > #contact_name,
+#contact_email, #IDSubject_type{
   grid-column: 1 / 2;
 }
 
-#form-contact > #message {
+#form-contact > #Text {
   grid-column: 1 / 4;
   grid-row: 4 / 8;
 }

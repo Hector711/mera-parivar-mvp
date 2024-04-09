@@ -5,12 +5,14 @@ const prisma = require('../../prisma');
 router.post('/', async (req, res) => {
   try {
     const { contact_name, contact_email, IDSubject_type, Text } = req.body;
-
+   
+    const parsedIDSubject_type = parseInt(IDSubject_type, 10);
+    
     await prisma.contact_form.create({
       data: {
         contact_name,
         contact_email,
-        IDSubject_type,
+        IDSubject_type: parsedIDSubject_type,
         Text,
       },
     });

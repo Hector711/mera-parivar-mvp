@@ -4,6 +4,9 @@ import HorizontalScroll from '@/components/HorizontalScroll';
 import Card from '@/components/Card';
 import CarruselLogos from '@/components/CarruselLogos';
 import CallToAction from '../components/CallToAction';
+import { useForm } from 'react-hook-form';
+import { useMutation } from '@tanstack/react-query';
+import { postBenefactors } from '@/service/partner';
 
 const horizontalScrollImages = [
   {
@@ -34,6 +37,22 @@ const horizontalScrollImages = [
 
 export default function GetInvolved() {
   // const [t] = useTranslation();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const { mutate } = useMutation({
+    mutationKey: 'partner',
+    mutationFn: postBenefactors,
+  });
+
+  const onSubmit = async (data) => {
+    console.log(data);
+   await mutate(data);
+  };
+
   return (
     <>
       <HorizontalScroll images={horizontalScrollImages} />
@@ -124,7 +143,12 @@ export default function GetInvolved() {
       <Section>
         <div className='flex justify-center w-full'>
           <form action='submit' id='form-get-involved'>
-            <input type='text' id='name' name='name' placeholder='Name' />
+          <input
+                type='text'
+                id='name'
+                {...register('name')}
+                placeholder='Name'
+              />
             <input type='email' id='email' name='email' placeholder='Email' />
             <input
               type='text'
