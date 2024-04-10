@@ -6,15 +6,17 @@ const postBenefactors = async ({
   company_name,
   company_role,
   message,
+  IDdonation_type,
 }) => {
-  // Ensure `api` is an instance of an HTTP client like Axios configured elsewhere
   const { data } = await api.post('/partner', {
     name,
     email,
     company_name,
     company_role,
     message,
+    IDdonation_type,
   });
+
   return data;
 };
 

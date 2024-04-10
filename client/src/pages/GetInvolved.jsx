@@ -1,4 +1,4 @@
-// import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
 import HorizontalScroll from '@/components/HorizontalScroll';
 import Card from '@/components/Card';
@@ -36,7 +36,7 @@ const horizontalScrollImages = [
 ];
 
 export default function GetInvolved() {
-  // const [t] = useTranslation();
+  //const [t] = useTranslation();
   const {
     register,
     handleSubmit,
@@ -48,10 +48,16 @@ export default function GetInvolved() {
     mutationFn: postBenefactors,
   });
 
-  const onSubmit = async (data) => {
-    console.log(data);
-   await mutate(data);
+  const onSubmit = async data => {
+    await mutate(data);
   };
+
+  const donationTypes = [
+    { IDdonation_type: 1, donation_name: 'Dinero' },
+    { IDdonation_type: 2, donation_name: 'Comida' },
+    { IDdonation_type: 3, donation_name: 'Material' },
+    { IDdonation_type: 4, donation_name: 'Otros' },
+  ];
 
   return (
     <>
@@ -142,39 +148,52 @@ export default function GetInvolved() {
       </Section>
       <Section>
         <div className='flex justify-center w-full'>
-          <form action='submit' id='form-get-involved'>
-          <input
-                type='text'
-                id='name'
-                {...register('name')}
-                placeholder='Name'
-              />
-            <input type='email' id='email' name='email' placeholder='Email' />
+          <form
+            action='submit'
+            id='form-get-involved'
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <input
               type='text'
-              id='company'
-              name='company'
+              id='name'
+              {...register('name')}
+              placeholder='Name'
+            />
+            <input
+              type='email'
+              id='email'
+              {...register('email')}
+              placeholder='Email'
+            />
+            <input
+              type='text'
+              id='company_name'
+              {...register('company_name')}
               placeholder='Company'
             />
             <input
               type='text'
-              id='companyrole'
-              name='companyrole'
+              id='company_role'
+              {...register('company_role')}
               placeholder='Company Role'
             />
-            <select id='type-donation'>
-              <option value='' selected>
-                Type of donation
-              </option>
-              <option value='opcion1'>Opción 1</option>
-              <option value='opcion2'>Opción 2</option>
-              <option value='opcion3'>Opción 3</option>
+
+            <select
+              type='number'
+              id='IDdonation_type'
+              {...register('IDdonation_type')}
+            >
+              {donationTypes.map(type => (
+                <option key={type.IDdonation_type} value={type.IDdonation_type}>
+                  {type.donation_name}{' '}
+                  {/* Assuming `name` is the field you want to display */}
+                </option>
+              ))}
             </select>
 
-            <input
-              type='text'
+            <textarea
               id='message'
-              name='message'
+              {...register('message')}
               placeholder='Message'
             />
             <button type='submit' id='send'>
