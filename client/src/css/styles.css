@@ -52,20 +52,19 @@ nav {
 #education-section > ul {
   padding: 0 0 0 10px;
 }
-#education-section > ul> li {
+#education-section > ul > li {
   padding: 0 0 0 10px;
-  margin: 5px
+  margin: 5px;
 }
 /* ========= PARTNER SECTION ========= */
 /* ========= ========= ========= */
 #partner-section > ul {
   padding: 0 0 0 10px;
 }
-#partner-section > ul> li {
+#partner-section > ul > li {
   padding: 0 0 0 10px;
-  margin: 10px
+  margin: 10px;
 }
-
 
 .nav-containers {
   display: flex;
@@ -126,7 +125,6 @@ nav {
 section {
   margin: 4rem auto;
   max-width: var(--width-section);
-
 }
 /* flex justify-center items-center gap-[40px] mx-[60px] my-[auto] h-[max-content] */
 

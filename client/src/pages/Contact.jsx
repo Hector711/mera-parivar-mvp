@@ -18,9 +18,9 @@ export default function Contact() {
     mutationFn: postContact,
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async data => {
     console.log(data);
-   await mutate(data);
+    await mutate(data);
   };
 
   const subjectTypes = [
@@ -37,7 +37,11 @@ export default function Contact() {
           <h1 className='small'>Contact Us</h1>
 
           <div className='flex justify-center w-[100%]'>
-            <form action='submit' id='form-contact' onSubmit={handleSubmit(onSubmit)}>
+            <form
+              action='submit'
+              id='form-contact'
+              onSubmit={handleSubmit(onSubmit)}
+            >
               <input
                 type='text'
                 id='contact_name'
@@ -50,7 +54,11 @@ export default function Contact() {
                 {...register('contact_email')}
                 placeholder='Email'
               />
-              <select type= 'number' id='IDSubject_type' {...register('IDSubject_type')}>
+              <select
+                type='number'
+                id='IDSubject_type'
+                {...register('IDSubject_type')}
+              >
                 {subjectTypes.map(type => (
                   <option key={type.IDSubject_type} value={type.IDSubject_type}>
                     {type.subject_name}{' '}
