@@ -38,6 +38,8 @@ export default function Navbar() {
           to='/getinvolved'
           pages={getInvolvedLinks}
         />
+      </div>
+      <div className='nav-containers'>
         <CallToAction to='/donate'>DONATE</CallToAction>
       </div>
 

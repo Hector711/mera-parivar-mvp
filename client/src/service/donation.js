@@ -14,7 +14,6 @@ const postBenefactorNonPartner = async ({
       email,
       currency: currency,
     });
-   
 
     // Devolver el ID de sesión de pago de Stripe
     return benefactorResponse.data.sessionId;
@@ -25,5 +24,3 @@ const postBenefactorNonPartner = async ({
 };
 
 export { postBenefactorNonPartner };
-
-
