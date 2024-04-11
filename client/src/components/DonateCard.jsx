@@ -1,85 +1,44 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useMutation } from '@tanstack/react-query';
-import { postBenefactorNonPartner } from '../service/donation';
+import { api } from '../service/api';
 
 export default function DonateCard() {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    watch,
-  } = useForm();
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
-  const subscriptionStatus = watch('Subscription_status');
-
-  const { mutate } = useMutation({
-    mutationKey: 'nonpartner',
-    mutationFn: postBenefactorNonPartner,
-  });
-
-  const onSubmit = async data => {
-    console.log(data);
-    await mutate(data);
+  const onSubmit = async (data) => {
+    // Envía la moneda seleccionada al servidor y espera el Payment Link
+    try {
+      const response = await api.post('/create-checkout-session', {
+        currency: data.currency // Asegúrate de enviar solo la moneda
+      });
+      window.location.href = response.data.url; // Redirige al usuario al Payment Link
+    } catch (error) {
+      console.error('There was an error:', error.response?.data?.error || error.message);
+    }
   };
 
   return (
     <div className='w-[1100px] border-black border-2'>
       <h1>Esta es la parte del formulario</h1>
-      <form action='' id='donate-form' onSubmit={handleSubmit(onSubmit)}>
-        {/* Sección de selección de moneda */}
-        <div>
-          <p>Select a currency:</p>
-          <label>
-            <input type='radio' value='Rupee' {...register('currency')} /> Rupee
-          </label>
-          <label>
-            <input type='radio' value='Euro' {...register('currency')} /> Euro
-          </label>
-          <label>
-            <input type='radio' value='Dollar' {...register('currency')} />{' '}
-            Dollar
-          </label>
-          <label>
-            <input type='radio' value='Pound' {...register('currency')} /> Pound
-          </label>
-        </div>
-
-        <input type='text' id='name' {...register('name')} placeholder='Name' />
-        <input
-          type='email'
-          id='email'
-          {...register('email')}
-          placeholder='Email'
-        />
-        <div>
-          <p>Would you like to make this donation every month?</p>
-          <label>
-            <input
-              type='radio'
-              value='true' // Cambiado a representar el valor booleano como string
-              {...register('Subscription_status', {
-                onChange: e =>
-                  setValue('Subscription_status', e.target.value === 'true'), // Convierte el valor a booleano
-              })}
-            />{' '}
-            Yes
-          </label>
-          <label>
-            <input
-              type='radio'
-              value='false' // Cambiado a representar el valor booleano como string
-              {...register('Subscription_status', {
-                onChange: e =>
-                  setValue('Subscription_status', e.target.value === 'false'), // Convierte el valor a booleano
-              })}
-            />{' '}
-            No
-          </label>
-        </div>
-        {/* Otros campos del formulario aquí */}
-        <button type='submit'>Submit</button>
+      <form id='donate-form' onSubmit={handleSubmit(onSubmit)}>
+        <input type='text' {...register('name')} placeholder='Name' />
+        <input type='email' {...register('email')} placeholder='Email' />
+        <select {...register('currency')}>
+          <option value="USD">Dollar</option>
+          <option value="EUR">Euro</option>
+          <option value="INR">Rupee</option>
+          <option value="GBP">Pound</option>
+        </select>
+        <select {...register('Subscription_status')}>
+          <option value="true">Yes</option>
+          <option value="false">No</option>
+        </select>
+        <button type='submit'>Donate</button>
       </form>
     </div>
   );
 }
+
+
+
+
