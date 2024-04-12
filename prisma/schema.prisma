@@ -42,7 +42,7 @@ model contact_form {
 
 model Benefactors {
   IDBenefactor        BigInt      @id @default(autoincrement())
-  email               String
+  email               String      @unique
   name                String
   Donation_frequency  Boolean
   Registration_date   DateTime    @default(now())

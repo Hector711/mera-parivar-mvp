@@ -23,7 +23,7 @@ export default function Footer() {
           </p>
         </div>
         <CallToAction to='/donate'>DONATE</CallToAction>
-        <CallToAction to='/contactus'>CONTACT US</CallToAction>
+        <CallToAction to='/contact'>CONTACT US</CallToAction>
 
         <div id='social-links-container'>
           <IconContext.Provider value={{ className: 'global-class-name' }}>
