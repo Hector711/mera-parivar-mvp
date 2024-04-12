@@ -2,60 +2,94 @@
 import Card from '@/components/Card';
 import Section from '@/components/Section';
 import CallToAction from '@/components/CallToAction';
+import CarrouselImages from '@/components/CarrouselImages';
+import CarrouselQuotes from '@/components/CarrouselQuotes';
+import carr_1 from '../assets/carr_1.jpg';
+import carr_2 from '../assets/carr_2.jpg';
+import carr_3 from '../assets/carr_3.jpg';
+import carr_4 from '../assets/carr_4.jpg';
+import carr_5 from '../assets/carr_5.jpg';
+import card_1 from '../assets/card_1.jpeg';
+import card_2 from '../assets/card_2.jpeg';
+import card_3 from '../assets/card_3.jpeg';
+import card_4 from '../assets/card_4.jpeg';
+import home_1 from '../assets/home_1.jpg';
+
+const ImagesCarrousel = [
+  {
+    src: carr_1,
+    alt: '1',
+  },
+  {
+    src: carr_2,
+    alt: '2',
+  },
+  {
+    src: carr_3,
+    alt: '3',
+  },
+  {
+    src: carr_4,
+    alt: '4',
+  },
+  {
+    src: carr_5,
+    alt: '5',
+  }
+];
 
 export default function Home() {
   // const [t] = useTranslation();
-
   return (
     <>
-      <img
-        className='w-full h-[400px] shadow'
-        src='https://images.unsplash.com/photo-1711658364398-b7b697baf4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-        alt=''
-      />
+      <CarrouselImages images={ImagesCarrousel} />
       {/* PHRASES */}
       <Section tail='flex flex-col justify-center gap-3'>
-        <div className='flex justify-center w-[80%] text-center m-[auto] gap-10'>
-          <button>&#8592;</button>
-          <h3>
-            Aquí irá una frase que irá cambiando con datos relevantes que
-            tenemos
-          </h3>
-          <button>&#8594;</button>
-        </div>
-        <div className='flex justify-center '> &#8226; &#8226; &#8226;</div>
+        <CarrouselQuotes />
       </Section>
       {/* CARDS SECTION */}
       <Section tail='flex w-full justify-between'>
         <Card
-          header='Titulo 1'
-          img='https://images.unsplash.com/photo-1712371963569-84c6f650a558?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          header='Education for children'
+          img={card_1}
           imgName=''
-          text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+          label='Program'
+          hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+          link='/'
+          cardText='To build a better future for the children of Gurgaon.'
         />
         <Card
-          header='Titulo 2'
-          img='https://plus.unsplash.com/premium_photo-1664970900224-6c67df73191a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          header='Women Empowerment'
+          img={card_2}
           imgName=''
-          text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+          label='Program'
+          hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+          link='/'
+          cardText='To help the community girls and young ladies became entrepreneurs.'
         />
         <Card
-          header='Titulo 3'
-          img='https://images.unsplash.com/photo-1712004257253-90705c255214?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          header='Education for children'
+          img={card_3}
           imgName=''
-          text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+          label='Partner'
+          hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+          link='/'
+          cardText='To build a better future for the children of Gurgaon.'
         />
         <Card
-          header='Titulo 4'
-          img='https://plus.unsplash.com/premium_photo-1674677530889-72b7cf7f1450?q=80&w=2706&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+          header='Education for children'
+          img={card_4}
           imgName=''
-          text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+          label='Partner'
+          hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+          link='/'
+          cardText='To build a better future for the children of Gurgaon.'
         />
       </Section>
       {/* BECOME A PARTNER-HOME SECTION */}
       <Section tail='flex w-full justify-between gap-16'>
         <img
-          src='https://images.unsplash.com/photo-1711658364398-b7b697baf4e2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D shadow'
+          src={home_1}
           alt='home-img'
           className='w-[50%] h-[240px] shadow'
         />

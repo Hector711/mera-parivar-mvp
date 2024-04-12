@@ -4,11 +4,12 @@ import LanguageSelection from '@/components/LanguageSelection.jsx';
 import Dropdown from '@/components/Dropdown';
 import Logo from '@/components/Logo';
 import CallToAction from '@/components/CallToAction';
+import { NavLink } from 'react-router-dom';
 
 const aboutUsLinks = [
-  { header: 'Our Mission', link: '/aboutus' },
-  { header: 'Our Team', link: '/aboutus' },
-  { header: 'Our Events', link: '/aboutus' },
+  { header: 'Our Mission', link: '/' },
+  { header: 'Our Team', link: '/' },
+  { header: 'Our Events', link: '/' },
 ];
 const whatWeDoLinks = [
   { header: 'Education for children', link: '/whatwedo' },
@@ -31,20 +32,19 @@ export default function Navbar() {
     <nav id='nav-header'>
       <div className='nav-containers'>
         <Logo />
-        <Dropdown header='ABOUT US' to='/aboutus' pages={aboutUsLinks} />
+        <Dropdown header='ABOUT US' to='/' pages={aboutUsLinks} />
         <Dropdown header='WHAT WE DO' to='/whatwedo' pages={whatWeDoLinks} />
-        <Dropdown
-          header='GET INVOLVED'
-          to='/getinvolved'
-          pages={getInvolvedLinks}
-        />
+        <Dropdown header='GET INVOLVED' to='/getinvolved' pages={getInvolvedLinks} />
       </div>
+
       <div className='nav-containers'>
         <CallToAction to='/donate'>DONATE</CallToAction>
       </div>
 
       <div className='nav-containers'>
-        <CallToAction to='/contact'>CONTACT</CallToAction>
+      <NavLink className='nav-link'  to='/contact'>
+        CONTACT US
+      </NavLink>
         <LanguageSelection />
       </div>
     </nav>

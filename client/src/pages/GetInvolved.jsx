@@ -1,39 +1,11 @@
 //import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
-import HorizontalScroll from '@/components/HorizontalScroll';
 import Card from '@/components/Card';
 import CarruselLogos from '@/components/CarruselLogos';
 import CallToAction from '../components/CallToAction';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { postBenefactors } from '@/service/partner';
-
-const horizontalScrollImages = [
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '1',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '2',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712312938983-676e2cdbb9d6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '3',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '4',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '5',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '6',
-  },
-];
 
 export default function GetInvolved() {
   //const [t] = useTranslation();
@@ -61,7 +33,6 @@ export default function GetInvolved() {
 
   return (
     <>
-      <HorizontalScroll images={horizontalScrollImages} />
       {/* BECOME A PARTNER SECTION */}
       <Section
         tail='flex flex-col justify-center items-center gap-4'

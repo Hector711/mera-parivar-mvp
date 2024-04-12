@@ -6,7 +6,7 @@ export default function Dropdown(props) {
   return (
     <div id='dropdown'>
       <NavLink className='{isActive} nav-link' to={props.to}>
-        <p className='bold'>{props.header}</p>
+        <p>{props.header}</p>
         <IoIosArrowDown />
       </NavLink>
 

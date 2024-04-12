@@ -1,41 +1,14 @@
 // import { useTranslation } from 'react-i18next';
-import HorizontalScroll from '@/components/HorizontalScroll';
 import Section from '@/components/Section';
 import CallToAction from '@/components/CallToAction';
 
-const horizontalScrollImages = [
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '1',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '2',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712312938983-676e2cdbb9d6?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '3',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '4',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '5',
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1712313498056-1feb70bd6999?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    alt: '6',
-  },
-];
+
 
 export default function WhatWeDo() {
   // const [t] = useTranslation();
 
   return (
     <>
-      <HorizontalScroll images={horizontalScrollImages} />
       {/* EDUCATION FOR CHILDREN PLANS */}
       <Section tail='flex flex-col gap-4' id='education-section'>
         <h1 className='small'>EDUCATION FOR CHILDREN PLANS</h1>
