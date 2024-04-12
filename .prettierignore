@@ -1,17 +1,7 @@
-# Ignora archivos de construcción y dependencias
-build/
-coverage/
-node_modules/
-
-# Ignora sistemas de control de versiones
+# Ignore artifacts: 
+build
+coverage
 **/.git
 **/.svn
 **/.hg
-
-# Ignora archivos específicos y carpetas
-.DS_Store
-reset.css
-
-# Ignora imágenes y otros archivos binarios
-**/*.svg
-**/*.png
+**/node_modules

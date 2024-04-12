@@ -3,7 +3,6 @@ const app = express();
 const port = 3000;
 const morgan = require('morgan');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 
 const whitelist = ['http://localhost:5173'];
 const corsOptions = {
@@ -22,7 +21,6 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 
 app.use('/', require('./routes'));
 
