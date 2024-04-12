@@ -1,0 +1,203 @@
+:root {
+  /* color-scheme: light dark; */
+  color: var(--black-1);
+  background-color: var(--white-1);
+
+  --width-section: 1224px;
+
+  --black-0: #000000;
+  --black-1: #1d1d1d;
+
+  --white-0: #ffffff;
+  --white-1: #f9f9f9;
+  --white-2: #c2c2c2;
+
+  --color-main-0: #134379;
+  --color-main-1: #1b5faa;
+  --color-main-2: #6694c6;
+
+  --color-sec-0: #ffc20e;
+  --color-sec-1: #ffd65e;
+  --color-sec-2: #fff9e7;
+
+  --border-s: 6px;
+  --border-m: 10px;
+  --border-l: 40px;
+  --border-xl: 40px;
+
+  --shadow-xs: 0px 1px 2px #29292980;
+  --shadow-s: 0 0 5px 0 #6c6b6bed;
+  --shadow-m: 2px 0 10px 0 #212121ed;
+  --shadow-l: 2px 0 10px #212121ed;
+}
+* {
+  /* border: 0.5px solid #bdbdbd; */
+}
+
+/* ========= NAVEGACIÓN ========= */
+/* ========= ========= ========= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: var(--width-section);
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* ========= EDUCATION SECTION ========= */
+/* ========= ========= ========= */
+#education-section > ul {
+  padding: 0 0 0 10px;
+}
+#education-section > ul > li {
+  padding: 0 0 0 10px;
+  margin: 5px;
+}
+/* ========= PARTNER SECTION ========= */
+/* ========= ========= ========= */
+#partner-section > ul {
+  padding: 0 0 0 10px;
+}
+#partner-section > ul > li {
+  padding: 0 0 0 10px;
+  margin: 10px;
+}
+
+.nav-containers {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  height: 60px;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  align-items: center;
+  padding: 0 15px;
+  gap: 8px;
+}
+#logo {
+  width: 130px;
+  border-radius: var(--border-s);
+}
+#logo-container {
+  overflow: hidden;
+  height: 100%;
+  padding: 0 !important;
+}
+
+#call-to-action {
+  border-radius: var(--border-l);
+  padding: 5px 25px;
+  height: min-content;
+  width: fit-content;
+
+  background-color: var(--color-sec-0);
+  border: 1px solid var(--color-sec-0);
+}
+#call-to-action:hover {
+  background-color: var(--white-0);
+  border: 1px solid var(--color-main-0);
+  box-shadow: var(--shadow-xs);
+}
+.social-links:hover {
+  background-color: var(--white-0);
+  border: 1px solid var(--color-main-0);
+  box-shadow: var(--shadow-xs);
+}
+.active {
+  font-weight: bold;
+  text-shadow: var(--shadow-xs);
+}
+#language-selector {
+  border-radius: var(--border-s);
+  padding: 10px;
+  background-color: var(--white-2);
+}
+
+/* ========= SECTION ========= */
+/* ========= ========= ========= */
+section {
+  margin: 4rem auto;
+  max-width: var(--width-section);
+}
+/* flex justify-center items-center gap-[40px] mx-[60px] my-[auto] h-[max-content] */
+
+/* ========= ========= ========= */
+/* ========= WHAT WE DO ========= */
+#horizontal-scroll {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  border-radius: 2px;
+  gap: 25px;
+  padding: 12px 0;
+}
+.horizontal-scroll-images {
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+  border-radius: var(--border-m);
+}
+.shadow {
+  box-shadow: var(--shadow-m);
+}
+
+/* ========= FOOTER ========= */
+/* ========= ========= ========= */
+footer {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  padding: 1.5rem 0;
+  background-color: var(--color-main-0);
+}
+#social-links-container {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 34px;
+  height: 34px;
+  color: var(--color-main-1);
+
+  background-color: var(--white-1);
+  border: 1px solid var(--white-1);
+}
+.social-links:hover {
+  background-color: var(--white-0);
+  border: 1px solid var(--color-main-0);
+  box-shadow: var(--shadow-xs);
+}
+.global-class-name {
+  height: 28px;
+  width: 28px;
+}
+.img-wide {
+  background-color: var(--color-main-0);
+}
+
+#carrousel-logos {
+  background-color: var(--color-main-2);
+}
+
+@media only screen and (max-width: 968px) {
+  section {
+  }
+}
