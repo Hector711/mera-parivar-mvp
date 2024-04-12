@@ -1,11 +1,11 @@
 import Logo from './Logo';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaYoutube } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
-import { IconContext } from 'react-icons';
+import rrss_facebook from '../assets/rrss_facebook.svg'
+import rrss_instagram from '../assets/rrss_instagram.svg'
+import rrss_x from '../assets/rrss_x.svg'
+import rrss_youtube from '../assets/rrss_youtube.svg'
 import CallToAction from './CallToAction';
+import ButtonDonate from './ButtonDonate';
+import { NavLink } from 'react-router-dom';
 
 import SocialLink from './SocialLink';
 import Section from './Section';
@@ -16,33 +16,30 @@ export default function Footer() {
       <Section tail='flex w-full justify-between items-center'>
         <Logo />
         <div>
-          <p className='bold text-white'>Location</p>
-          <p className='w-[400px] text-white'>
+          <p className='caption text-white'>Location</p>
+          <p className='w-[400px] text-white caption'>
             Bihari Sabji Mandi near Raj boutique Rajiv Nagar Gurgaon Haryana -
             India
           </p>
         </div>
-        <CallToAction to='/donate'>DONATE</CallToAction>
-        <CallToAction to='/contact'>CONTACT US</CallToAction>
-
+        <ButtonDonate />
         <div id='social-links-container'>
-          <IconContext.Provider value={{ className: 'global-class-name' }}>
             <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
-              <FaFacebookF />
+              <img src={rrss_facebook} alt="" />
             </SocialLink>
-            <SocialLink link='https://twitter.com/ParivarNgo'>
-              <FaXTwitter />
+            <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
+              <img src={rrss_instagram} alt="" />
             </SocialLink>
-            <SocialLink link='https://www.youtube.com/channel/UCR-GwOXZNqWFsKASl63I1xA'>
-              <FaYoutube />
+            <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
+              <img src={rrss_x} alt="" />
             </SocialLink>
-            <SocialLink link='https://www.instagram.com/meraparivar/'>
-              <FaInstagram />
+            <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
+              <img src={rrss_youtube} alt="" />
             </SocialLink>
-            <SocialLink link='https://www.linkedin.com/in/anil-landge-7b4115157/'>
-              <FaLinkedinIn />
-            </SocialLink>
-          </IconContext.Provider>
+            
+          <NavLink className='nav-link' id='contact-footer' to='/contact'>
+            CONTACT US
+          </NavLink>
         </div>
       </Section>
     </footer>

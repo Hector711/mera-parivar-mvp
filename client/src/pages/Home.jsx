@@ -1,9 +1,10 @@
 // import { useTranslation } from 'react-i18next';
 import Card from '@/components/Card';
 import Section from '@/components/Section';
-import CallToAction from '@/components/CallToAction';
+import ButtonPartner from '../components/ButtonPartner';
 import CarouselImages from '@/components/CarouselImages';
 import CarrouselQuotes from '@/components/CarrouselQuotes';
+import CarouselTest from '../components/carouselTest';
 import carr_1 from '../assets/carr_1.jpg';
 import carr_2 from '../assets/carr_2.jpg';
 import carr_3 from '../assets/carr_3.jpg';
@@ -42,7 +43,8 @@ export default function Home() {
   // const [t] = useTranslation();
   return (
     <>
-      <CarouselImages images={ImagesCarousel} />
+      <CarouselImages />
+      {/* <CarouselTest images={ImagesCarousel} /> */}
       {/* PHRASES */}
       <Section tail='flex flex-col justify-center gap-3'>
         <CarrouselQuotes />
@@ -92,14 +94,15 @@ export default function Home() {
           src={home_1}
           alt='home-img'
           className='w-[50%] h-[240px] shadow'
+          id='img-home'
         />
         <div className='w-[50%] flex flex-col gap-4'>
-          <CallToAction to='/getinvolved'>BECOME A PARTNER</CallToAction>
+          <ButtonPartner />
           <p className='h-full'>
             Lorem ipsum dolor sit amet consectetur. Pellentesque ac vitae
             malesuada integer in commodo magnis maecenas. Proin leo interdum
             amet nisi mauris augue ipsum nunc faucibus. Nullam nunc elit nisi
-            tortor gravida sit sit auctor urna. Eget mauris egestas elementum
+            tortor gravida sit sit auctor  urna. Eget mauris egestas elementum
             ut. Congue fringilla et sit turpis rhoncus neque. Etiam in purus
             nullam risus quam pretium consectetur. Tempor curabitur quis sit
             vel. Turpis urna in tristique ut et duis nisl. Leo ut egestas nec

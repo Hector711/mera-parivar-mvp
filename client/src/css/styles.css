@@ -91,7 +91,7 @@ nav {
   padding: 0 !important;
 }
 
-#call-to-action {
+#button-donate {
   border-radius: var(--border-l);
   padding: 5px 25px;
   height: min-content;
@@ -100,16 +100,28 @@ nav {
   background-color: var(--color-sec-0);
   border: 1px solid var(--color-sec-0);
 }
-#call-to-action:hover {
+
+#button-partner {
+  border-radius: var(--border-l);
+  padding: 5px 25px;
+  height: min-content;
+  width: fit-content;
+
+  background-color: var(--color-main-0);
+  color: var(--white-1);
+  border: 1px solid var(--color-main-0);
+}
+
+#button-donate:hover {
   background-color: var(--white-0);
   border: 1px solid var(--color-main-0);
   box-shadow: var(--shadow-xs);
 }
-.social-links:hover {
-  background-color: var(--white-0);
-  border: 1px solid var(--color-main-0);
+#button-partner:hover {
+  background-color: var(--color-main-1);
   box-shadow: var(--shadow-xs);
 }
+
 .active {
   font-weight: bold;
   text-shadow: var(--shadow-xs);
@@ -118,6 +130,9 @@ nav {
   border-radius: var(--border-s);
   padding: 10px;
   background-color: var(--white-2);
+}
+#img-home {
+  border-radius: var(--border-s);
 }
 
 /* ========= SECTION ========= */
@@ -128,25 +143,7 @@ section {
 }
 /* flex justify-center items-center gap-[40px] mx-[60px] my-[auto] h-[max-content] */
 
-/* ========= ========= ========= */
-/* ========= WHAT WE DO ========= */
-#horizontal-scroll {
-  display: flex;
-  height: 500px;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  border-radius: 2px;
-  gap: 25px;
-  padding: 12px 0;
-}
-.horizontal-scroll-images {
-  width: 500px;
-  height: 100%;
-  object-fit: cover;
-  scroll-snap-align: center;
-  border-radius: var(--border-m);
-}
+
 .shadow {
   box-shadow: var(--shadow-m);
 }
@@ -176,19 +173,16 @@ footer {
   width: 34px;
   height: 34px;
   color: var(--color-main-1);
-
-  background-color: var(--white-1);
-  border: 1px solid var(--white-1);
 }
 .social-links:hover {
-  background-color: var(--white-0);
-  border: 1px solid var(--color-main-0);
   box-shadow: var(--shadow-xs);
+  transform: scale(1.1);
 }
-.global-class-name {
-  height: 28px;
-  width: 28px;
+
+#contact-footer {
+  color: var(--white-1);
 }
+
 .img-wide {
   background-color: var(--color-main-0);
 }

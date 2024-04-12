@@ -1,14 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid black; */
-}
-body {
-  overflow-x: hidden;
-  background: #eee;
-}
-
 .auto-carousel {
+  overflow-x: hidden;
   width: 100vw;
   position: relative;
   height: 20em;

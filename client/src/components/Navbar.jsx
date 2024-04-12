@@ -3,7 +3,7 @@ import React from 'react';
 import LanguageSelection from '@/components/LanguageSelection.jsx';
 import Dropdown from '@/components/Dropdown';
 import Logo from '@/components/Logo';
-import CallToAction from '@/components/CallToAction';
+import ButtonDonate from '@/components/ButtonDonate';
 import { NavLink } from 'react-router-dom';
 
 const aboutUsLinks = [
@@ -38,7 +38,7 @@ export default function Navbar() {
       </div>
 
       <div className='nav-containers'>
-        <CallToAction to='/donate'>DONATE</CallToAction>
+        <ButtonDonate />
       </div>
 
       <div className='nav-containers'>

@@ -36,7 +36,7 @@ setInterval(() => {
 export default function CarouselImages({ images }) {
   return (
     <>
-      <div id='horizontal-scroll'>
+      {/* <div id='horizontal-scroll'>
         {images.map(({ src, alt }) => (
           <img
             className='shadow horizontal-scroll-images'
@@ -44,30 +44,30 @@ export default function CarouselImages({ images }) {
             alt={alt}
           />
         ))}
-      </div>
+      </div> */}
 
-      <div class='auto-carousel' id='horizontal-scroll'>
-        <div class='carousel-container'>
+      <div className='auto-carousel' id='horizontal-scroll'>
+        <div className='carousel-container'>
 
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
-          <div class='slide'>
+          <div className='slide'>
             <img src='https://picsum.photos/id/73/500/400' alt='' />
           </div>
 
