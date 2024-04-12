@@ -2,7 +2,7 @@
 import Card from '@/components/Card';
 import Section from '@/components/Section';
 import CallToAction from '@/components/CallToAction';
-import CarrouselImages from '@/components/CarrouselImages';
+import CarouselImages from '@/components/CarouselImages';
 import CarrouselQuotes from '@/components/CarrouselQuotes';
 import carr_1 from '../assets/carr_1.jpg';
 import carr_2 from '../assets/carr_2.jpg';
@@ -15,7 +15,7 @@ import card_3 from '../assets/card_3.jpeg';
 import card_4 from '../assets/card_4.jpeg';
 import home_1 from '../assets/home_1.jpg';
 
-const ImagesCarrousel = [
+const ImagesCarousel = [
   {
     src: carr_1,
     alt: '1',
@@ -42,7 +42,7 @@ export default function Home() {
   // const [t] = useTranslation();
   return (
     <>
-      <CarrouselImages images={ImagesCarrousel} />
+      <CarouselImages images={ImagesCarousel} />
       {/* PHRASES */}
       <Section tail='flex flex-col justify-center gap-3'>
         <CarrouselQuotes />

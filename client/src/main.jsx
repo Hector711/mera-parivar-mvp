@@ -15,6 +15,7 @@ import '@/css/styles.css';
 import '@/css/comp-dropdown.css';
 import '@/css/comp-form.css';
 import '@/css/comp-card.css';
+import '@/css/comp-carousel.css';
 
 
 export const queryClient = new QueryClient();
