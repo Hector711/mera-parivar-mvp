@@ -16,7 +16,7 @@ export default function DonateCard() {
         currency: data.currency,
         email: data.email,
         name: data.name,
-        Subscription_status: data.Subscription_status
+        Subscription_status: data.Subscription_status,
       });
       window.location.href = response.data.url; // Redirige al usuario al Payment Link
     } catch (error) {

@@ -20,10 +20,22 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(morgan('dev'));
 
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// Configura bodyParser.raw solo para /webhook y en formato raw específico para JSON
+app.use('/webhook', bodyParser.raw({ type: 'application/json' }));
 
+// Middleware para datos form-urlencoded
+app.use(express.urlencoded({ extended: true }));
+
+// Middleware para parsear JSON para todas las rutas excepto /webhook
+app.use((req, res, next) => {
+  if (req.originalUrl.startsWith('/webhook')) {
+    next();
+  } else {
+    express.json()(req, res, next);
+  }
+});
+
+// Monta los routers desde el archivo de rutas
 app.use('/', require('./routes'));
 
 app.listen(port, () => {
