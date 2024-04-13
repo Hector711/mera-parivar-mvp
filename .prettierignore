@@ -15,3 +15,5 @@ reset.css
 # Ignora imágenes y otros archivos binarios
 **/*.svg
 **/*.png
+**/*.jpg
+**/*.jpeg

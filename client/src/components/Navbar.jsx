@@ -35,7 +35,11 @@ export default function Navbar() {
         <Logo />
         <Dropdown header='ABOUT US' to='/' pages={aboutUsLinks} />
         <Dropdown header='WHAT WE DO' to='/whatwedo' pages={whatWeDoLinks} />
-        <Dropdown header='GET INVOLVED' to='/getinvolved' pages={getInvolvedLinks} />
+        <Dropdown
+          header='GET INVOLVED'
+          to='/getinvolved'
+          pages={getInvolvedLinks}
+        />
       </div>
 
       <div className='nav-containers'>
@@ -43,9 +47,9 @@ export default function Navbar() {
       </div>
 
       <div className='nav-containers'>
-      <NavLink className='nav-link'  to='/contact'>
-        CONTACT US
-      </NavLink>
+        <NavLink className='nav-link' to='/contact'>
+          CONTACT US
+        </NavLink>
         <LanguageSelection />
       </div>
     </nav>

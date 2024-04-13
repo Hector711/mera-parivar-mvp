@@ -10,7 +10,6 @@ import GetInvolved from '@/pages/GetInvolved';
 import Footer from '@/components/Footer';
 import Thanks from '@/pages/Thanks';
 
-
 export default function App() {
   return (
     <>

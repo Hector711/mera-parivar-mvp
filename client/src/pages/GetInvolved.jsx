@@ -1,10 +1,42 @@
 //import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
 import Card from '@/components/Card';
-import CarruselLogos from '@/components/CarruselLogos';
+import ButtonPartner from '@/components/ButtonPartner';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { postBenefactors } from '@/service/partner';
+import card_1 from '../assets/card_1.jpeg';
+import card_2 from '../assets/card_2.jpeg';
+import CarouselImages from '../components/CarouselImages';
+import img_become from '../assets/img_become.jpg';
+import carousel_1 from '../assets/carousel_1.jpg';
+import carousel_2 from '../assets/carousel_2.jpg';
+import carousel_3 from '../assets/carousel_3.jpg';
+import carousel_4 from '../assets/carousel_4.jpg';
+import carousel_5 from '../assets/carousel_5.jpg';
+
+const caroursel_imgs = [
+  {
+    src: carousel_1,
+    alt: '1',
+  },
+  {
+    src: carousel_2,
+    alt: '2',
+  },
+  {
+    src: carousel_3,
+    alt: '3',
+  },
+  {
+    src: carousel_4,
+    alt: '4',
+  },
+  {
+    src: carousel_5,
+    alt: '5',
+  },
+];
 
 export default function GetInvolved() {
   //const [t] = useTranslation();
@@ -32,86 +64,97 @@ export default function GetInvolved() {
 
   return (
     <>
+      <CarouselImages images={caroursel_imgs} />
       {/* BECOME A PARTNER SECTION */}
       <Section
-        tail='flex flex-col justify-center items-center gap-4'
+        tail='flex flex-col justify-center items-center gap-7'
         id='partner-section'
       >
-        <h1 className='small'>BECOME A PARTNER</h1>
-
-        {/* ORIGINAL */}
-        {/* <p className='bold flex justify-center m-1'>
-          ¿Eres una empresa comprometida con erradicar la desigualdad social?
-        </p>
-        <p className='bold flex justify-center mb-5'>¿Estás buscando un proyecto que contribuya a que los niños y niñas de
-          la India tengan una vida digna?</p> */}
-
-        {/* PROPUESTA 1 */}
-        {/* <p className='bold flex justify-center m-1'>
-          ¿Eres una empresa comprometida con erradicar la desigualdad social?
-        </p>
-        <p className='bold flex justify-center mb-5'>¿Estás buscando un proyecto que contribuya a que los niños y niñas de
-          la India tengan una vida digna?</p> */}
-
-        {/* PROPUESTA 2 */}
-        <h3 className='flex justify-center m-1'>
-          ¿Eres una empresa comprometida con erradicar la desigualdad social?
-        </h3>
-        <h3 className='flex justify-center text-center mb-5'>
-          ¿Estás buscando un proyecto que contribuya a que los niños y niñas de
-          la India tengan una vida digna?
-        </h3>
+        <div className='flex flex-col gap-6 justify-center items-center'>
+          <h1 className='small'>BECOME A PARTNER</h1>
+          {/* ORIGINAL */}
+          {/* <p>Are you a company committed to eradicating social inequality?</p>
         <p>
-          <span className='bold'>Meraparivar</span> desarrolla sus proyectos en
-          la comunidad rural de
-          <span className='bold'> Gurgaon</span>, al Sur de Nueva Dheli, sus
-          iniciativas tienen como objetivo mejorar la calidad de vida de esta
-          comunidad, a través de proyectos educativos para jóvenes, niños y
-          niñas. Además, ofrece programas para acabar con el hambre en las
-          comunidades más humildes y fomentar la igualdad de género.
-        </p>
-
-        <ul>
-          <p>
-            <span className='bold'>Tu organización </span> puede colaborar con
-            los proyectos de Meraparivar, de diferentes formas:
+        Are you looking for a project that helps Indian boys and girls have a
+        decent life?
+      </p> */}
+          {/* PROPUESTA 1 */}
+          {/* <p className='bold flex justify-center m-1'>
+          Are you a company committed to eradicating social inequality?
           </p>
-          <li>
-            &#8226; <span className='bold'>Aportaciones económicas: </span> a
-            través de una donación puntual para impulsar alguno de los proyectos
-            existentes o mediante donativos periódicos.
-          </li>
-          <li>
-            &#8226; <span className='bold'>Donaciones de material:</span> Mera
-            Parivar apuesta por la educación de los niños y niñas más
-            desfavorecidos, por lo que puedes contribuir a que las instalaciones
-            se adecuen a las necesidades de formación.
-          </li>
-          <li>
-            &#8226; <span className='bold'>Banco de alimentos:</span> uno de los
-            principales objetivos de Meraparivar, es paliar el hambre en las
-            zonas rurales de la India, si quieres establecer un acuerdo para
-            suministrar comida, para las zonas más humildes, es una buena manera
-            de colaborar.
-          </li>
-        </ul>
+          <p className='bold flex justify-center mb-5'>
+          Are you looking for a project that helps Indian boys and girls have a
+          decent life?
+        </p> */}
+          {/* PROPUESTA 2 */}
+          <h3 className='flex justify-center '>
+            Are you a company committed to eradicating social inequality?
+          </h3>
+          <h3 className='flex justify-center text-center'>
+            Are you looking for a project that helps Indian boys and girls have
+            a decent life?
+          </h3>
+          <p>
+            <span className='bold'>Meraparivar</span> develops its projects in
+            the rural community of <span className='bold'> Gurgaon</span>, south
+            of New Delhi. Our initiatives aim to improve the quality of life of
+            this community, through educational projects for young people and
+            boys and girls. In addition, we offer programs to end hunger in the
+            most humble communities and promote gender equality.
+          </p>
+
+          <ul>
+            <p>
+              <span className='bold'>Your organization </span> can collaborate
+              with Meraparivar projects in different ways:
+            </p>
+            <li>
+              &#8226; <span className='bold'>Financial contributions: </span>
+              through a one-time donation to promote one of the existing
+              projects or through periodic donations.
+            </li>
+            <li>
+              &#8226; <span className='bold'>Material donations:</span>{' '}
+              Meraparivar is committed to the education of the most
+              disadvantaged boys and girls, so you can help ensure that the
+              facilities adapt to the training needs.
+            </li>
+            <li>
+              &#8226; <span className='bold'>Food bank:</span> one of
+              Meraparivar's main objectives is to alleviate hunger in rural
+              areas of India. If you want to establish an agreement to supply
+              food for the most humble areas, it is a good way to collaborate.
+            </li>
+          </ul>
+        </div>
+        <ButtonPartner />
       </Section>
 
       {/*  */}
       <Section tail='flex justify-between gap-20'>
-        <CarruselLogos />
+        <img
+          src={img_become}
+          alt='image logos'
+          className='w-[588px] h-[434px]'
+        />
         <div className='flex justify-between w-[50%] '>
           <Card
-            header='Titulo 1'
-            img='https://images.unsplash.com/photo-1712371963569-84c6f650a558?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            header='Education for children'
+            img={card_1}
             imgName=''
-            text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+            label='Program'
+            hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+            link='/'
+            cardText='To build a better future for the children of Gurgaon.'
           />
           <Card
-            header='Titulo 2'
-            img='https://plus.unsplash.com/premium_photo-1664970900224-6c67df73191a?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+            header='Women Empowerment'
+            img={card_2}
             imgName=''
-            text='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
+            label='Program'
+            hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+            link='/'
+            cardText='To help the community girls and young ladies became entrepreneurs.'
           />
         </div>
       </Section>
@@ -165,7 +208,8 @@ export default function GetInvolved() {
               {...register('message')}
               placeholder='Message'
             />
-            <button type='submit' id='send'>
+
+            <button type='submit' className='button-send' id='send'>
               Send
             </button>
           </form>

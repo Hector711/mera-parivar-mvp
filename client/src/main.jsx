@@ -17,8 +17,6 @@ import '@/css/comp-form.css';
 import '@/css/comp-card.css';
 import '@/css/comp-carousels.css';
 
-
-
 export const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById('root')).render(

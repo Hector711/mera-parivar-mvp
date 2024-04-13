@@ -1,10 +1,15 @@
 import { useTranslation } from 'react-i18next';
-import flag_uk from '../assets/flag_uk.svg'
-import flag_spain from '../assets/flag_spain.svg'
+import flag_uk from '../assets/flag_uk.svg';
+import flag_spain from '../assets/flag_spain.svg';
 
 const LANGUAGES = [
-  { label: 'Spanish', code: 'es', flag:{flag_uk}, alt:'Spanish Language' },
-  { label: 'English', code: 'en', flag:{flag_spain}, alt:'English Language' },
+  { label: 'Spanish', code: 'es', flag: { flag_uk }, alt: 'Spanish Language' },
+  {
+    label: 'English',
+    code: 'en',
+    flag: { flag_spain },
+    alt: 'English Language',
+  },
 ];
 
 export default function LanguageSelection() {
@@ -19,7 +24,7 @@ export default function LanguageSelection() {
       onChange={onChangeLang}
       id='language-selector'
     >
-      {LANGUAGES.map(({ code, label, flag, alt}) => (
+      {LANGUAGES.map(({ code, label, flag, alt }) => (
         <option key={code} value={code}>
           {label}
         </option>

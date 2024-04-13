@@ -29,7 +29,7 @@ export default function DonateCard() {
 
   return (
     <div className='w-[1100px] border-black border-2'>
-      <h1>Esta es la parte del formulario</h1>
+      <h1>Donate</h1>
       <form id='donate-form' onSubmit={handleSubmit(onSubmit)}>
         <input type='text' {...register('name')} placeholder='Name' />
         <input type='email' {...register('email')} placeholder='Email' />

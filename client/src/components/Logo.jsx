@@ -1,5 +1,3 @@
-import React from 'react';
-// import logo from '@/assets/logo.png';
 import logo_svg from '@/assets/logo_svg.svg';
 import { NavLink } from 'react-router-dom';
 

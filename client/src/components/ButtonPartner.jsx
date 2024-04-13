@@ -5,5 +5,5 @@ export default function ButtonPartner() {
     <NavLink className='nav-link' id='button-partner' to='/donate'>
       <p className='bold'>BECOME A PARTNER</p>
     </NavLink>
-  )
+  );
 }

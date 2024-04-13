@@ -8,7 +8,7 @@ form {
   /* border: 0.5px solid #2f2f2f; */
 }
 
-/* FORMULARIO 1 */
+/* GET INVOLVED */
 /* =============== */
 #form-get-involved {
   display: grid;
@@ -37,9 +37,21 @@ form {
 }
 #form-get-involved > #send {
   grid-column: 7/8;
+  justify-self: end;
+}
+.button-send {
+  background-color: var(--color-main-0);
+  color: var(--white-1);
+  width: 154px;
+  height: 40px;
+  border-radius: var(--border-l);
+}
+.button-send:hover {
+  background-color: var(--color-main-1);
+  border: 1px;
 }
 
-/* FORMULARIO 1 */
+/* FORM CONTACT  */
 /* =============== */
 #form-contact {
   display: grid;

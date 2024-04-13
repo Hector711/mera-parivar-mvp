@@ -39,26 +39,35 @@ const caroursel_imgs = [
 ];
 
 const carousel_quotes = [
-  { quote: 'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.'
+  {
+    quote:
+      'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.',
   },
-  { quote: '+2.5 million children´s lives positively impacted through education.'
+  {
+    quote:
+      '+2.5 million children´s lives positively impacted through education.',
   },
-  { quote: '+ 12.45 million benefited from surplus vegetable and cooked food distribution'
+  {
+    quote:
+      '+ 12.45 million benefited from surplus vegetable and cooked food distribution',
   },
-  { quote: '2 million government school children with clean water facilities in rural areas'
+  {
+    quote:
+      '2 million government school children with clean water facilities in rural areas',
   },
-  { quote: '+ 12.45 million benefited surplus Vegetable & cook Food distribution'
-  }
-]
+  {
+    quote:
+      '+ 12.45 million benefited surplus Vegetable & cook Food distribution',
+  },
+];
 
 export default function Home() {
   // const [t] = useTranslation();
   return (
     <>
       <CarouselImages images={caroursel_imgs} />
-      
       <Section>
-        <CarouselQuotes quotes={carousel_quotes}/>
+        <CarouselQuotes quotes={carousel_quotes} />
       </Section>
 
       <Section tail='flex w-full justify-between'>
@@ -101,12 +110,7 @@ export default function Home() {
       </Section>
       {/* BECOME A PARTNER-HOME SECTION */}
       <Section tail='flex w-full justify-between gap-16'>
-        <img
-          src={img_home}
-          alt='home-img'
-          className='w-[50%] h-[240px] shadow'
-          id='img-home'
-        />
+        <img src={img_home} alt='home-img' className='w-[50%] h-[240px]' />
         <div className='w-[50%] flex flex-col gap-4'>
           <ButtonPartner />
           <p className='h-full'>

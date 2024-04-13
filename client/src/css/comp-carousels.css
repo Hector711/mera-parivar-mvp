@@ -1,18 +1,13 @@
-/* #app {
-  height: 100%;
-} */
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 0; */
+  padding: 10px 0;
 }
 
 .swiper-slide img {
-  background-color: black;
   display: block;
   width: 100%;
   height: 100%;
