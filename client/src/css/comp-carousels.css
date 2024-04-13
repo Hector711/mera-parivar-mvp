@@ -1,0 +1,31 @@
+#app {
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  background-color: black;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========= QUOTES ========= */
+#swiper-quotes {
+  width: 60%;
+  height: 100px;
+}
+
+/* ========= IMAGES ========= */
+#swiper-images {
+  width: 100%;
+  height: 400px;
+}

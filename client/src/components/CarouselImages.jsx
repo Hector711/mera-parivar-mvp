@@ -1,79 +1,43 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-const container = document.querySelector('.carousel-container');
-const slides = document.querySelectorAll('.slide');
-let offset = 0;
-let slideID = 0;
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
-setInterval(() => {
-  // set offset to slide width
-  offset = slides[0].offsetWidth;
-  container.style.transition = 'left ease-in-out 3.5s';
-  container.style.left = -offset + 'px';
-  // set timeout
-  setTimeout(() => {
-    // remove oontainer transition
-    container.style.transition = 'none';
-    // move the current slide to the last position
-    slides[slideID].style.order = slides.length - 1;
-    // Move the container back to the starting position
-    container.style.left = 0;
-    // increment slide ID
-    slideID++;
-    // If the slide ID reaches the slides length
-    if (slideID === slides.length) {
-      // set the slide ID to zero
-      slideID = 0;
-      // select all slides
-      slides.forEach(slide => {
-        // Reset all slides order
-        slide.style.order = 'initial';
-      });
-    }
-  }, 3500);
-}, 4000);
+// import required modules
+import { Autoplay, Navigation } from 'swiper/modules';
 
-export default function CarouselImages({ images }) {
+export default function carouselImages() {
   return (
     <>
-      {/* <div id='horizontal-scroll'>
-        {images.map(({ src, alt }) => (
-          <img
-            className='shadow horizontal-scroll-images'
-            src={src}
-            alt={alt}
-          />
-        ))}
-      </div> */}
-
-      <div className='auto-carousel' id='horizontal-scroll'>
-        <div className='carousel-container'>
-
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-          <div className='slide'>
-            <img src='https://picsum.photos/id/73/500/400' alt='' />
-          </div>
-
-        </div>
-      </div>
-
+      <Swiper
+        slidesPerView={3}
+        spaceBetween={30}
+        speed={4000}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 1000,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Navigation]}
+        id='swiper-images'
+      >
+        <SwiperSlide>
+          <img src='' alt='' />
+        </SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
     </>
   );
 }

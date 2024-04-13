@@ -3,8 +3,7 @@ import Card from '@/components/Card';
 import Section from '@/components/Section';
 import ButtonPartner from '../components/ButtonPartner';
 import CarouselImages from '@/components/CarouselImages';
-import CarrouselQuotes from '@/components/CarrouselQuotes';
-import CarouselTest from '../components/carouselTest';
+import CarouselQuotes from '../components/CarouselQuotes';
 import carr_1 from '../assets/carr_1.jpg';
 import carr_2 from '../assets/carr_2.jpg';
 import carr_3 from '../assets/carr_3.jpg';
@@ -14,7 +13,7 @@ import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import card_3 from '../assets/card_3.jpeg';
 import card_4 from '../assets/card_4.jpeg';
-import home_1 from '../assets/home_1.jpg';
+import img_home from '../assets/img_home.jpg';
 
 const ImagesCarousel = [
   {
@@ -36,7 +35,7 @@ const ImagesCarousel = [
   {
     src: carr_5,
     alt: '5',
-  }
+  },
 ];
 
 export default function Home() {
@@ -44,11 +43,11 @@ export default function Home() {
   return (
     <>
       <CarouselImages />
-      {/* <CarouselTest images={ImagesCarousel} /> */}
       {/* PHRASES */}
-      <Section tail='flex flex-col justify-center gap-3'>
-        <CarrouselQuotes />
+      <Section>
+        <CarouselQuotes />
       </Section>
+      <Section tail='flex flex-col justify-center gap-3'></Section>
       {/* CARDS SECTION */}
       <Section tail='flex w-full justify-between'>
         <Card
@@ -91,7 +90,7 @@ export default function Home() {
       {/* BECOME A PARTNER-HOME SECTION */}
       <Section tail='flex w-full justify-between gap-16'>
         <img
-          src={home_1}
+          src={img_home}
           alt='home-img'
           className='w-[50%] h-[240px] shadow'
           id='img-home'
@@ -102,7 +101,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur. Pellentesque ac vitae
             malesuada integer in commodo magnis maecenas. Proin leo interdum
             amet nisi mauris augue ipsum nunc faucibus. Nullam nunc elit nisi
-            tortor gravida sit sit auctor  urna. Eget mauris egestas elementum
+            tortor gravida sit sit auctor urna. Eget mauris egestas elementum
             ut. Congue fringilla et sit turpis rhoncus neque. Etiam in purus
             nullam risus quam pretium consectetur. Tempor curabitur quis sit
             vel. Turpis urna in tristique ut et duis nisl. Leo ut egestas nec

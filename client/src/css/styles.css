@@ -1,12 +1,9 @@
 :root {
   /* color-scheme: light dark; */
-  color: var(--black-1);
+  color: var(--color-main-0);
   background-color: var(--white-1);
 
   --width-section: 1224px;
-
-  --black-0: #000000;
-  --black-1: #1d1d1d;
 
   --white-0: #ffffff;
   --white-1: #f9f9f9;
