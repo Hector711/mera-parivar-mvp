@@ -1,53 +1,66 @@
 // import { useTranslation } from 'react-i18next';
 import Card from '@/components/Card';
 import Section from '@/components/Section';
-import CallToAction from '@/components/CallToAction';
+import ButtonPartner from '../components/ButtonPartner';
 import CarouselImages from '@/components/CarouselImages';
-import CarrouselQuotes from '@/components/CarrouselQuotes';
-import carr_1 from '../assets/carr_1.jpg';
-import carr_2 from '../assets/carr_2.jpg';
-import carr_3 from '../assets/carr_3.jpg';
-import carr_4 from '../assets/carr_4.jpg';
-import carr_5 from '../assets/carr_5.jpg';
+import CarouselQuotes from '../components/CarouselQuotes';
+import carousel_1 from '../assets/carousel_1.jpg';
+import carousel_2 from '../assets/carousel_2.jpg';
+import carousel_3 from '../assets/carousel_3.jpg';
+import carousel_4 from '../assets/carousel_4.jpg';
+import carousel_5 from '../assets/carousel_5.jpg';
 import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import card_3 from '../assets/card_3.jpeg';
 import card_4 from '../assets/card_4.jpeg';
-import home_1 from '../assets/home_1.jpg';
+import img_home from '../assets/img_home.jpg';
 
-const ImagesCarousel = [
+const caroursel_imgs = [
   {
-    src: carr_1,
+    src: carousel_1,
     alt: '1',
   },
   {
-    src: carr_2,
+    src: carousel_2,
     alt: '2',
   },
   {
-    src: carr_3,
+    src: carousel_3,
     alt: '3',
   },
   {
-    src: carr_4,
+    src: carousel_4,
     alt: '4',
   },
   {
-    src: carr_5,
+    src: carousel_5,
     alt: '5',
-  }
+  },
 ];
+
+const carousel_quotes = [
+  { quote: 'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.'
+  },
+  { quote: '+2.5 million children´s lives positively impacted through education.'
+  },
+  { quote: '+ 12.45 million benefited from surplus vegetable and cooked food distribution'
+  },
+  { quote: '2 million government school children with clean water facilities in rural areas'
+  },
+  { quote: '+ 12.45 million benefited surplus Vegetable & cook Food distribution'
+  }
+]
 
 export default function Home() {
   // const [t] = useTranslation();
   return (
     <>
-      <CarouselImages images={ImagesCarousel} />
-      {/* PHRASES */}
-      <Section tail='flex flex-col justify-center gap-3'>
-        <CarrouselQuotes />
+      <CarouselImages images={caroursel_imgs} />
+      
+      <Section>
+        <CarouselQuotes quotes={carousel_quotes}/>
       </Section>
-      {/* CARDS SECTION */}
+
       <Section tail='flex w-full justify-between'>
         <Card
           header='Education for children'
@@ -89,12 +102,13 @@ export default function Home() {
       {/* BECOME A PARTNER-HOME SECTION */}
       <Section tail='flex w-full justify-between gap-16'>
         <img
-          src={home_1}
+          src={img_home}
           alt='home-img'
           className='w-[50%] h-[240px] shadow'
+          id='img-home'
         />
         <div className='w-[50%] flex flex-col gap-4'>
-          <CallToAction to='/getinvolved'>BECOME A PARTNER</CallToAction>
+          <ButtonPartner />
           <p className='h-full'>
             Lorem ipsum dolor sit amet consectetur. Pellentesque ac vitae
             malesuada integer in commodo magnis maecenas. Proin leo interdum

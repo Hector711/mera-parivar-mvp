@@ -13,7 +13,10 @@ export default function DonateCard() {
     // Envía la moneda seleccionada al servidor y espera el Payment Link
     try {
       const response = await api.post('/create-checkout-session', {
-        currency: data.currency, // Asegúrate de enviar solo la moneda
+        currency: data.currency,
+        email: data.email,
+        name: data.name,
+        Subscription_status: data.Subscription_status
       });
       window.location.href = response.data.url; // Redirige al usuario al Payment Link
     } catch (error) {

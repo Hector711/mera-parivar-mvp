@@ -8,6 +8,8 @@ import Donate from '@/pages/Donate';
 import Contact from '@/pages/Contact';
 import GetInvolved from '@/pages/GetInvolved';
 import Footer from '@/components/Footer';
+import Thanks from '@/pages/Thanks';
+
 
 export default function App() {
   return (
@@ -21,6 +23,7 @@ export default function App() {
           <Route path='/getinvolved' element={<GetInvolved />} />
           <Route path='/donate' element={<Donate />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/thanks' element={<Thanks />} />
         </Routes>
         <Footer />
       </BrowserRouter>

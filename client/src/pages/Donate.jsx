@@ -4,7 +4,6 @@ import DonateCard from '@/components/DonateCard';
 
 export default function Donate() {
   // const [t] = useTranslation();
-
   return (
     <>
       <div className='w-[100%] h-[264px] flex p-[5rem] img-wide'>

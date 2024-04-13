@@ -1,6 +1,9 @@
 // import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
-import CallToAction from '@/components/CallToAction';
+import ButtonDonate from '@/components/ButtonDonate'
+import ButtonPartner from '@/components/ButtonPartner';
+import CarouselImages from '@/components/CarouselImages';
+
 
 
 
@@ -9,6 +12,7 @@ export default function WhatWeDo() {
 
   return (
     <>
+      <CarouselImages />
       {/* EDUCATION FOR CHILDREN PLANS */}
       <Section tail='flex flex-col gap-4' id='education-section'>
         <h1 className='small'>EDUCATION FOR CHILDREN PLANS</h1>
@@ -48,8 +52,8 @@ export default function WhatWeDo() {
         </ul>
         <p>Un pequeño gesto puede suponer un gran cambio.</p>
         <div className='flex justify-center gap-10'>
-          <CallToAction to='/donate'>DONATE NOW</CallToAction>
-          <CallToAction to='/getinvolved'>BECOME A PARTNER</CallToAction>
+          <ButtonDonate />
+          <ButtonPartner />
         </div>
       </Section>
     </>

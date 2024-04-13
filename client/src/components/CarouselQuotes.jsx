@@ -5,36 +5,29 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // import required modules
 import { Autoplay, Navigation } from 'swiper/modules';
 
-export default function carouselImages({images}) {
+export default function carouselQuotes({ quotes }) {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        speed={4000}
-        pagination={{
-          clickable: true,
-        }}
+        direction={'vertical'}
+        speed={1800}
+        spaceBetween={0}
+        centeredSlides={true}
         autoplay={{
-          delay: 1000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
-        id='swiper-images'
+        id='swiper-quotes'
       >
-        <SwiperSlide>
-          <img src='' alt='' />
-        </SwiperSlide>
-        {images.map(({ src, alt }, index) => (
-          <SwiperSlide key={index}>
-            <img src={src} alt={alt} />
-          </SwiperSlide>
+        {quotes.map(({quote}, index) => (
+          <SwiperSlide key={index}>{quote}</SwiperSlide>
         ))}
-       
       </Swiper>
     </>
   );
