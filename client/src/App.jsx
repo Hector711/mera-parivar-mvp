@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Home from '@/pages/Home';
 import AboutUs from '@/pages/AboutUs';
@@ -14,7 +14,7 @@ import Thanks from '@/pages/Thanks';
 export default function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -26,7 +26,7 @@ export default function App() {
           <Route path='/thanks' element={<Thanks />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
