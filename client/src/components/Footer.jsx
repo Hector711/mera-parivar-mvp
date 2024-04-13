@@ -3,7 +3,6 @@ import rrss_facebook from '../assets/rrss_facebook.svg'
 import rrss_instagram from '../assets/rrss_instagram.svg'
 import rrss_x from '../assets/rrss_x.svg'
 import rrss_youtube from '../assets/rrss_youtube.svg'
-import CallToAction from './CallToAction';
 import ButtonDonate from './ButtonDonate';
 import { NavLink } from 'react-router-dom';
 

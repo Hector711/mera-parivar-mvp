@@ -1,6 +1,5 @@
 // import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
-import CallToAction from '@/components/CallToAction';
 import ButtonDonate from '@/components/ButtonDonate'
 import ButtonPartner from '@/components/ButtonPartner';
 import CarouselImages from '@/components/CarouselImages';

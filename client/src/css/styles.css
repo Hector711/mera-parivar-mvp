@@ -123,11 +123,7 @@ nav {
   font-weight: bold;
   text-shadow: var(--shadow-xs);
 }
-#language-selector {
-  border-radius: var(--border-s);
-  padding: 10px;
-  background-color: var(--white-2);
-}
+
 #img-home {
   border-radius: var(--border-s);
 }
@@ -172,8 +168,10 @@ footer {
   color: var(--color-main-1);
 }
 .social-links:hover {
-  box-shadow: var(--shadow-xs);
+  /* box-shadow: var(--shadow-xs); */
   transform: scale(1.1);
+  text-shadow: 2px 0 10px 0 #e8e8e8ed;
+  box-shadow: 2px 0 10px 0 #e8e8e8ed;
 }
 
 #contact-footer {

@@ -1,5 +1,6 @@
 import React from 'react';
 // import { useTranslation } from 'react-i18next';
+import LanguageSelector from '@/components/LanguageSelector.jsx';
 import LanguageSelection from '@/components/LanguageSelection.jsx';
 import Dropdown from '@/components/Dropdown';
 import Logo from '@/components/Logo';

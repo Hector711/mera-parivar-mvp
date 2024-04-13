@@ -1,6 +1,6 @@
-#app {
+/* #app {
   height: 100%;
-}
+} */
 
 .swiper-slide {
   text-align: center;
@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* z-index: 0; */
 }
 
 .swiper-slide img {
@@ -16,16 +17,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: 0;
 }
 
 /* ========= QUOTES ========= */
 #swiper-quotes {
   width: 60%;
-  height: 100px;
+  height: 70px;
+  /* z-index: 0; */
 }
 
 /* ========= IMAGES ========= */
 #swiper-images {
   width: 100%;
   height: 400px;
+  z-index: 0;
 }

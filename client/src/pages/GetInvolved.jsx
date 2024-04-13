@@ -2,7 +2,6 @@
 import Section from '@/components/Section';
 import Card from '@/components/Card';
 import CarruselLogos from '@/components/CarruselLogos';
-import CallToAction from '../components/CallToAction';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { postBenefactors } from '@/service/partner';
@@ -96,7 +95,6 @@ export default function GetInvolved() {
             de colaborar.
           </li>
         </ul>
-        <CallToAction to='/donate'>DONATE</CallToAction>
       </Section>
 
       {/*  */}
