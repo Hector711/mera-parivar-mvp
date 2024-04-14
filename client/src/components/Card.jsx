@@ -10,7 +10,7 @@ export default function Card(props) {
           <p className='hover-label'>{props.label}</p>
           <p className='hover-card-text'>{props.hoverCardText}</p>
           <NavLink className='hover-card-link' to={props.link}>
-            Link
+            Read More
           </NavLink>
         </div>
       </div>

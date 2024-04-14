@@ -1,6 +1,6 @@
 // import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
-import DonateCard from '@/components/DonateCard';
+import FormDonate from '@/components/FormDonate';
 import img_donate from '../assets/img_donate.jpg';
 import img_wide from '../assets/img_wide.jpg';
 
@@ -29,8 +29,7 @@ export default function Donate() {
             className='w-[360px] h-[403px]'
             id='img-donate'
           />
-          <DonateCard />
-          {/* <div className='w-[600px] h-[300px] img-wide'> DONATE </div> */}
+          <FormDonate />
         </div>
       </Section>
     </>

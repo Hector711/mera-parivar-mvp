@@ -8,6 +8,7 @@ import { postBenefactors } from '@/service/partner';
 import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import CarouselImages from '../components/CarouselImages';
+// import FormContact from '../components/FormContact';
 import img_become from '../assets/img_become.jpg';
 import carousel_1 from '../assets/carousel_1.jpg';
 import carousel_2 from '../assets/carousel_2.jpg';
@@ -65,7 +66,7 @@ export default function GetInvolved() {
   return (
     <>
       <CarouselImages images={caroursel_imgs} />
-      {/* BECOME A PARTNER SECTION */}
+      {/* BECOME A PARTNER */}
       <Section
         tail='flex flex-col justify-center items-center gap-7'
         id='partner-section'
@@ -130,7 +131,7 @@ export default function GetInvolved() {
         <ButtonPartner />
       </Section>
 
-      {/*  */}
+      {/*  CARDS AND IMAGE */}
       <Section tail='flex justify-between gap-20'>
         <img
           src={img_become}
@@ -158,8 +159,9 @@ export default function GetInvolved() {
           />
         </div>
       </Section>
-      <Section>
-        <div className='flex justify-center w-full'>
+
+      {/* FORMULARIO BECOME A PARTNER */}
+      <Section tail='flex justify-center w-full'>
           <form
             action='submit'
             id='form-get-involved'
@@ -213,7 +215,6 @@ export default function GetInvolved() {
               Send
             </button>
           </form>
-        </div>
       </Section>
     </>
   );
