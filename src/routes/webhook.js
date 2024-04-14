@@ -6,7 +6,8 @@ const prisma = require('../../prisma');
 // Ensure the raw body is used for webhook processing
 router.post('/', express.raw({ type: 'application/json' }), async (req, res) => {
     const sig = req.headers['stripe-signature'];
-
+    console.log("Signature:", sig);
+    console.log("Body:", req.body.toString());
     let event;
     try {
         // Construct the event using the Stripe library
