@@ -84,8 +84,8 @@ nav {
   box-shadow: var(--shadow-xs);
 }
 #logo-container {
+  /* width: 176px; */
   /* overflow: hidden; */
-  width: 176px;
   height: 100%;
   padding: 0;
 }
@@ -162,11 +162,13 @@ footer {
   border-radius: 5px;
   width: 34px;
   height: 34px;
-  color: var(--color-main-1);
+  /* background-color: #6694c6; */
 }
 .social-links:hover {
   transform: scale(1.1);
-  text-shadow: 2px 0 10px 0 #e8e8e8ed;
+}
+.img-rrss {
+  box-shadow: 0 0 0 0 #ffffff00 !important;
 }
 
 #contact-footer {

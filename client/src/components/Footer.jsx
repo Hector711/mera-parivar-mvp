@@ -22,18 +22,18 @@ export default function Footer() {
           </p>
         </div>
         <ButtonDonate />
-        <div id='social-links-container'>
+        <div className='flex gap-2'>
           <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
-            <img src={rrss_facebook} alt='' />
+            <img src={rrss_facebook} className='img-rrss' alt='' />
           </SocialLink>
           <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
-            <img src={rrss_instagram} alt='' />
+            <img src={rrss_instagram} className='img-rrss' alt='' />
           </SocialLink>
           <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
-            <img src={rrss_x} alt='' />
+            <img src={rrss_x} className='img-rrss' alt='' />
           </SocialLink>
           <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
-            <img src={rrss_youtube} alt='' />
+            <img src={rrss_youtube} className='img-rrss' alt='' />
           </SocialLink>
 
           <NavLink className='nav-link' id='contact-footer' to='/contact'>
