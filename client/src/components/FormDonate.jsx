@@ -30,12 +30,11 @@ export default function FormDonate() {
   return (
     <div className='w-[852px] h-[403px]'>
       <form id='donate-form' onSubmit={handleSubmit(onSubmit)}>
-        <div id='personal-information' >
+        <div id='personal-information'>
           <p className='bold'>Personal Information:</p>
           <div id='personal-information-input'>
-
-          <input type='text' {...register('name')} placeholder='Name' />
-          <input type='email' {...register('email')} placeholder='Email' />
+            <input type='text' {...register('name')} placeholder='Name' />
+            <input type='email' {...register('email')} placeholder='Email' />
           </div>
         </div>
         <div id='select-currency'>
@@ -48,7 +47,9 @@ export default function FormDonate() {
           </select>
         </div>
         <div id='every-month'>
-          <p className='bold'>Would you like to make this donation every month?</p>
+          <p className='bold'>
+            Would you like to make this donation every month?
+          </p>
           <select {...register('Subscription_status')}>
             <option value='true'>Yes</option>
             <option value='false'>No</option>

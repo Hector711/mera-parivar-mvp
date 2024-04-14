@@ -30,27 +30,29 @@ const getInvolvedLinks = [
 export default function Navbar() {
   // const [t] = useTranslation();
   return (
-    <nav id='nav-header'>
-      <div className='nav-containers'>
-        <Logo />
-        <Dropdown header='ABOUT US' to='/' pages={aboutUsLinks} />
-        <Dropdown header='WHAT WE DO' to='/whatwedo' pages={whatWeDoLinks} />
-        <Dropdown
-          header='GET INVOLVED'
-          to='/getinvolved'
-          pages={getInvolvedLinks}
-        />
-      </div>
+    <nav >
+      <div id='nav-container'>
+        <div className='nav-containers'>
+          <Logo />
+          <Dropdown header='ABOUT US' to='/' pages={aboutUsLinks} />
+          <Dropdown header='WHAT WE DO' to='/whatwedo' pages={whatWeDoLinks} />
+          <Dropdown
+            header='GET INVOLVED'
+            to='/getinvolved'
+            pages={getInvolvedLinks}
+          />
+        </div>
 
-      <div className='nav-containers'>
-        <ButtonDonate />
-      </div>
+        <div className='nav-containers'>
+          <ButtonDonate />
+        </div>
 
-      <div className='nav-containers'>
-        <NavLink className='nav-link' to='/contact'>
-          CONTACT US
-        </NavLink>
-        <LanguageSelection />
+        <div className='nav-containers'>
+          <NavLink className='nav-link' to='/contact'>
+            CONTACT US
+          </NavLink>
+          <LanguageSelection />
+        </div>
       </div>
     </nav>
   );
