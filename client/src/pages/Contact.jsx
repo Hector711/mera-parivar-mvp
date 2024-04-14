@@ -47,15 +47,15 @@ export default function Contact() {
 
   return (
     <>
-      <Section tail='flex flex-col'>
-        <h1 className='small text-left my-8'>Contact Us</h1>
+      <Section tail='flex flex-col '>
+        <h1 className='small text-left mb-8'>Contact Us</h1>
         <div className='flex w-full justify-between'>
           <form
             action='submit'
             id='form-contact'
             onSubmit={handleSubmit(onSubmit)}
           >
-              <p className='bold' id='personal-information' >Personal Information:</p>
+              <p className='bold' id='personal-information'>Personal Information:</p>
               <input
                 type='text'
                 id='contact_name'

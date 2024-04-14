@@ -23,27 +23,31 @@ h1 {
   text-align: center;
   margin-bottom: 7px;
 }
-h1.small {
-  font-size: 42px;
-  font-weight: 400;
-}
+/* TITLE L */
 h1.large {
   font-size: 68px;
 }
+/* TITLE M */
+h1.small {
+  font-size: 42px;
+}
+/* SUBTITLE */
 h2 {
   font-size: 26px;
   font-weight: 500;
   width: 100%;
   text-shadow: var(--shadow-xs);
 }
+/* EXTRA */
 h3 {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
   width: 100%;
   text-shadow: var(--shadow-xs);
 }
 
-p {
+/* NORMAL TEXT BOLD*/
+p, span {
   font-size: 16px;
   line-height: 1.5;
   text-wrap: pretty;
@@ -51,10 +55,12 @@ p {
   padding-inline: auto;
   width: 100%;
 }
+/* NORMAL TEXT BOLD*/
 p.bold,
 span.bold {
   font-weight: 900;
 }
+/* CAPTION*/
 p.caption {
   font-size: 12px;
 }
@@ -65,7 +71,6 @@ ul {
 a {
   text-decoration: inherit;
 }
-
 img {
   border-radius: var(--border-m);
   box-shadow: var(--shadow-m);
