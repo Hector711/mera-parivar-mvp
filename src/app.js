@@ -5,7 +5,7 @@ const morgan = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-const whitelist = ['https://mera-parivar-web-page.vercel.app'];
+const whitelist = ['https://mera-parivar-web-page.vercel.app', 'http://localhost:5173'];
 const corsOptions = {
   origin: function (origin, callback) {
     if (whitelist.indexOf(origin) !== -1 || !origin) {

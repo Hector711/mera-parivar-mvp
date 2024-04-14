@@ -1,16 +1,19 @@
 import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
-import { useForm } from 'react-hook-form';
+import { set, useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { postContact } from '@/service/contact';
+import { useState, useEffect } from 'react';
 
 export default function Contact() {
   const [t] = useTranslation();
+  const [messageSent, setMessageSent] = useState(false);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const { mutate } = useMutation({
@@ -19,9 +22,20 @@ export default function Contact() {
   });
 
   const onSubmit = async data => {
-    console.log(data);
     await mutate(data);
+    setMessageSent(true);
+    reset();
   };
+
+  useEffect(() => {
+    let timer;
+    if (messageSent) {
+      timer = setTimeout(() => {
+        setMessageSent(false);
+      }, 3000); // 3000 milliseconds = 3 seconds
+    }
+    return () => clearTimeout(timer);
+  }, [messageSent]);
 
   const subjectTypes = [
     { IDSubject_type: 1, subject_name: 'Dudas y sugerencias' },
@@ -70,8 +84,8 @@ export default function Contact() {
               <button type='submit' id='send'>
                 Send
               </button>
+              {messageSent && <p>Message sent</p>}
             </form>
-
             <img src='' alt='' className='w-[526px] h-[512px] bg-slate-400' />
           </div>
         </div>

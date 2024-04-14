@@ -5,6 +5,7 @@ import ButtonPartner from '@/components/ButtonPartner';
 import { useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { postBenefactors } from '@/service/partner';
+import { useState, useEffect } from 'react';
 import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import CarouselImages from '../components/CarouselImages';
@@ -41,10 +42,13 @@ const caroursel_imgs = [
 
 export default function GetInvolved() {
   //const [t] = useTranslation();
+  const [messageSent, setMessageSent] = useState(false);
+
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm();
 
   const { mutate } = useMutation({
@@ -54,7 +58,19 @@ export default function GetInvolved() {
 
   const onSubmit = async data => {
     await mutate(data);
+    setMessageSent(true);
+    reset();
   };
+
+  useEffect(() => {
+    let timer;
+    if (messageSent) {
+      timer = setTimeout(() => {
+        setMessageSent(false);
+      }, 3000); // 3000 milliseconds = 3 seconds
+    }
+    return () => clearTimeout(timer);
+  }, [messageSent]);
 
   const donationTypes = [
     { IDdonation_type: 1, donation_name: 'Dinero' },
@@ -162,59 +178,60 @@ export default function GetInvolved() {
 
       {/* FORMULARIO BECOME A PARTNER */}
       <Section tail='flex justify-center w-full'>
-          <form
-            action='submit'
-            id='form-get-involved'
-            onSubmit={handleSubmit(onSubmit)}
+        <form
+          action='submit'
+          id='form-get-involved'
+          onSubmit={handleSubmit(onSubmit)}
+        >
+          <input
+            type='text'
+            id='name'
+            {...register('name')}
+            placeholder='Name'
+          />
+          <input
+            type='email'
+            id='email'
+            {...register('email')}
+            placeholder='Email'
+          />
+          <input
+            type='text'
+            id='company_name'
+            {...register('company_name')}
+            placeholder='Company'
+          />
+          <input
+            type='text'
+            id='company_role'
+            {...register('company_role')}
+            placeholder='Company Role'
+          />
+
+          <select
+            type='number'
+            id='IDdonation_type'
+            {...register('IDdonation_type')}
           >
-            <input
-              type='text'
-              id='name'
-              {...register('name')}
-              placeholder='Name'
-            />
-            <input
-              type='email'
-              id='email'
-              {...register('email')}
-              placeholder='Email'
-            />
-            <input
-              type='text'
-              id='company_name'
-              {...register('company_name')}
-              placeholder='Company'
-            />
-            <input
-              type='text'
-              id='company_role'
-              {...register('company_role')}
-              placeholder='Company Role'
-            />
+            {donationTypes.map(type => (
+              <option key={type.IDdonation_type} value={type.IDdonation_type}>
+                {type.donation_name}{' '}
+                {/* Assuming `name` is the field you want to display */}
+              </option>
+            ))}
+          </select>
 
-            <select
-              type='number'
-              id='IDdonation_type'
-              {...register('IDdonation_type')}
-            >
-              {donationTypes.map(type => (
-                <option key={type.IDdonation_type} value={type.IDdonation_type}>
-                  {type.donation_name}{' '}
-                  {/* Assuming `name` is the field you want to display */}
-                </option>
-              ))}
-            </select>
+          <textarea
+            id='message'
+            {...register('message')}
+            placeholder='Message'
+          />
 
-            <textarea
-              id='message'
-              {...register('message')}
-              placeholder='Message'
-            />
-
-            <button type='submit' className='button-send' id='send'>
-              Send
-            </button>
-          </form>
+          <button type='submit' className='button-send' id='send'>
+            Send
+          </button>
+          {messageSent && <p>Message sent</p>}
+        </form>
       </Section>
     </>
   );

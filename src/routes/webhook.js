@@ -4,13 +4,11 @@ const bodyParser = require('body-parser');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const prisma = require('../../prisma');
 
-router.post(
-  '/',
-  bodyParser.raw({ type: 'application/json' }),
-  async (req, res) => {
-    const sig = req.headers['stripe-signature'];
+router.post('/', express.raw({type: 'application/json'}), async (req, res) => {
+  const sig = req.headers['stripe-signature'];
 
-    let event;
+  let event;
+
     try {
       event = stripe.webhooks.constructEvent(
         req.body,
