@@ -1,8 +1,9 @@
 .img-wide {
-  background-color: var(--black-0);
+  /* background-color: var(--black-0); */
 }
 #wide-container {
   position: relative;
+  padding: 10px 0;
 }
 #img_wide {
   width: 100%;

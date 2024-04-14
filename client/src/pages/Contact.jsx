@@ -48,7 +48,7 @@ export default function Contact() {
   return (
     <>
       <Section tail='flex flex-col '>
-        <h1 className='small text-left mb-8'>Contact Us</h1>
+        <h1 className='large text-left mb-8'>Contact Us</h1>
         <div className='flex w-full justify-between'>
           <form
             action='submit'

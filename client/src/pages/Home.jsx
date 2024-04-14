@@ -116,6 +116,7 @@ export default function Home() {
           img={card_1}
           imgName=''
           label='Program'
+          color='blue'
           hoverCardText='Early literacy is key to educational and economic opportunities in the global economy, but 100s of millions of children are being left behind. They just need the opportunity. Project 1 –  Bridge Schools and Remedial Classes. Running three Bidge Schools in three different urban slums of '
           link='/'
           cardText='To build a better future for the children of Gurgaon.'
@@ -125,6 +126,7 @@ export default function Home() {
           img={card_2}
           imgName=''
           label='Program'
+          color='blue'
           hoverCardText='At the Women’s Education Project’s Leadership and Financial Independence program, vibrant, young women from underserved communities are empowered to become self-sufficient, robust, enlightened, and adept leaders, contributors'
           link='/'
           cardText='To help the community girls and young ladies became entrepreneurs.'
@@ -134,6 +136,7 @@ export default function Home() {
           img={card_3}
           imgName=''
           label='Partner'
+          color='yellow'
           hoverCardText='Faced with the great challenges posed by technology, respect for digital rights is a key element in the path towards a humanistic digitalization. At it-willbe.org, we made new commitments on digital rights in order to take a step forward and lead a collective reflection. '
           link='/'
           cardText='This Spanish NGO collaborates by helping the digitalization of our educational project.
@@ -144,6 +147,7 @@ export default function Home() {
           img={card_4}
           imgName=''
           label='Partner'
+          color='yellow'
           hoverCardText='Our food bank is backed by the Central Government of India, collaborating to fight hunger. Together, we make it possible to feed those in need. Join us in this mission to provide hope and support to vulnerable communities in India.'
           link='/'
           cardText='We have an agreement with The Central Government of India, which helps in the food bank initiative.'
