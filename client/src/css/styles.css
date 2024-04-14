@@ -123,7 +123,7 @@ nav {
 
 .active {
   font-weight: bold;
-  text-shadow: var(--shadow-xs);
+  /* text-shadow: var(--shadow-xs); */
 }
 
 /* ========= SECTION ========= */
