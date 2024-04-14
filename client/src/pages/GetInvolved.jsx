@@ -40,6 +40,15 @@ const caroursel_imgs = [
   },
 ];
 
+function scrollToSection() {
+  const section = document.getElementById('form-get');
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+
+
 export default function GetInvolved() {
   //const [t] = useTranslation();
   const [messageSent, setMessageSent] = useState(false);
@@ -145,6 +154,7 @@ export default function GetInvolved() {
           </ul>
         </div>
         <ButtonPartner />
+        <button onClick={scrollToSection}>Ir a la sección</button>
       </Section>
 
       {/*  CARDS AND IMAGE */}
@@ -160,6 +170,7 @@ export default function GetInvolved() {
             img={card_1}
             imgName=''
             label='Program'
+            color='blue'
             hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
             link='/'
             cardText='To build a better future for the children of Gurgaon.'
@@ -169,6 +180,7 @@ export default function GetInvolved() {
             img={card_2}
             imgName=''
             label='Program'
+            color='blue'
             hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
             link='/'
             cardText='To help the community girls and young ladies became entrepreneurs.'
@@ -177,7 +189,7 @@ export default function GetInvolved() {
       </Section>
 
       {/* FORMULARIO BECOME A PARTNER */}
-      <Section tail='flex justify-center w-full'>
+      <Section tail='flex justify-center w-full' id='form-get' >
         <form
           action='submit'
           id='form-get-involved'

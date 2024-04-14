@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { api } from '../service/api';
+import ButtonRegular from './ButtonRegular'
 
 export default function FormDonate() {
   const {
@@ -51,8 +52,9 @@ export default function FormDonate() {
           <option value='true'>Yes</option>
           <option value='false'>No</option>
         </select>
-
-        <button type='submit'>Donate</button>
+        
+        <ButtonRegular>DONATE</ButtonRegular>
+        {/* <button type='submit'>Donate</button> */}
       </form>
     </div>
   );

@@ -1,0 +1,10 @@
+.button-regular {
+  background-color: var(--color-main-0);
+  color: var(--white-1);
+  border-radius: var(--border-l);
+  height: 40px;
+  width: 70%;
+  justify-self: end;
+  
+} 
+

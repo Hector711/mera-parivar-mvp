@@ -18,6 +18,7 @@ import '@/css/comp-card.css';
 import '@/css/comp-carousels.css';
 import '@/css/comp-language.css';
 import '@/css/comp-wide.css';
+import '@/css/comp-button.css';
 
 export const queryClient = new QueryClient();
 

@@ -99,15 +99,7 @@ form {
   grid-row: 7 / 8;
 }
 
-#select-currency {
 
-}
-#every-month {
- 
-}
-#donate-form > button {
-
-}
 
 
 
@@ -119,15 +111,9 @@ form {
 #form-contact {
   display: grid;
   grid-template-columns: 50% 10% 40% ;
-  grid-template-rows: 26px 56px 26px 56px 190px 1fr;
+  grid-template-rows: 26px 56px 26px 56px 190px 40px 40px;
   width: 526px;
   height: 500px;
-}
-#form-contact * {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  /* padding: 1rem; */
 }
 #form-contact > #personal-information {
   grid-column: 0 / 2;
@@ -158,6 +144,15 @@ form {
 #form-contact > button {
   grid-column: 3 / 4;
   grid-row: 6 / 7;
+}
+#message-sent {
+  grid-column: 3/4;
+  grid-row: 7/8;
+  justify-self: end;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
