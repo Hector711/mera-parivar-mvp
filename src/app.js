@@ -19,11 +19,16 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(morgan('dev'));
 
-// Use express.json() for other routes where JSON is expected
-app.use(express.json());
-
-// Use express.urlencoded() for URL-encoded body parsing
-app.use(express.urlencoded({ extended: true }));
+// Conditionally apply express.json() and express.urlencoded() middleware
+app.use((req, res, next) => {
+    if (req.originalUrl.startsWith('/webhook')) {
+        // Bypass these middlewares for webhook routes
+        next();
+    } else {
+        // Apply JSON and URL-encoded parsers to non-webhook routes
+        express.json()(req, res, next);
+    }
+}, express.urlencoded({ extended: true }));
 
 // Mount routers from the 'routes' directory
 app.use('/', require('./routes'));
