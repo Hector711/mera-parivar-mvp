@@ -4,6 +4,7 @@ import { set, useForm } from 'react-hook-form';
 import { useMutation } from '@tanstack/react-query';
 import { postContact } from '@/service/contact';
 import { useState, useEffect } from 'react';
+import img_contact from '../assets/img_contact.jpeg';
 
 export default function Contact() {
   const [t] = useTranslation();
@@ -46,28 +47,28 @@ export default function Contact() {
 
   return (
     <>
-      <Section tail=''>
-        <div className='flex flex-col bg-slate-300 items-start w-[100%]'>
-          <h1 className='small'>Contact Us</h1>
-
-          <div className='flex justify-center w-[100%]'>
-            <form
-              action='submit'
-              id='form-contact'
-              onSubmit={handleSubmit(onSubmit)}
-            >
+      <Section tail='flex flex-col'>
+        <h1 className='small text-left my-8'>Contact Us</h1>
+        <div className='flex w-full justify-between'>
+          <form
+            action='submit'
+            id='form-contact'
+            onSubmit={handleSubmit(onSubmit)}
+          >
+              <p className='bold' id='personal-information' >Personal Information:</p>
               <input
                 type='text'
                 id='contact_name'
                 {...register('contact_name')}
                 placeholder='Name'
-              />
+                />
               <input
                 type='email'
                 id='contact_email'
                 {...register('contact_email')}
                 placeholder='Email'
-              />
+                />
+              <p className='bold' id='purpose-consultation'>Purpose of the consultation:</p>
               <select
                 type='number'
                 id='IDSubject_type'
@@ -86,8 +87,11 @@ export default function Contact() {
               </button>
               {messageSent && <p>Message sent</p>}
             </form>
-            <img src='' alt='' className='w-[526px] h-[512px] bg-slate-400' />
-          </div>
+          <img
+            src={img_contact}
+            alt=''
+            className='w-[526px] h-[512px] bg-slate-400'
+          />
         </div>
       </Section>
     </>

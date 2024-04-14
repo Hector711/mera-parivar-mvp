@@ -9,12 +9,12 @@ form textarea {
 }
 form {
   gap: 1rem;
-  /* padding: 18px; */
-  /* padding-bottom: 18px; */
   height: 100%;
   /* border: 2px solid var(--color-main-1); */
-
 }
+
+
+
 
 /* GET INVOLVED */
 /* =============== */
@@ -56,33 +56,59 @@ form {
   border: 1px;
 }
 
+
+
+
 /* FORM CONTACT  */
 /* =============== */
 #form-contact {
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 50% 10% 40% ;
+  grid-template-rows: 56px 56px 56px 190px 1fr;
   width: 526px;
   height: 500px;
+}
+#form-contact * {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+}
+#form-contact > #personal-information {
+  grid-column: 0 / 2;
+  grid-row: 1 / 2;
 
 }
-#form-contact > #contact_name,
-#contact_email,
-#IDSubject_type {
+#form-contact > #contact_name {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+#form-contact > #contact_email {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+#form-contact > #purpose-consultation {
   grid-column: 1 / 2;
+  grid-row: 3 / 4;
 }
-
-#form-contact > #Text {
+#form-contact > #IDSubject_type {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+}
+#form-contact > textarea {
   grid-column: 1 / 4;
-  grid-row: 4 / 8;
+  grid-row: 4 / 5;
+
 }
-#form-contact > #send {
+#form-contact > button {
   grid-column: 3 / 4;
-  grid-row: 8 / 9;
+  grid-row: 5 / 6;
 }
 
 
-/* DONATE */
+
+
+/* FORM DONATE */
 /* =============== */
 #donate-form {
   display: grid;
@@ -91,7 +117,7 @@ form {
   /* gap: 1rem; */
 }
 
-#personal-information {
+#donate-form > #personal-information {
   grid-column: 2 / 6;
   grid-row: 1 / 3;
   display: flex;
@@ -105,7 +131,6 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* gap: 24px; */
 }
 #select-currency {
   grid-column: 2 / 6;
