@@ -58,7 +58,7 @@ router.post('/', express.raw({ type: 'application/json' }), async (req, res) => 
             // Create a new donation record in the database
             const new_donation = await prisma.Donations.create({
                 data: {
-                    Amount_in_rup: amount,
+                    Amount_in_rup: amount / 100,
                     IDBenefactor: benefactor.IDBenefactor,
                     IDmethod_pay: paymentMethodId,
                     IDdonation_type: 1,  // Assuming '1' is a default donation type
