@@ -23,7 +23,8 @@ export default function Footer() {
           </p>
         </div>
         <ButtonDonate />
-        <div className='flex gap-1'>
+        <div className='flex gap-1
+        '>
           <SocialLink link='https://www.facebook.com/MeraParivarNgo'>
             <img src={rrss_facebook} className='img-rrss' alt='' />
           </SocialLink>
