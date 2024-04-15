@@ -90,12 +90,12 @@ router.post(
 // Función para convertir una cantidad de una moneda a rupias
 function convertToRupias(amount, currency) {
   const exchangeRates = {
-    USD: 75, // 1 dollar = 75 rupias
-    EUR: 85, // 1 euro = 85 rupias
-    GBP: 95, // 1 pound = 95 rupias
+    usd: 75, // 1 dollar = 75 rupias
+    eur: 85, // 1 euro = 85 rupias
+    gbp: 95, // 1 pound = 95 rupias
+    inr: 1,
   };
 
-  // Log the input values
   console.log(`Received amount: ${amount} and currency: ${currency}`);
 
   if (currency in exchangeRates) {
