@@ -56,7 +56,7 @@ model Benefactors {
 
 model Donations {
   IDDonacion      BigInt        @id @default(autoincrement())
-  Amount_in_rup   BigInt
+  Amount_in_rup   Float
   date            DateTime      @default(now())
   IDBenefactor    BigInt
   IDmethod_pay    Int
