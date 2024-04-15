@@ -19,6 +19,7 @@ import '@/css/comp-carousels.css';
 import '@/css/comp-language.css';
 import '@/css/comp-wide.css';
 import '@/css/comp-button.css';
+import '@/css/comp-nav.css';
 
 export const queryClient = new QueryClient();
 

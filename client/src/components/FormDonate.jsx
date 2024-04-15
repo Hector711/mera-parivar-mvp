@@ -66,7 +66,6 @@ export default function FormDonate() {
         </select>
 
         <ButtonRegular>DONATE</ButtonRegular>
-        {/* <button type='submit'>Donate</button> */}
       </form>
     </div>
   );

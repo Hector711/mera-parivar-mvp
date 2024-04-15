@@ -1,0 +1,120 @@
+/* ========= NAVEGACIÓN ========= */
+/* ========= ========= ========= */
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  box-shadow: 0 5px 10px 1px var(--color-sec-0);
+  margin-bottom: 32px;
+}
+#nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: var(--width-section);
+}
+
+/* ========= EDUCATION SECTION ========= */
+/* ========= ========= ========= */
+#education-section > ul {
+  padding: 0 0 0 10px;
+}
+#education-section > ul > li {
+  padding: 0 0 0 10px;
+  margin: 5px;
+}
+/* ========= PARTNER SECTION ========= */
+/* ========= ========= ========= */
+#partner-section > div > ul {
+  padding: 0 0 0 10px;
+}
+#partner-section > div > ul > li {
+  padding: 0 0 0 10px;
+  margin: 10px;
+}
+
+.nav-containers {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  height: 60px;
+}
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  align-items: center;
+  padding: 0 15px;
+  gap: 8px;
+}
+#nav-resposive {
+  display: flex;
+}
+
+#logo {
+  border-radius: var(--border-s);
+  box-shadow: var(--shadow-xs);
+}
+#logo-container {
+  height: 100%;
+  padding: 0;
+  margin-right: 1rem;
+}
+
+
+.nav-responsive-2 {
+  display: flex;
+  gap: 4rem;
+}
+#button-donate {
+  border-radius: var(--border-l);
+  padding: 5px 25px;
+  height: min-content;
+  width: fit-content;
+
+  background-color: var(--color-sec-0);
+  border: 1px solid var(--color-sec-0);
+  box-shadow: var(--shadow-xs);
+
+}
+
+
+#button-donate:hover {
+  background-color: var(--white-0);
+  border: 1px solid var(--color-main-0);
+}
+
+
+@media only screen and (max-width: 968px) {
+  nav {
+    margin-bottom: 0;
+  }
+  #nav-container {
+    flex-direction: column;
+  }
+  .nav-containers {
+    display: flex;
+    flex-direction: column;
+  }
+  #nav-resposive {
+    /* display: flex; */
+  }
+  #button-donate {
+  }
+  .nav-responsive-2 {
+    margin-top: 4rem;
+  }
+  .nav-responsive-2 * {
+    display: flex;
+    justify-content: center;
+  }
+
+  #language-selector {
+    display: none;
+  }
+}
+
