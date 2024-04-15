@@ -119,14 +119,21 @@ export default function Home() {
         <div className='w-[50%] flex flex-col gap-4'>
           <ButtonPartner />
           <p className='h-full'>
-            Lorem ipsum dolor sit amet consectetur. Pellentesque ac vitae
-            malesuada integer in commodo magnis maecenas. Proin leo interdum
-            amet nisi mauris augue ipsum nunc faucibus. Nullam nunc elit nisi
-            tortor gravida sit sit auctor urna. Eget mauris egestas elementum
-            ut. Congue fringilla et sit turpis rhoncus neque. Etiam in purus
-            nullam risus quam pretium consectetur. Tempor curabitur quis sit
-            vel. Turpis urna in tristique ut et duis nisl. Leo ut egestas nec
-            tortor pellentesque.
+            <span className='bold'>
+              &#8226; Are you a company committed to eradicating social
+              inequality?
+            </span>
+            <br />
+            <span className='bold'>
+              &#8226; Are you looking for a project that helps Indian boys and
+              girls have a decent life?
+            </span>
+            <br />
+            Meraparivar develops its projects in the rural community of Gurgaon,
+            south of New Delhi. Our initiatives aim to improve the quality of
+            life of this community, through educational projects for young
+            people and boys and girls. In addition, we offer programs to end
+            hunger in the most humble communities and promote gender equality.
           </p>
         </div>
       </Section>

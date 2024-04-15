@@ -33,7 +33,6 @@ const caroursel_imgs = [
 ];
 export default function WhatWeDo() {
   // const [t] = useTranslation();
-
   return (
     <>
       <CarouselImages images={caroursel_imgs} />
