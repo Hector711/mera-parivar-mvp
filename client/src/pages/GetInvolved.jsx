@@ -47,8 +47,6 @@ function scrollToSection() {
   }
 }
 
-
-
 export default function GetInvolved() {
   //const [t] = useTranslation();
   const [messageSent, setMessageSent] = useState(false);
@@ -153,8 +151,10 @@ export default function GetInvolved() {
             </li>
           </ul>
         </div>
-        <ButtonPartner />
-        <button onClick={scrollToSection}>Ir a la sección</button>
+        {/* <ButtonPartner /> */}
+        <button id='button-partner' onClick={scrollToSection}>
+        <p className='bold'>BECOME A PARTNER</p>
+        </button>
       </Section>
 
       {/*  CARDS AND IMAGE */}

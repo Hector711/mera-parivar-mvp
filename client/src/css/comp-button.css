@@ -1,10 +1,56 @@
+/* ========= BUTTON REGULAR ========= */
+/* =========================== */
 .button-regular {
   background-color: var(--color-main-0);
+  border: 1px solid var(--color-main-0);
   color: var(--white-1);
   border-radius: var(--border-l);
   height: 40px;
   width: 70%;
   justify-self: end;
+  box-shadow: var(--shadow-s);
   
 } 
 
+.button-regular:hover {
+  background-color: var(--color-main-1);
+}
+
+
+/* ========= BUTTON PARTNER ========= */
+/* =========================== */
+#button-partner {
+  border-radius: var(--border-l);
+  padding: 5px 25px;
+  height: min-content;
+  width: fit-content;
+  background-color: var(--color-main-0);
+  color: var(--white-1);
+}
+#button-partner:hover {
+  background-color: var(--color-main-1);
+  box-shadow: var(--shadow-xs);
+}
+
+/* ========= BUTTON DONATE ========= */
+/* =========================== */
+#button-donate {
+  border-radius: var(--border-l);
+  padding: 5px 25px;
+  height: min-content;
+  width: fit-content;
+  background-color: var(--color-sec-0);
+  /* border: 1px solid var(--color-sec-0); */
+  box-shadow: var(--shadow-xs);
+}
+#button-donate:hover {
+  background-color: var(--color-sec-1);
+  /* border: 1px solid var(--color-main-0); */
+}
+
+
+
+.active {
+  font-weight: bold;
+  /* text-shadow: var(--shadow-xs); */
+}
