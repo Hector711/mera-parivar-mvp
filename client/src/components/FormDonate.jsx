@@ -40,7 +40,6 @@ export default function FormDonate() {
           placeholder='Name'
           id='donate-name'
         />
-        {errors.name && <p className='text-red-500'>Email is required</p>}
         <input
           type='email'
           {...register('email')}
