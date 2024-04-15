@@ -76,7 +76,8 @@ export default function Home() {
           img={card_1}
           imgName=''
           label='Program'
-          hoverCardText='Early literacy is key to educational and economic opportunities in the global economy, but 100s of millions of children are being left behind. They just need the opportunity. Project 1 –  Bridge Schools and Remedial Classes. Running three Bidge Schools in three different urban slums of '
+          color='blue'
+          hoverCardText='Early literacy is key to educational and economic opportunities in the global economy, but 100s of millions of children are being left behind. They just need the opportunity.'
           link='/'
           cardText='To build a better future for the children of Gurgaon.'
         />
@@ -85,6 +86,7 @@ export default function Home() {
           img={card_2}
           imgName=''
           label='Program'
+          color='blue'
           hoverCardText='At the Women’s Education Project’s Leadership and Financial Independence program, vibrant, young women from underserved communities are empowered to become self-sufficient, robust, enlightened, and adept leaders, contributors'
           link='/'
           cardText='To help the community girls and young ladies became entrepreneurs.'
@@ -94,7 +96,8 @@ export default function Home() {
           img={card_3}
           imgName=''
           label='Partner'
-          hoverCardText='Faced with the great challenges posed by technology, respect for digital rights is a key element in the path towards a humanistic digitalization. At it-willbe.org, we made new commitments on digital rights in order to take a step forward and lead a collective reflection. '
+          color='yellow'
+          hoverCardText='Faced with the great challenges posed by technology, respect for digital rights is a key element in the path towards a humanistic digitalization.'
           link='/'
           cardText='This Spanish NGO collaborates by helping the digitalization of our educational project.
           '
@@ -104,6 +107,7 @@ export default function Home() {
           img={card_4}
           imgName=''
           label='Partner'
+          color='yellow'
           hoverCardText='Our food bank is backed by the Central Government of India, collaborating to fight hunger. Together, we make it possible to feed those in need. Join us in this mission to provide hope and support to vulnerable communities in India.'
           link='/'
           cardText='We have an agreement with The Central Government of India, which helps in the food bank initiative.'
@@ -115,14 +119,21 @@ export default function Home() {
         <div className='w-[50%] flex flex-col gap-4'>
           <ButtonPartner />
           <p className='h-full'>
-            Lorem ipsum dolor sit amet consectetur. Pellentesque ac vitae
-            malesuada integer in commodo magnis maecenas. Proin leo interdum
-            amet nisi mauris augue ipsum nunc faucibus. Nullam nunc elit nisi
-            tortor gravida sit sit auctor urna. Eget mauris egestas elementum
-            ut. Congue fringilla et sit turpis rhoncus neque. Etiam in purus
-            nullam risus quam pretium consectetur. Tempor curabitur quis sit
-            vel. Turpis urna in tristique ut et duis nisl. Leo ut egestas nec
-            tortor pellentesque.
+            <span className='bold'>
+              &#8226; Are you a company committed to eradicating social
+              inequality?
+            </span>
+            <br />
+            <span className='bold'>
+              &#8226; Are you looking for a project that helps Indian boys and
+              girls have a decent life?
+            </span>
+            <br />
+            Meraparivar develops its projects in the rural community of Gurgaon,
+            south of New Delhi. Our initiatives aim to improve the quality of
+            life of this community, through educational projects for young
+            people and boys and girls. In addition, we offer programs to end
+            hunger in the most humble communities and promote gender equality.
           </p>
         </div>
       </Section>

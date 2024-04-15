@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { api } from '../service/api';
+import ButtonRegular from './ButtonRegular';
 
 export default function FormDonate() {
   const {
@@ -28,34 +29,43 @@ export default function FormDonate() {
   };
 
   return (
-    <div className='w-[852px] h-[403px]'>
+    <div className='w-[852px] '>
       <form id='donate-form' onSubmit={handleSubmit(onSubmit)}>
-        <div id='personal-information'>
-          <p className='bold'>Personal Information:</p>
-          <div id='personal-information-input'>
-            <input type='text' {...register('name')} placeholder='Name' />
-            <input type='email' {...register('email')} placeholder='Email' />
-          </div>
-        </div>
-        <div id='select-currency'>
-          <p className='bold'>Select Currency:</p>
-          <select {...register('currency')}>
-            <option value='USD'>Dollar</option>
-            <option value='EUR'>Euro</option>
-            <option value='INR'>Rupee</option>
-            <option value='GBP'>Pound</option>
-          </select>
-        </div>
-        <div id='every-month'>
-          <p className='bold'>
-            Would you like to make this donation every month?
-          </p>
-          <select {...register('Subscription_status')}>
-            <option value='true'>Yes</option>
-            <option value='false'>No</option>
-          </select>
-        </div>
-        <button type='submit'>Donate</button>
+        <p className='bold' id='personal-information'>
+          Personal Information:
+        </p>
+        <input
+          type='text'
+          {...register('name')}
+          placeholder='Name'
+          id='donate-name'
+        />
+        <input
+          type='email'
+          {...register('email')}
+          placeholder='Email'
+          id='donate-email'
+        />
+        <p className='bold' id='select-currency'>
+          Select Currency:
+        </p>
+        <select {...register('currency')} id='currency'>
+          <option value='' >- Select currency -</option>
+          <option value='USD'>Dollar - &#36;</option>
+          <option value='EUR'>Euro - &#8364;</option>
+          <option value='INR'>Rupee - &#8377;</option>
+          <option value='GBP'>Pound - &#163;</option>
+        </select>
+        <p className='bold' id='every-month'>
+          Would you like to make this donation every month?
+        </p>
+        <select {...register('Subscription_status')} id='subscription'>
+          <option value=''  >- Yes / No -</option>
+          <option value='true'>Yes</option>
+          <option value='false'>No</option>
+        </select>
+
+        <ButtonRegular>DONATE</ButtonRegular>
       </form>
     </div>
   );
