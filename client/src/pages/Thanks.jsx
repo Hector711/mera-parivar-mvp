@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '@/components/Section';
-import WideImage from '../components/WideImage'
-import CarouselQuotes from '../components/CarouselQuotes'
+import WideImage from '../components/WideImage';
+import CarouselQuotes from '../components/CarouselQuotes';
 import img_wide_thanks from '../assets/img_wide_thanks.jpeg';
 import Card from '../components/Card';
 import card_1 from '../assets/card_1.jpeg';
@@ -13,39 +13,40 @@ import { useTranslation } from 'react-i18next';
 const carousel_quotes = [
   {
     quote:
-    'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.',
+      'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.',
   },
   {
     quote:
-    '+2.5 million children´s lives positively impacted through education.',
+      '+2.5 million children´s lives positively impacted through education.',
   },
   {
     quote:
-    '+ 12.45 million benefited from surplus vegetable and cooked food distribution',
+      '+ 12.45 million benefited from surplus vegetable and cooked food distribution',
   },
   {
     quote:
-    '2 million government school children with clean water facilities in rural areas',
+      '2 million government school children with clean water facilities in rural areas',
   },
   {
     quote:
-    '+ 12.45 million benefited surplus Vegetable & cook Food distribution',
+      '+ 12.45 million benefited surplus Vegetable & cook Food distribution',
   },
 ];
-
 
 export default function Thanks() {
   const [t] = useTranslation();
   return (
     <>
       <WideImage img={img_wide_thanks} alt=''>
-        <h1 className='large flex w-[100%] justify-center'>THANKS FOR YOUR DONATION</h1>
+        <h1 className='large flex w-[100%] justify-center'>
+          THANKS FOR YOUR DONATION
+        </h1>
       </WideImage>
       <Section>
-        <CarouselQuotes quotes={carousel_quotes}/>
+        <CarouselQuotes quotes={carousel_quotes} />
       </Section>
       <Section tail='flex w-full justify-between'>
-      <Card
+        <Card
           header='Education for children'
           img={card_1}
           imgName=''

@@ -9,13 +9,11 @@
   width: 70%;
   justify-self: end;
   box-shadow: var(--shadow-s);
-  
-} 
+}
 
 .button-regular:hover {
   background-color: var(--color-main-1);
 }
-
 
 /* ========= BUTTON PARTNER ========= */
 /* =========================== */
@@ -47,8 +45,6 @@
   background-color: var(--color-sec-1);
   /* border: 1px solid var(--color-main-0); */
 }
-
-
 
 .active {
   font-weight: bold;

@@ -42,26 +42,16 @@ export default function WhatWeDo() {
         <p>{t('what_we_do.body.text_1')} </p>
         <ul>
           <p className='bold'>{t('what_we_do.body.text_2')}</p>
-          <li>
-            &#8226; {t('what_we_do.body.text_3')}
-          </li>
-          <li>
-            &#8226; {t('what_we_do.body.text_3')}
-          </li>
+          <li>&#8226; {t('what_we_do.body.text_3')}</li>
+          <li>&#8226; {t('what_we_do.body.text_3')}</li>
         </ul>
         <ul>
-          <p className='bold'>
-          {t('what_we_do.body.text_5')}
-          </p>
-          <li>
-            &#8226; {t('what_we_do.body.text_6')}
-          </li>
+          <p className='bold'>{t('what_we_do.body.text_5')}</p>
+          <li>&#8226; {t('what_we_do.body.text_6')}</li>
         </ul>
         <ul>
           <p className='bold'>{t('what_we_do.body.text_7')}</p>
-          <li>
-            &#8226; {t('what_we_do.body.text_8')}
-          </li>
+          <li>&#8226; {t('what_we_do.body.text_8')}</li>
         </ul>
         <p>{t('what_we_do.body.text_9')}</p>
         <div className='flex justify-center gap-20'>

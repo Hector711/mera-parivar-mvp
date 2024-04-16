@@ -7,7 +7,12 @@ export default function ButtonPartner() {
     window.scrollTo(0, 0);
   };
   return (
-    <NavLink className='nav-link' id='button-partner' to='/getinvolved' onClick={handleNavLinkClick}>
+    <NavLink
+      className='nav-link'
+      id='button-partner'
+      to='/getinvolved'
+      onClick={handleNavLinkClick}
+    >
       <p className='bold'>{t('get_involved.button')}</p>
     </NavLink>
   );

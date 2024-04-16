@@ -1,4 +1,7 @@
-form input, select, button, textarea {
+form input,
+select,
+button,
+textarea {
   border: 2px solid var(--color-main-1);
   border-radius: var(--border-s);
   background-color: var(--white-1);
@@ -8,12 +11,10 @@ form textarea {
   padding: 20px 20px;
 }
 form {
-  gap: .5rem;
+  gap: 0.5rem;
   height: 100%;
   /* border: 2px solid var(--color-main-1); */
 }
-
-
 
 /* GET INVOLVED */
 /* =============== */
@@ -57,14 +58,12 @@ form {
   border: 1px;
 }
 
-
-
 /* FORM DONATE */
 /* =============== */
 #donate-form {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: 26px 58px 26px 58px 26px 58px ;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 26px 58px 26px 58px 26px 58px;
   /* gap: 1rem; */
 }
 
@@ -101,19 +100,11 @@ form {
   grid-row: 7 / 8;
 }
 
-
-
-
-
-
-
-
-
 /* FORM CONTACT  */
 /* =============== */
 #form-contact {
   display: grid;
-  grid-template-columns: 50% 10% 40% ;
+  grid-template-columns: 50% 10% 40%;
   grid-template-rows: 26px 56px 26px 56px 190px 40px 40px;
   width: 526px;
   height: 500px;
@@ -121,7 +112,6 @@ form {
 #form-contact > #personal-information {
   grid-column: 0 / 2;
   grid-row: 1 / 2;
-
 }
 #form-contact > #contact_name {
   grid-column: 1 / 2;
@@ -142,7 +132,6 @@ form {
 #form-contact > textarea {
   grid-column: 1 / 4;
   grid-row: 5 / 6;
-
 }
 #form-contact > button {
   grid-column: 3 / 4;
@@ -157,7 +146,3 @@ form {
   justify-content: center;
   align-items: center;
 }
-
-
-
-

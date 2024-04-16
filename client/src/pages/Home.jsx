@@ -66,7 +66,7 @@ export default function Home() {
 
       <Section tail='flex w-full justify-between'>
         <Card
-          header= {t('cards.c_1.header')}
+          header={t('cards.c_1.header')}
           img={card_1}
           imgName=''
           label={t('cards.c_1.label')}
@@ -76,7 +76,7 @@ export default function Home() {
           cardText={t('cards.c_1.text')}
         />
         <Card
-          header= {t('cards.c_2.header')}
+          header={t('cards.c_2.header')}
           img={card_2}
           imgName=''
           label={t('cards.c_2.label')}
@@ -86,17 +86,17 @@ export default function Home() {
           cardText={t('cards.c_2.text')}
         />
         <Card
-           header= {t('cards.c_3.header')}
-           img={card_3}
-           imgName=''
-           label={t('cards.c_3.label')}
-           color='yellow'
-           hoverCardText={t('cards.c_3.hover')}
-           link='/'
-           cardText={t('cards.c_3.text')}
+          header={t('cards.c_3.header')}
+          img={card_3}
+          imgName=''
+          label={t('cards.c_3.label')}
+          color='yellow'
+          hoverCardText={t('cards.c_3.hover')}
+          link='/'
+          cardText={t('cards.c_3.text')}
         />
         <Card
-          header= {t('cards.c_4.header')}
+          header={t('cards.c_4.header')}
           img={card_4}
           imgName=''
           label={t('cards.c_4.label')}
@@ -112,7 +112,7 @@ export default function Home() {
         <div className='w-[50%] flex flex-col gap-4'>
           <ButtonPartner />
           <p className='h-full'>
-              {t('home.section_1.text_1')}
+            {t('home.section_1.text_1')}
             <br />
             {t('home.section_1.text_2')}
             <br />

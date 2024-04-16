@@ -3,10 +3,10 @@ import flag_uk from '../assets/flag_uk.svg';
 import flag_spain from '../assets/flag_spain.svg';
 
 const LANGUAGES = [
-  { 
+  {
     label: 'Español',
-    code: 'es', 
-    alt: 'Spanish Language' 
+    code: 'es',
+    alt: 'Spanish Language',
   },
   {
     label: 'English',

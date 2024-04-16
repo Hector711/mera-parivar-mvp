@@ -56,40 +56,48 @@ export default function Contact() {
             id='form-contact'
             onSubmit={handleSubmit(onSubmit)}
           >
-              <p className='bold' id='personal-information'>{t('forms.personal_information')}</p>
-              <input
-                type='text'
-                id='contact_name'
-                {...register('contact_name')}
-                placeholder={t('forms.name')}
-                />
-              <input
-                type='email'
-                id='contact_email'
-                {...register('contact_email')}
-                placeholder={t('forms.email')}
-                />
-              <p className='bold' id='purpose-consultation'>{t('forms.purpose')}</p>
-              <select
-                type='number'
-                id='IDSubject_type'
-                {...register('IDSubject_type')}
-              >
-                {subjectTypes.map(type => (
-                  <option key={type.IDSubject_type} value={type.IDSubject_type}>
-                    {type.subject_name}{' '}
-                    {/* Assuming `name` is the field you want to display */}
-                  </option>
-                ))}
-              </select>
-              <textarea id='Text' {...register('Text')}  placeholder={t('forms.message')} />
-              <ButtonRegular id='send'>{t('forms.send')}</ButtonRegular>
-                
-              {/* <button type='submit' id='send'>
+            <p className='bold' id='personal-information'>
+              {t('forms.personal_information')}
+            </p>
+            <input
+              type='text'
+              id='contact_name'
+              {...register('contact_name')}
+              placeholder={t('forms.name')}
+            />
+            <input
+              type='email'
+              id='contact_email'
+              {...register('contact_email')}
+              placeholder={t('forms.email')}
+            />
+            <p className='bold' id='purpose-consultation'>
+              {t('forms.purpose')}
+            </p>
+            <select
+              type='number'
+              id='IDSubject_type'
+              {...register('IDSubject_type')}
+            >
+              {subjectTypes.map(type => (
+                <option key={type.IDSubject_type} value={type.IDSubject_type}>
+                  {type.subject_name}{' '}
+                  {/* Assuming `name` is the field you want to display */}
+                </option>
+              ))}
+            </select>
+            <textarea
+              id='Text'
+              {...register('Text')}
+              placeholder={t('forms.message')}
+            />
+            <ButtonRegular id='send'>{t('forms.send')}</ButtonRegular>
+
+            {/* <button type='submit' id='send'>
                 Send
               </button> */}
-              {messageSent && <p id='message-sent'>{t('forms.message_sent')}</p>}
-            </form>
+            {messageSent && <p id='message-sent'>{t('forms.message_sent')}</p>}
+          </form>
           <img
             src={img_contact}
             alt=''
