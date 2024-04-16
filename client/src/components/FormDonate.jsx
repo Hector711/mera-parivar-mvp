@@ -31,23 +31,27 @@ export default function FormDonate() {
   };
 
   return (
-    <div className='w-[852px] '>
+    <div className='w-[752px] '>
       <form id='donate-form' onSubmit={handleSubmit(onSubmit)}>
         <p className='bold' id='personal-information'>
           {t('forms.personal_information')}
         </p>
         <input
           type='text'
-          {...register('name')}
+          {...register('name', { required: 'Required field' })}
+          aria-invalid={errors.name ? 'true' : 'false'}
           placeholder={t('forms.name')}
           id='donate-name'
         />
+        {errors.name && <p className='error' id='error-name'>{errors.name.message}</p>}
         <input
           type='email'
-          {...register('email')}
+          {...register('email', { required: 'Required field' })}
+          aria-invalid={errors.email ? 'true' : 'false'}
           placeholder={t('forms.email')}
           id='donate-email'
         />
+        {errors.email && <p className='error' id='error-email'>{errors.email.message}</p>}
         <p className='bold' id='select-currency'>
           {t('forms.select_currency')}
         </p>

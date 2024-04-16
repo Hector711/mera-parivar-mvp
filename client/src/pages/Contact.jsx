@@ -56,29 +56,37 @@ export default function Contact() {
             id='form-contact'
             onSubmit={handleSubmit(onSubmit)}
           >
-            <p className='bold' id='personal-information'>
-              {t('forms.personal_information')}
-            </p>
             <input
               type='text'
               id='contact_name'
-              {...register('contact_name')}
+              {...register('contact_name', { required: 'Required field' })}
+              aria-invalid={errors.contact_name ? 'true' : 'false'}
               placeholder={t('forms.name')}
             />
+            {errors.contact_name && (
+              <p role='alert' className='error' id='error-name'>
+                {errors.contact_name.message}
+              </p>
+            )}
             <input
               type='email'
               id='contact_email'
-              {...register('contact_email')}
+              {...register('contact_email', { required: 'Required field' })}
+              aria-invalid={errors.contact_email ? 'true' : 'false'}
               placeholder={t('forms.email')}
             />
-            <p className='bold' id='purpose-consultation'>
-              {t('forms.purpose')}
-            </p>
+            {errors.contact_email && (
+              <p role='alert' className='error' id='error-email'>
+                {errors.contact_email.message}
+              </p>
+            )}
+
             <select
               type='number'
               id='IDSubject_type'
               {...register('IDSubject_type')}
             >
+              <option value=''>-- {t('forms.subject')} --</option>
               {subjectTypes.map(type => (
                 <option key={type.IDSubject_type} value={type.IDSubject_type}>
                   {type.subject_name}{' '}
@@ -88,9 +96,15 @@ export default function Contact() {
             </select>
             <textarea
               id='Text'
-              {...register('Text')}
+              {...register('Text', { required: 'Required field' })}
+              aria-invalid={errors.Text ? 'true' : 'false'}
               placeholder={t('forms.message')}
             />
+            {errors.Text && (
+              <p role='alert' className='error' id='error-message'>
+                {errors.Text.message}
+              </p>
+            )}
             <ButtonRegular id='send'>{t('forms.send')}</ButtonRegular>
 
             {/* <button type='submit' id='send'>

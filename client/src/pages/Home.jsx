@@ -72,7 +72,7 @@ export default function Home() {
           label={t('cards.c_1.label')}
           color='blue'
           hoverCardText={t('cards.c_1.hover')}
-          link='/'
+          link='/education-for-children'
           cardText={t('cards.c_1.text')}
         />
         <Card
@@ -114,7 +114,9 @@ export default function Home() {
           <p className='h-full'>
             {t('home.section_1.text_1')}
             <br />
+            <br />
             {t('home.section_1.text_2')}
+            <br />
             <br />
             {t('home.section_1.text_3')}
           </p>

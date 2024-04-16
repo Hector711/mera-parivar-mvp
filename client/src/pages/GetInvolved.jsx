@@ -94,8 +94,8 @@ export default function GetInvolved() {
         tail='flex flex-col justify-center items-center gap-10'
         id='partner-section'
       >
-        <div className='flex flex-col gap-6 justify-center items-center'>
-          <h1 className='small'>{t('get_involved.body.title')}</h1>
+        <div className='flex flex-col gap-5 justify-center items-center'>
+          <h1 className='small mb-5'>{t('get_involved.body.title')}</h1>
           <p>{t('get_involved.body.text_1')}</p>
           <p>{t('get_involved.body.text_2')}</p>
           <p>
@@ -127,14 +127,13 @@ export default function GetInvolved() {
             </li>
           </ul>
         </div>
-        {/* <ButtonPartner /> */}
-        <button id='button-partner' onClick={scrollToSection}>
-          <p className='bold'>{t('get_involved.button')}</p>
+        <button className='m-4' id='button-partner' onClick={scrollToSection}>
+          <p>{t('get_involved.button')}</p>
         </button>
       </Section>
 
       {/*  CARDS AND IMAGE */}
-      <Section tail='flex justify-between gap-20'>
+      <Section tail='flex justify-between gap-14'>
         <img
           src={img_logos}
           alt='image logos'
@@ -148,7 +147,7 @@ export default function GetInvolved() {
             label={t('cards.c_1.label')}
             color='blue'
             hoverCardText={t('cards.c_1.hover')}
-            link='/'
+            link='/education-for-children'
             cardText={t('cards.c_1.text')}
           />
           <Card
@@ -165,7 +164,7 @@ export default function GetInvolved() {
       </Section>
 
       {/* FORMULARIO BECOME A PARTNER */}
-      <Section tail='flex justify-center w-full' id='form-get'>
+      <Section tail='flex justify-center w-full pt-10' id='form-get'>
         <form
           action='submit'
           id='form-get-involved'
@@ -174,34 +173,42 @@ export default function GetInvolved() {
           <input
             type='text'
             id='name'
-            {...register('name')}
+            {...register('name', { required: 'Required field' })}
+            aria-invalid={errors.name ? 'true' : 'false'}
             placeholder={t('forms.name')}
           />
+          {errors.name && <p className='error' id='error-name'>{errors.name.message}</p>}
           <input
             type='email'
             id='email'
-            {...register('email')}
+            {...register('email', { required: 'Required field' })}
+            aria-invalid={errors.email ? 'true' : 'false'}
             placeholder={t('forms.email')}
           />
+          {errors.email && <p className='error' id='error-email'>{errors.email.message}</p>}
           <input
             type='text'
             id='company_name'
-            {...register('company_name')}
+            {...register('company_name', { required: 'Required field' })}
+            aria-invalid={errors.company_name ? 'true' : 'false'}
             placeholder={t('forms.company')}
           />
+          {errors.company_name && <p className='error' id='error-company-name'>{errors.company_name.message}</p>}
           <input
             type='text'
             id='company_role'
-            {...register('company_role')}
+            {...register('company_role', { required: 'Required field' })}
+            aria-invalid={errors.company_role ? 'true' : 'false'}
             placeholder={t('forms.company_role')}
           />
+          {errors.company_role && <p className='error' id='error-company-role'>{errors.company_role.message}</p>}
 
           <select
             type='number'
             id='IDdonation_type'
             {...register('IDdonation_type')}
           >
-            <option value=''>{t('forms.company_role')} </option>
+            <option value=''>-- {t('forms.donation_type')} --</option>
 
             {donationTypes.map(type => (
               <option key={type.IDdonation_type} value={type.IDdonation_type}>
@@ -213,14 +220,16 @@ export default function GetInvolved() {
 
           <textarea
             id='message'
-            {...register('message')}
+            {...register('message', { required: 'Required field' })}
+            aria-invalid={errors.message ? 'true' : 'false'}
             placeholder={t('forms.message')}
           />
+          {errors.message && <p className='error' id='error-name'>{errors.message.message}</p>}
 
           <button type='submit' className='button-send' id='send'>
-            Send
+          {t('forms.send')}
           </button>
-          {messageSent && <p>Message sent</p>}
+          {messageSent && <p id='message-sent'>{t('forms.message_sent')}</p>}
         </form>
       </Section>
     </>

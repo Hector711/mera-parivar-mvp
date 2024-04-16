@@ -49,6 +49,18 @@
   width: 132px;
   height: 35px;
 }
+#label-over {
+  width: 132px;
+  height: 35px;
+  border-radius: var(--border-l);
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+
+}
 #label > p {
   display: flex;
   justify-content: center;
@@ -72,13 +84,14 @@
 }
 .blue {
   background-color: var(--color-main-1);
+    color: var(--white-1);
+
 }
 .yellow {
   background-color: var(--color-sec-0);
-}
-.yellow > p {
   color: var(--color-main-0);
 }
+
 .card-header {
   text-align: left;
   margin: 0.5rem 0;

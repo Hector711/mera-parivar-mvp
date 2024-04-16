@@ -6,7 +6,7 @@ export default i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'en',
+    fallbackLng: 'es',
     default: 'es',
     interpolation: {
       escapeValue: false,
@@ -157,8 +157,8 @@ export default i18n
             material: 'Material',
             others: 'Others',
             // DONATE
-            select_currency: 'Select Currency',
-            month: 'Would you like to make this donatino every month?',
+            select_currency: 'Select Currency:',
+            month: 'Would you like to make this donatinon every month?',
             yes: 'Yes',
             no: 'No',
             // CONTACT
@@ -197,29 +197,29 @@ export default i18n
           },
           cards: {
             c_1: {
-              header: 'Educación para niños',
+              header: 'Educación infantil',
               label: 'Programa',
               hover:
                 'La alfabetización temprana es clave para las oportunidades educativas y económicas en la economía global, pero cientos de millones de niños se están quedando atrás. Solo necesitan la oportunidad.',
-              text: 'Para construir un mejor futuro para los niños de Gurgaon.',
+              text: 'Trabajamos para construir un futuro mejor para los jovenes de Gurgaon.',
             },
             c_2: {
-              header: 'Empoderamiento de la mujer',
+              header: 'Mujeres empoderadas',
               label: 'Programa',
               hover:
                 'En el programa de Liderazgo e Independencia Financiera del Proyecto de Educación de la Mujer, mujeres jóvenes y vibrantes de comunidades desfavorecidas son empoderadas para convertirse en líderes, contribuyentes autónomas, iluminadas y expertas.',
-              text: 'Para ayudar a que las niñas y jóvenes de la comunidad se conviertan en empresarias.',
+              text: 'Ayudamos a las niñas y jóvenes de la comunidad a ser emprendedoras.',
             },
             c_3: {
               header: 'IT WILL BE',
-              label: 'Socio',
+              label: 'Patrocinadores',
               hover:
                 'Ante los grandes desafíos que plantea la tecnología, el respeto de los derechos digitales es un elemento clave en el camino hacia una digitalización humanista.',
-              text: 'Esta ONG española colabora ayudando en la digitalización de nuestro proyecto educativo.',
+              text: 'ONG española que nos ayuda a la digitalización de nuestro proyecto educativo.',
             },
             c_4: {
               header: 'Gobierno Central',
-              label: 'Socio',
+              label: 'Patrocinadores',
               hover:
                 'Nuestro banco de alimentos cuenta con el respaldo del Gobierno Central de India, colaborando para combatir el hambre. Juntos, hacemos posible alimentar a los necesitados. Únete a nosotros en esta misión para brindar esperanza y apoyo a las comunidades vulnerables de India.',
               text: 'Tenemos un acuerdo con el Gobierno Central de India, que ayuda en la iniciativa del banco de alimentos.',
@@ -234,15 +234,15 @@ export default i18n
           },
           what_we_do: {
             header: 'QUÉ HACEMOS',
-            dd_1: 'Educación para niños',
+            dd_1: 'Educación infantil',
             dd_2: 'Formación vocacional y habilidades para jóvenes',
             dd_3: 'Educación de niñas',
-            dd_4: 'Abogacía y Asistencia Comunitaria',
-            dd_5: 'Tráfico Humano',
-            dd_6: 'Empoderamiento de la Mujer',
+            dd_4: 'Defensa y asistencia a la comunidad',
+            dd_5: 'Anti-tráfico Humano',
+            dd_6: 'Empoderamiento Femenino',
             dd_7: 'Proyecto Swabhiman',
             body: {
-              title: 'PLANES DE EDUCACIÓN PARA NIÑOS',
+              title: 'PLANES DE EDUCACIÓN INFANTIL',
               text_1:
                 'Mera Parivar está comprometido con la educación como una forma de construir un futuro mejor para los niños de la comunidad rural de Gurgaon.',
               text_2: '¿Qué tipo de proyectos promovemos?',
@@ -261,13 +261,13 @@ export default i18n
             },
           },
           get_involved: {
-            header: 'INVOLÚCRATE',
-            dd_1: 'Conviértete en voluntario',
-            dd_2: 'Conviértete en Socio',
+            header: 'COLABORA',
+            dd_1: 'Hazte voluntario',
+            dd_2: 'Hazte patrocinador',
             dd_3: 'Trabaja con nosotros',
             button: 'COLABORA AHORA',
             body: {
-              title: 'CONVIÉRTETE EN UN SOCIO',
+              title: 'HAZTE COLABORADOR',
               text_1:
                 '¿Eres una empresa comprometida en erradicar la desigualdad social?',
               text_2:
@@ -298,7 +298,7 @@ export default i18n
           },
 
           contact_us: {
-            header: 'Contáctanos',
+            header: 'Contacto',
           },
           forms: {
             name: 'Nombre',
@@ -307,6 +307,7 @@ export default i18n
             personal_information: 'Información Personal:',
             message_sent: 'Mensaje Enviado',
             message: 'Mensaje',
+            required_field: 'Campo requerido',
             // CONVERTIRSE EN UN SOCIO
             company: 'Empresa',
             company_role: 'Cargo en la Empresa',

@@ -14,7 +14,7 @@ export default function ButtonDonate(props) {
       onClick={handleNavLinkClick}
       to='/donate'
     >
-      <p className='bold'>
+      <p>
         {t()}
         {t('donate.header')}
         {props ? props.children : ''}

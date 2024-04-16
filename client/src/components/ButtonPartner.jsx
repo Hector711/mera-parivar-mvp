@@ -10,10 +10,10 @@ export default function ButtonPartner() {
     <NavLink
       className='nav-link'
       id='button-partner'
-      to='/getinvolved'
+      to='/become-a-partner'
       onClick={handleNavLinkClick}
     >
-      <p className='bold'>{t('get_involved.button')}</p>
+      <p>{t('get_involved.button')}</p>
     </NavLink>
   );
 }
