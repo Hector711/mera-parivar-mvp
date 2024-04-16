@@ -20,7 +20,7 @@ export default function Donate() {
         </div>
       </WideImage>
       <Section>
-        <div className='flex gap-14'>
+        <div className='flex gap-24'>
           <img
             src={img_donate}
             alt='Image Donate'

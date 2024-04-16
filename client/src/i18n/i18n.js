@@ -157,8 +157,8 @@ export default i18n
             material: 'Material',
             others: 'Others',
             // DONATE
-            select_currency: 'Select Currency',
-            month: 'Would you like to make this donatino every month?',
+            select_currency: 'Select Currency:',
+            month: 'Would you like to make this donatinon every month?',
             yes: 'Yes',
             no: 'No',
             // CONTACT
