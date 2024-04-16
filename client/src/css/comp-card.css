@@ -55,11 +55,9 @@
   border-radius: var(--border-l);
   position: absolute;
   right: 0;
-  background-color: var(--color-main-1);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-1);
   margin: 1rem;
 
 }
@@ -86,13 +84,14 @@
 }
 .blue {
   background-color: var(--color-main-1);
+    color: var(--white-1);
+
 }
 .yellow {
   background-color: var(--color-sec-0);
-}
-.yellow > p {
   color: var(--color-main-0);
 }
+
 .card-header {
   text-align: left;
   margin: 0.5rem 0;
