@@ -1,12 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function ButtonPartner() {
+  const [t] = useTranslation();
   const handleNavLinkClick = () => {
     window.scrollTo(0, 0);
   };
   return (
     <NavLink className='nav-link' id='button-partner' to='/getinvolved' onClick={handleNavLinkClick}>
-      <p className='bold'>BECOME A PARTNER</p>
+      <p className='bold'>{t('get_involved.button')}</p>
     </NavLink>
   );
 }

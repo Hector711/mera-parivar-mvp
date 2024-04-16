@@ -1,21 +1,16 @@
-import Select from 'react-select';
+import { useTranslation } from 'react-i18next';
 import flag_uk from '../assets/flag_uk.svg';
 import flag_spain from '../assets/flag_spain.svg';
-import { useTranslation } from 'react-i18next';
 
-const options = [
-  {
-    value: 'es',
-    label: 'Spanish',
-    code: 'es',
-    flag: { flag_uk },
-    alt: 'Spanish Language',
+const LANGUAGES = [
+  { 
+    label: 'Español',
+    code: 'es', 
+    alt: 'Spanish Language' 
   },
   {
-    value: 'en',
     label: 'English',
     code: 'en',
-    flag: { flag_spain },
     alt: 'English Language',
   },
 ];
@@ -27,13 +22,16 @@ export default function LanguageSelector() {
     i18n.changeLanguage(lang_code);
   };
   return (
-    <>
-      <Select
-        id='language-selector'
-        options={options}
-        // defaultValue={i18n.language}
-        onChange={onChangeLang}
-      />
-    </>
+    <select
+      defaultValue={i18n.language}
+      onChange={onChangeLang}
+      id='language-selector'
+    >
+      {LANGUAGES.map(({ code, label, flag, alt }) => (
+        <option key={code} value={code}>
+          {label}
+        </option>
+      ))}
+    </select>
   );
 }

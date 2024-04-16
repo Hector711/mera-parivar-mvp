@@ -1,4 +1,3 @@
-// import { useTranslation } from 'react-i18next';
 import Card from '@/components/Card';
 import Section from '@/components/Section';
 import ButtonPartner from '../components/ButtonPartner';
@@ -14,55 +13,50 @@ import card_2 from '../assets/card_2.jpeg';
 import card_3 from '../assets/card_3.jpeg';
 import card_4 from '../assets/card_4.jpeg';
 import img_home from '../assets/img_home.jpg';
-
-const caroursel_imgs = [
-  {
-    src: carousel_1,
-    alt: '1',
-  },
-  {
-    src: carousel_2,
-    alt: '2',
-  },
-  {
-    src: carousel_3,
-    alt: '3',
-  },
-  {
-    src: carousel_4,
-    alt: '4',
-  },
-  {
-    src: carousel_5,
-    alt: '5',
-  },
-];
-
-const carousel_quotes = [
-  {
-    quote:
-      'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.',
-  },
-  {
-    quote:
-      '+2.5 million children´s lives positively impacted through education.',
-  },
-  {
-    quote:
-      '+ 12.45 million benefited from surplus vegetable and cooked food distribution',
-  },
-  {
-    quote:
-      '2 million government school children with clean water facilities in rural areas',
-  },
-  {
-    quote:
-      '+ 12.45 million benefited surplus Vegetable & cook Food distribution',
-  },
-];
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
-  // const [t] = useTranslation();
+  const [t] = useTranslation();
+  const caroursel_imgs = [
+    {
+      src: carousel_1,
+      alt: '1',
+    },
+    {
+      src: carousel_2,
+      alt: '2',
+    },
+    {
+      src: carousel_3,
+      alt: '3',
+    },
+    {
+      src: carousel_4,
+      alt: '4',
+    },
+    {
+      src: carousel_5,
+      alt: '5',
+    },
+  ];
+
+  const carousel_quotes = [
+    {
+      quote: t('carousel_quotes.q_1'),
+    },
+    {
+      quote: t('carousel_quotes.q_2'),
+    },
+    {
+      quote: t('carousel_quotes.q_3'),
+    },
+    {
+      quote: t('carousel_quotes.q_4'),
+    },
+    {
+      quote: t('carousel_quotes.q_5'),
+    },
+  ];
   return (
     <>
       <CarouselImages images={caroursel_imgs} />
@@ -72,45 +66,44 @@ export default function Home() {
 
       <Section tail='flex w-full justify-between'>
         <Card
-          header='Education for children'
+          header= {t('cards.c_1.header')}
           img={card_1}
           imgName=''
-          label='Program'
+          label={t('cards.c_1.label')}
           color='blue'
-          hoverCardText='Early literacy is key to educational and economic opportunities in the global economy, but 100s of millions of children are being left behind. They just need the opportunity.'
+          hoverCardText={t('cards.c_1.hover')}
           link='/'
-          cardText='To build a better future for the children of Gurgaon.'
+          cardText={t('cards.c_1.text')}
         />
         <Card
-          header='Women Empowerment'
+          header= {t('cards.c_2.header')}
           img={card_2}
           imgName=''
-          label='Program'
+          label={t('cards.c_2.label')}
           color='blue'
-          hoverCardText='At the Women’s Education Project’s Leadership and Financial Independence program, vibrant, young women from underserved communities are empowered to become self-sufficient, robust, enlightened, and adept leaders, contributors'
+          hoverCardText={t('cards.c_2.hover')}
           link='/'
-          cardText='To help the community girls and young ladies became entrepreneurs.'
+          cardText={t('cards.c_2.text')}
         />
         <Card
-          header='IT WILL BE'
-          img={card_3}
-          imgName=''
-          label='Partner'
-          color='yellow'
-          hoverCardText='Faced with the great challenges posed by technology, respect for digital rights is a key element in the path towards a humanistic digitalization.'
-          link='/'
-          cardText='This Spanish NGO collaborates by helping the digitalization of our educational project.
-          '
+           header= {t('cards.c_3.header')}
+           img={card_3}
+           imgName=''
+           label={t('cards.c_3.label')}
+           color='yellow'
+           hoverCardText={t('cards.c_3.hover')}
+           link='/'
+           cardText={t('cards.c_3.text')}
         />
         <Card
-          header='Central Government'
+          header= {t('cards.c_4.header')}
           img={card_4}
           imgName=''
-          label='Partner'
+          label={t('cards.c_4.label')}
           color='yellow'
-          hoverCardText='Our food bank is backed by the Central Government of India, collaborating to fight hunger. Together, we make it possible to feed those in need. Join us in this mission to provide hope and support to vulnerable communities in India.'
+          hoverCardText={t('cards.c_4.hover')}
           link='/'
-          cardText='We have an agreement with The Central Government of India, which helps in the food bank initiative.'
+          cardText={t('cards.c_4.text')}
         />
       </Section>
       {/* BECOME A PARTNER-HOME SECTION */}
@@ -119,21 +112,11 @@ export default function Home() {
         <div className='w-[50%] flex flex-col gap-4'>
           <ButtonPartner />
           <p className='h-full'>
-            <span >
-              Are you a company committed to eradicating social
-              inequality?
-            </span>
+              {t('home.section_1.text_1')}
             <br />
-            <span>
-              Are you looking for a project that helps Indian boys and
-              girls have a decent life?
-            </span>
+            {t('home.section_1.text_2')}
             <br />
-            Meraparivar develops its projects in the rural community of Gurgaon,
-            south of New Delhi. Our initiatives aim to improve the quality of
-            life of this community, through educational projects for young
-            people and boys and girls. In addition, we offer programs to end
-            hunger in the most humble communities and promote gender equality.
+            {t('home.section_1.text_3')}
           </p>
         </div>
       </Section>

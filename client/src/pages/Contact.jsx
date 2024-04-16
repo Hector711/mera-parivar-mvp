@@ -40,10 +40,10 @@ export default function Contact() {
   }, [messageSent]);
 
   const subjectTypes = [
-    { IDSubject_type: 1, subject_name: 'Dudas y sugerencias' },
-    { IDSubject_type: 2, subject_name: 'Proyectos' },
-    { IDSubject_type: 3, subject_name: 'Donaciones particulares' },
-    { IDSubject_type: 4, subject_name: 'Acuerdos con empresas' },
+    { IDSubject_type: 1, subject_name: t('forms.questions') },
+    { IDSubject_type: 2, subject_name: t('forms.projects') },
+    { IDSubject_type: 3, subject_name: t('forms.individual') },
+    { IDSubject_type: 4, subject_name: t('forms.partner_agreements') },
   ];
 
   return (
@@ -56,20 +56,20 @@ export default function Contact() {
             id='form-contact'
             onSubmit={handleSubmit(onSubmit)}
           >
-              <p className='bold' id='personal-information'>Personal Information:</p>
+              <p className='bold' id='personal-information'>{t('forms.personal_information')}</p>
               <input
                 type='text'
                 id='contact_name'
                 {...register('contact_name')}
-                placeholder='Name'
+                placeholder={t('forms.name')}
                 />
               <input
                 type='email'
                 id='contact_email'
                 {...register('contact_email')}
-                placeholder='Email'
+                placeholder={t('forms.email')}
                 />
-              <p className='bold' id='purpose-consultation'>Purpose of the consultation:</p>
+              <p className='bold' id='purpose-consultation'>{t('forms.purpose')}</p>
               <select
                 type='number'
                 id='IDSubject_type'
@@ -82,8 +82,8 @@ export default function Contact() {
                   </option>
                 ))}
               </select>
-              <textarea id='Text' {...register('Text')} placeholder='Message' />
-              <ButtonRegular id='send'>SEND</ButtonRegular>
+              <textarea id='Text' {...register('Text')}  placeholder={t('forms.message')} />
+              <ButtonRegular id='send'>{t('forms.send')}</ButtonRegular>
                 
               {/* <button type='submit' id='send'>
                 Send

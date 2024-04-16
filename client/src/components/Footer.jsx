@@ -1,4 +1,5 @@
 import Logo from './Logo';
+import { useTranslation } from 'react-i18next';
 import rrss_facebook from '../assets/rrss_facebook.svg';
 import rrss_instagram from '../assets/rrss_instagram.svg';
 import rrss_x from '../assets/rrss_x.svg';
@@ -11,12 +12,13 @@ import SocialLink from './SocialLink';
 import Section from './Section';
 
 export default function Footer() {
+  const [t] = useTranslation();
   return (
     <footer>
       <Section tail='flex w-full justify-between items-center'>
         <Logo />
         <div>
-          <p className='caption text-white'>Location</p>
+          <p className='caption text-white'>{t('footer.location')}</p>
           <p className='w-[400px] text-white caption'>
             Bihari Sabji Mandi near Raj boutique Rajiv Nagar Gurgaon Haryana - India
           </p>

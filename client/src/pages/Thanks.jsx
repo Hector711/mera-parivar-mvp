@@ -8,32 +8,34 @@ import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import card_3 from '../assets/card_3.jpeg';
 import card_4 from '../assets/card_4.jpeg';
+import { useTranslation } from 'react-i18next';
 
 const carousel_quotes = [
   {
     quote:
-      'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.',
+    'Since 2014, our interventions with stakeholders and key allies in local communities have reached 7 states and 18 districts throughout India.',
   },
   {
     quote:
-      '+2.5 million children´s lives positively impacted through education.',
+    '+2.5 million children´s lives positively impacted through education.',
   },
   {
     quote:
-      '+ 12.45 million benefited from surplus vegetable and cooked food distribution',
+    '+ 12.45 million benefited from surplus vegetable and cooked food distribution',
   },
   {
     quote:
-      '2 million government school children with clean water facilities in rural areas',
+    '2 million government school children with clean water facilities in rural areas',
   },
   {
     quote:
-      '+ 12.45 million benefited surplus Vegetable & cook Food distribution',
+    '+ 12.45 million benefited surplus Vegetable & cook Food distribution',
   },
 ];
 
 
 export default function Thanks() {
+  const [t] = useTranslation();
   return (
     <>
       <WideImage img={img_wide_thanks} alt=''>

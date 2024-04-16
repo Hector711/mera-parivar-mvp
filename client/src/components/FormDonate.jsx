@@ -2,8 +2,10 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { api } from '../service/api';
 import ButtonRegular from './ButtonRegular';
+import { useTranslation } from 'react-i18next';
 
 export default function FormDonate() {
+  const [t] = useTranslation();
   const {
     register,
     handleSubmit,
@@ -32,40 +34,42 @@ export default function FormDonate() {
     <div className='w-[852px] '>
       <form id='donate-form' onSubmit={handleSubmit(onSubmit)}>
         <p className='bold' id='personal-information'>
-          Personal Information:
+          {t('forms.personal_information')}
         </p>
         <input
           type='text'
           {...register('name')}
-          placeholder='Name'
+          placeholder={t('forms.name')}
           id='donate-name'
         />
         <input
           type='email'
           {...register('email')}
-          placeholder='Email'
+          placeholder={t('forms.email')}
           id='donate-email'
         />
         <p className='bold' id='select-currency'>
-          Select Currency:
+          {t('forms.select_currency')}
         </p>
         <select {...register('currency')} id='currency'>
-          <option value='' >- Select currency -</option>
+          <option value=''>-- {t('forms.select_currency')} --</option>
           <option value='USD'>Dollar - &#36;</option>
           <option value='EUR'>Euro - &#8364;</option>
           <option value='INR'>Rupee - &#8377;</option>
           <option value='GBP'>Pound - &#163;</option>
         </select>
         <p className='bold' id='every-month'>
-          Would you like to make this donation every month?
+        {t('forms.month')}
         </p>
         <select {...register('Subscription_status')} id='subscription'>
-          <option value=''  >- Yes / No -</option>
-          <option value='true'>Yes</option>
-          <option value='false'>No</option>
+          <option value=''>
+            -- {t('forms.yes')} / {t('forms.no')} --
+          </option>
+          <option value='true'>{t('forms.yes')}</option>
+          <option value='false'>{t('forms.no')}</option>
         </select>
 
-        <ButtonRegular>DONATE</ButtonRegular>
+        <ButtonRegular>{t('donate.header')}</ButtonRegular>
       </form>
     </div>
   );
