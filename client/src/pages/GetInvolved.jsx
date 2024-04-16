@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import CarouselImages from '../components/CarouselImages';
-import img_become from '../assets/img_become.jpg';
+import img_logos from '../assets/img_logos.png';
 import carousel_1 from '../assets/carousel_1.jpg';
 import carousel_2 from '../assets/carousel_2.jpg';
 import carousel_3 from '../assets/carousel_3.jpg';
@@ -136,7 +136,7 @@ export default function GetInvolved() {
       {/*  CARDS AND IMAGE */}
       <Section tail='flex justify-between gap-20'>
         <img
-          src={img_become}
+          src={img_logos}
           alt='image logos'
           className='w-[588px] h-[434px]'
         />
@@ -209,7 +209,7 @@ export default function GetInvolved() {
             id='IDdonation_type'
             {...register('IDdonation_type')}
           >
-            <option value=''>{t('forms.company_role')} </option>
+            <option value=''>-- {t('forms.donation_type')} --</option>
 
             {donationTypes.map(type => (
               <option key={type.IDdonation_type} value={type.IDdonation_type}>
