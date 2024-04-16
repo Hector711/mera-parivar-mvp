@@ -72,7 +72,7 @@ export default function Home() {
           label={t('cards.c_1.label')}
           color='blue'
           hoverCardText={t('cards.c_1.hover')}
-          link='/'
+          link='/education-for-children'
           cardText={t('cards.c_1.text')}
         />
         <Card
