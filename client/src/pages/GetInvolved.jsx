@@ -91,33 +91,18 @@ export default function GetInvolved() {
       <CarouselImages images={caroursel_imgs} />
       {/* BECOME A PARTNER */}
       <Section
-        tail='flex flex-col justify-center items-center gap-7'
+        tail='flex flex-col justify-center items-center gap-10'
         id='partner-section'
       >
         <div className='flex flex-col gap-6 justify-center items-center'>
           <h1 className='small'>BECOME A PARTNER</h1>
-          {/* ORIGINAL */}
-          {/* <p>Are you a company committed to eradicating social inequality?</p>
-        <p>
-        Are you looking for a project that helps Indian boys and girls have a
-        decent life?
-      </p> */}
-          {/* PROPUESTA 1 */}
-          {/* <p className='bold flex justify-center m-1'>
-          Are you a company committed to eradicating social inequality?
-          </p>
-          <p className='bold flex justify-center mb-5'>
-          Are you looking for a project that helps Indian boys and girls have a
-          decent life?
-        </p> */}
-          {/* PROPUESTA 2 */}
-          <h3 className='flex justify-center '>
+          <p >
             Are you a company committed to eradicating social inequality?
-          </h3>
-          <h3 className='flex justify-center text-center'>
+          </p>
+          <p >
             Are you looking for a project that helps Indian boys and girls have
             a decent life?
-          </h3>
+          </p>
           <p>
             <span className='bold'>Meraparivar</span> develops its projects in
             the rural community of <span className='bold'> Gurgaon</span>, south

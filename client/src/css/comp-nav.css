@@ -51,6 +51,9 @@ nav {
   padding: 0 15px;
   gap: 8px;
 }
+.active {
+  font-weight: 400;
+}
 #nav-resposive {
   display: flex;
 }

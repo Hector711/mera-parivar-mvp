@@ -119,13 +119,13 @@ export default function Home() {
         <div className='w-[50%] flex flex-col gap-4'>
           <ButtonPartner />
           <p className='h-full'>
-            <span className='bold'>
-              &#8226; Are you a company committed to eradicating social
+            <span >
+              Are you a company committed to eradicating social
               inequality?
             </span>
             <br />
-            <span className='bold'>
-              &#8226; Are you looking for a project that helps Indian boys and
+            <span>
+              Are you looking for a project that helps Indian boys and
               girls have a decent life?
             </span>
             <br />
