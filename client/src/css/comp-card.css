@@ -49,6 +49,20 @@
   width: 132px;
   height: 35px;
 }
+#label-over {
+  width: 132px;
+  height: 35px;
+  border-radius: var(--border-l);
+  position: absolute;
+  right: 0;
+  background-color: var(--color-main-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-1);
+  margin: 1rem;
+
+}
 #label > p {
   display: flex;
   justify-content: center;

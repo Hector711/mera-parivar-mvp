@@ -9,6 +9,7 @@ export default function Card(props) {
   return (
     <div className='card'>
       <div className='container-img-hover shadow'>
+        <div id='label-over'color={props.color}>{props.label}</div>
         <img src={props.img} alt={props.imgName} className='card-img' />
         <div className='hover-card'>
           <Label color={props.color}>{props.label}</Label>
