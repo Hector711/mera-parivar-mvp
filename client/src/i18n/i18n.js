@@ -146,10 +146,11 @@ export default i18n
             email: 'Email',
             send: 'SEND',
             personal_information: 'Personal Information:',
+            message_sent: 'Message sent',
+            message: 'Message',
             // BECOME A PARTNER
             company: 'Company',
             company_role: 'Company Role',
-            message: 'Message',
             donation_type: 'Select donation type',
             money: 'Money',
             food: 'Food',
@@ -167,6 +168,7 @@ export default i18n
             projects:'Projects',
             individual: 'Individual donations',
             partner_agreements: 'Partner agreements',
+          
           },
           footer: {
             location: 'Location'
@@ -305,10 +307,11 @@ export default i18n
             email: 'Correo electrónico',
             send: 'ENVIAR',
             personal_information: 'Información Personal:',
+            message_sent: 'Mensaje Enviado',
+            message: 'Mensaje',
             // CONVERTIRSE EN UN SOCIO
             company: 'Empresa',
             company_role: 'Cargo en la Empresa',
-            message: 'Mensaje',
             donation_type: 'Seleccionar tipo de donación',
             money: 'Dinero',
             food: 'Alimentos',
