@@ -20,7 +20,8 @@ export default function Footer() {
         <div>
           <p className='caption text-white'>{t('footer.location')}</p>
           <p className='w-[400px] text-white caption'>
-            Bihari Sabji Mandi near Raj boutique Rajiv Nagar Gurgaon Haryana - India
+            Bihari Sabji Mandi near Raj boutique Rajiv Nagar Gurgaon Haryana -
+            India
           </p>
         </div>
         <ButtonDonate />

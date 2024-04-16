@@ -9,23 +9,23 @@ import { NavLink } from 'react-router-dom';
 export default function Navbar() {
   const [t] = useTranslation();
   const aboutUsLinks = [
-    { header: t('about_us.dd_1'), link: '/' },
-    { header: t('about_us.dd_2'), link: '/' },
-    { header: t('about_us.dd_3'), link: '/' },
+    { header: t('about_us.dd_1') },
+    { header: t('about_us.dd_2') },
+    { header: t('about_us.dd_3') },
   ];
   const whatWeDoLinks = [
-    { header: t('what_we_do.dd_1'), link: '/whatwedo' },
-    { header: t('what_we_do.dd_2'), link: '/whatwedo' },
-    { header: t('what_we_do.dd_3'), link: '/whatwedo' },
-    { header: t('what_we_do.dd_4'), link: '/whatwedo' },
-    { header: t('what_we_do.dd_5'), link: '/whatwedo' },
-    { header: t('what_we_do.dd_6'), link: '/whatwedo' },
-    { header: t('what_we_do.dd_7'), link: '/whatwedo' },
+    { header: t('what_we_do.dd_1'), link: '/education-for-children' },
+    { header: t('what_we_do.dd_2') },
+    { header: t('what_we_do.dd_3') },
+    { header: t('what_we_do.dd_4') },
+    { header: t('what_we_do.dd_5') },
+    { header: t('what_we_do.dd_6') },
+    { header: t('what_we_do.dd_7') },
   ];
   const getInvolvedLinks = [
-    { header: t('get_involved.dd_1'), link: '/getinvolved' },
-    { header: t('get_involved.dd_2'), link: '/getinvolved' },
-    { header: t('get_involved.dd_3'), link: '/getinvolved' },
+    { header: t('get_involved.dd_1') },
+    { header: t('get_involved.dd_2'), link: '/become-a-partner' },
+    { header: t('get_involved.dd_3') },
   ];
   return (
     <nav>
@@ -33,19 +33,10 @@ export default function Navbar() {
         <div className='nav-containers'>
           <Logo />
           <div id='nav-resposive'>
-            <Dropdown
-              header={t('about_us.header')}
-              to='/'
-              pages={aboutUsLinks}
-            />
-            <Dropdown
-              header={t('what_we_do.header')}
-              to='/whatwedo'
-              pages={whatWeDoLinks}
-            />
+            <Dropdown header={t('about_us.header')} pages={aboutUsLinks} />
+            <Dropdown header={t('what_we_do.header')} pages={whatWeDoLinks} />
             <Dropdown
               header={t('get_involved.header')}
-              to='/getinvolved'
               pages={getInvolvedLinks}
             />
           </div>

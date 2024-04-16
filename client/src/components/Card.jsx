@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
-import Label from './Label'
+import Label from './Label';
 
 export default function Card(props) {
   const [t] = useTranslation();

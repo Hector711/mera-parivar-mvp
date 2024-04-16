@@ -5,7 +5,6 @@ import img_donate from '../assets/img_donate.jpg';
 import img_wide from '../assets/img_wide.jpg';
 import WideImage from '../components/WideImage';
 
-
 export default function Donate() {
   const [t] = useTranslation();
   return (

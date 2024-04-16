@@ -16,8 +16,8 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/whatwedo' element={<WhatWeDo />} />
-          <Route path='/getinvolved' element={<GetInvolved />} />
+          <Route path='/education-for-children' element={<WhatWeDo />} />
+          <Route path='/become-a-partner' element={<GetInvolved />} />
           <Route path='/donate' element={<Donate />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/thanks' element={<Thanks />} />

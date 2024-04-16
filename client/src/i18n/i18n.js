@@ -165,14 +165,13 @@ export default i18n
             purpose: 'Consultation purpose',
             subject: 'Subject',
             questions: 'Questions and suggestions',
-            projects:'Projects',
+            projects: 'Projects',
             individual: 'Individual donations',
             partner_agreements: 'Partner agreements',
-          
           },
           footer: {
-            location: 'Location'
-          }
+            location: 'Location',
+          },
         },
       },
 
@@ -292,7 +291,6 @@ export default i18n
                 p: 'uno de los principales objetivos de Meraparivar es aliviar el hambre en las zonas rurales de India. Si deseas establecer un acuerdo para suministrar alimentos a las áreas más humildes, es una buena manera de colaborar.',
               },
             },
-            
           },
           donate: {
             header: 'DONA',
@@ -331,8 +329,8 @@ export default i18n
             partner_agreements: 'Acuerdos de Colaboración',
           },
           footer: {
-            location: 'Localización'
-          }
+            location: 'Localización',
+          },
         },
       },
     },

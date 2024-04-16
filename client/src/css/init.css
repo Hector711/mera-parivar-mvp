@@ -42,7 +42,6 @@ h2 {
   font-weight: -moz-bold;
   font-weight: -ms-bold; 
   font-weight: -o-bold;  */
-
 }
 /* Sin prefijos */
 .mi-texto {
@@ -57,9 +56,6 @@ h2 {
   font-weight: -ms-bold; /* Internet Explorer */
   font-weight: -o-bold; /* Opera */
 }
-
-
-
 
 /* EXTRA */
 h3 {
@@ -108,5 +104,3 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-

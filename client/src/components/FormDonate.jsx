@@ -59,7 +59,7 @@ export default function FormDonate() {
           <option value='GBP'>Pound - &#163;</option>
         </select>
         <p className='bold' id='every-month'>
-        {t('forms.month')}
+          {t('forms.month')}
         </p>
         <select {...register('Subscription_status')} id='subscription'>
           <option value=''>

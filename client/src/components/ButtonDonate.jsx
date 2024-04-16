@@ -8,9 +8,17 @@ export default function ButtonDonate(props) {
     window.scrollTo(0, 0);
   };
   return (
-    <NavLink className='nav-link' id='button-donate' onClick={handleNavLinkClick} to='/donate'>
-      <p className='bold'>{t()}
-        {t('donate.header')}{props ? props.children : ''}</p>
+    <NavLink
+      className='nav-link'
+      id='button-donate'
+      onClick={handleNavLinkClick}
+      to='/donate'
+    >
+      <p className='bold'>
+        {t()}
+        {t('donate.header')}
+        {props ? props.children : ''}
+      </p>
     </NavLink>
   );
 }
