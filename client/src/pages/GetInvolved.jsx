@@ -201,7 +201,7 @@ export default function GetInvolved() {
             id='IDdonation_type'
             {...register('IDdonation_type')}
           >
-            <option value=''>{t('forms.company_role')} </option>
+            <option value=''>-- {t('forms.donation_type')} --</option>
 
             {donationTypes.map(type => (
               <option key={type.IDdonation_type} value={type.IDdonation_type}>
