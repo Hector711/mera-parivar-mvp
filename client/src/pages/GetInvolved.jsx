@@ -129,7 +129,7 @@ export default function GetInvolved() {
         </div>
         {/* <ButtonPartner /> */}
         <button id='button-partner' onClick={scrollToSection}>
-          <p className='bold'>{t('get_involved.button')}</p>
+          <p>{t('get_involved.button')}</p>
         </button>
       </Section>
 
@@ -148,7 +148,7 @@ export default function GetInvolved() {
             label={t('cards.c_1.label')}
             color='blue'
             hoverCardText={t('cards.c_1.hover')}
-            link='/'
+            link='/education-for-children'
             cardText={t('cards.c_1.text')}
           />
           <Card
@@ -174,27 +174,35 @@ export default function GetInvolved() {
           <input
             type='text'
             id='name'
-            {...register('name')}
+            {...register('name', { required: 'Required field' })}
+            aria-invalid={errors.name ? 'true' : 'false'}
             placeholder={t('forms.name')}
           />
+          {errors.name && <p>{errors.name.message}</p>}
           <input
             type='email'
             id='email'
-            {...register('email')}
+            {...register('email', { required: 'Required field' })}
+            aria-invalid={errors.email ? 'true' : 'false'}
             placeholder={t('forms.email')}
           />
+          {errors.email && <p>{errors.email.message}</p>}
           <input
             type='text'
             id='company_name'
-            {...register('company_name')}
+            {...register('company_name', { required: 'Required field' })}
+            aria-invalid={errors.company_name ? 'true' : 'false'}
             placeholder={t('forms.company')}
           />
+          {errors.company_name && <p>{errors.company_name.message}</p>}
           <input
             type='text'
             id='company_role'
-            {...register('company_role')}
+            {...register('company_role', { required: 'Required field' })}
+            aria-invalid={errors.company_role ? 'true' : 'false'}
             placeholder={t('forms.company_role')}
           />
+          {errors.company_role && <p>{errors.company_role.message}</p>}
 
           <select
             type='number'
@@ -213,9 +221,11 @@ export default function GetInvolved() {
 
           <textarea
             id='message'
-            {...register('message')}
+            {...register('message', { required: 'Required field' })}
+            aria-invalid={errors.message ? 'true' : 'false'}
             placeholder={t('forms.message')}
           />
+          {errors.message && <p>{errors.message.message}</p>}
 
           <button type='submit' className='button-send' id='send'>
             Send

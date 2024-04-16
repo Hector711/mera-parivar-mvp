@@ -38,16 +38,20 @@ export default function FormDonate() {
         </p>
         <input
           type='text'
-          {...register('name')}
+          {...register('name', { required: 'Required field' })}
+          aria-invalid={errors.name ? 'true' : 'false'}
           placeholder={t('forms.name')}
           id='donate-name'
         />
+        {errors.name && <p className='error'>{errors.name.message}</p>}
         <input
           type='email'
-          {...register('email')}
+          {...register('email', { required: 'Required field' })}
+          aria-invalid={errors.email ? 'true' : 'false'}
           placeholder={t('forms.email')}
           id='donate-email'
         />
+        {errors.email && <p className='error'>{errors.email.message}</p>}
         <p className='bold' id='select-currency'>
           {t('forms.select_currency')}
         </p>
