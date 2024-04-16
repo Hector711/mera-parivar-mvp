@@ -42,7 +42,7 @@ export default function Footer() {
             <img src={rrss_linkedin} className='img-rrss' alt='' />
           </SocialLink>
 
-          <NavLink className='nav-link' id='contact-footer' to='/contact'>
+          <NavLink className='nav-link yellow-text' id='contact-footer' to='/contact'>
             {t('contact_us.header')}
           </NavLink>
         </div>

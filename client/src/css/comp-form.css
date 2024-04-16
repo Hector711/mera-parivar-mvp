@@ -15,6 +15,14 @@ form {
   height: 100%;
   /* border: 2px solid var(--color-main-1); */
 }
+.error {
+  color: var(--color-red);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 15px;
+}
+
 
 /* GET INVOLVED */
 /* =============== */
@@ -105,20 +113,16 @@ form {
 #form-contact {
   display: grid;
   grid-template-columns: 50% 10% 40%;
-  grid-template-rows: 26px 56px 26px 56px 190px 40px 40px;
+  grid-template-rows: 56px 56px 56px 272px 36px ;
   width: 526px;
   height: 500px;
 }
-#form-contact > #personal-information {
-  grid-column: 0 / 2;
-  grid-row: 1 / 2;
-}
 #form-contact > #contact_name {
   grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
 }
 #form-contact > #contact_email {
-  grid-column: 2 / 4;
+  grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 #form-contact > #purpose-consultation {
@@ -127,22 +131,35 @@ form {
 }
 #form-contact > #IDSubject_type {
   grid-column: 1 / 2;
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
 }
 #form-contact > textarea {
   grid-column: 1 / 4;
-  grid-row: 5 / 6;
+  grid-row: 4/ 5;
 }
 #form-contact > button {
   grid-column: 3 / 4;
-  grid-row: 6 / 7;
+  grid-row: 5 / 6;
 }
 #message-sent {
-  grid-column: 3/4;
-  grid-row: 7/8;
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
   justify-self: end;
   width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#error-name {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+#error-email {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+#error-message {
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
 }

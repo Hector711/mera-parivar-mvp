@@ -64,7 +64,9 @@ export default function Contact() {
               placeholder={t('forms.name')}
             />
             {errors.contact_name && (
-              <p role='alert'>{errors.contact_name.message}</p>
+              <p role='alert' className='error' id='error-name'>
+                {errors.contact_name.message}
+              </p>
             )}
             <input
               type='email'
@@ -74,7 +76,9 @@ export default function Contact() {
               placeholder={t('forms.email')}
             />
             {errors.contact_email && (
-              <p role='alert'>{errors.contact_email.message}</p>
+              <p role='alert' className='error' id='error-email'>
+                {errors.contact_email.message}
+              </p>
             )}
 
             <select
@@ -82,6 +86,7 @@ export default function Contact() {
               id='IDSubject_type'
               {...register('IDSubject_type')}
             >
+              <option value=''>-- {t('forms.subject')} --</option>
               {subjectTypes.map(type => (
                 <option key={type.IDSubject_type} value={type.IDSubject_type}>
                   {type.subject_name}{' '}
@@ -95,7 +100,11 @@ export default function Contact() {
               aria-invalid={errors.Text ? 'true' : 'false'}
               placeholder={t('forms.message')}
             />
-            {errors.Text && <p role='alert'>{errors.Text.message}</p>}
+            {errors.Text && (
+              <p role='alert' className='error' id='error-message'>
+                {errors.Text.message}
+              </p>
+            )}
             <ButtonRegular id='send'>{t('forms.send')}</ButtonRegular>
 
             {/* <button type='submit' id='send'>
