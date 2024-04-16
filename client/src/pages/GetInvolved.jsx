@@ -94,8 +94,8 @@ export default function GetInvolved() {
         tail='flex flex-col justify-center items-center gap-10'
         id='partner-section'
       >
-        <div className='flex flex-col gap-6 justify-center items-center'>
-          <h1 className='small'>{t('get_involved.body.title')}</h1>
+        <div className='flex flex-col gap-5 justify-center items-center'>
+          <h1 className='small mb-5'>{t('get_involved.body.title')}</h1>
           <p>{t('get_involved.body.text_1')}</p>
           <p>{t('get_involved.body.text_2')}</p>
           <p>
@@ -127,14 +127,13 @@ export default function GetInvolved() {
             </li>
           </ul>
         </div>
-        {/* <ButtonPartner /> */}
-        <button id='button-partner' onClick={scrollToSection}>
+        <button className='m-4' id='button-partner' onClick={scrollToSection}>
           <p>{t('get_involved.button')}</p>
         </button>
       </Section>
 
       {/*  CARDS AND IMAGE */}
-      <Section tail='flex justify-between gap-20'>
+      <Section tail='flex justify-between gap-14'>
         <img
           src={img_logos}
           alt='image logos'
@@ -165,7 +164,7 @@ export default function GetInvolved() {
       </Section>
 
       {/* FORMULARIO BECOME A PARTNER */}
-      <Section tail='flex justify-center w-full' id='form-get'>
+      <Section tail='flex justify-center w-full pt-10' id='form-get'>
         <form
           action='submit'
           id='form-get-involved'
@@ -178,7 +177,7 @@ export default function GetInvolved() {
             aria-invalid={errors.name ? 'true' : 'false'}
             placeholder={t('forms.name')}
           />
-          {errors.name && <p>{errors.name.message}</p>}
+          {errors.name && <p className='error' id='error-name'>{errors.name.message}</p>}
           <input
             type='email'
             id='email'
@@ -186,7 +185,7 @@ export default function GetInvolved() {
             aria-invalid={errors.email ? 'true' : 'false'}
             placeholder={t('forms.email')}
           />
-          {errors.email && <p>{errors.email.message}</p>}
+          {errors.email && <p className='error' id='error-email'>{errors.email.message}</p>}
           <input
             type='text'
             id='company_name'
@@ -194,7 +193,7 @@ export default function GetInvolved() {
             aria-invalid={errors.company_name ? 'true' : 'false'}
             placeholder={t('forms.company')}
           />
-          {errors.company_name && <p>{errors.company_name.message}</p>}
+          {errors.company_name && <p className='error' id='error-company-name'>{errors.company_name.message}</p>}
           <input
             type='text'
             id='company_role'
@@ -202,7 +201,7 @@ export default function GetInvolved() {
             aria-invalid={errors.company_role ? 'true' : 'false'}
             placeholder={t('forms.company_role')}
           />
-          {errors.company_role && <p>{errors.company_role.message}</p>}
+          {errors.company_role && <p className='error' id='error-company-role'>{errors.company_role.message}</p>}
 
           <select
             type='number'
@@ -225,12 +224,12 @@ export default function GetInvolved() {
             aria-invalid={errors.message ? 'true' : 'false'}
             placeholder={t('forms.message')}
           />
-          {errors.message && <p>{errors.message.message}</p>}
+          {errors.message && <p className='error' id='error-name'>{errors.message.message}</p>}
 
           <button type='submit' className='button-send' id='send'>
-            Send
+          {t('forms.send')}
           </button>
-          {messageSent && <p>Message sent</p>}
+          {messageSent && <p id='message-sent'>{t('forms.message_sent')}</p>}
         </form>
       </Section>
     </>

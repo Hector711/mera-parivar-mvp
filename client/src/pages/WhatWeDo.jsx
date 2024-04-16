@@ -38,7 +38,7 @@ export default function WhatWeDo() {
       <CarouselImages images={caroursel_imgs} />
       {/* EDUCATION FOR CHILDREN PLANS */}
       <Section tail='flex flex-col gap-4' id='education-section'>
-        <h1 className='small'>{t('what_we_do.body.title')}</h1>
+        <h1 className='small mb-5'>{t('what_we_do.body.title')}</h1>
         <p>{t('what_we_do.body.text_1')} </p>
         <ul>
           <p className='bold'>{t('what_we_do.body.text_2')}</p>
@@ -53,7 +53,9 @@ export default function WhatWeDo() {
           <p className='bold'>{t('what_we_do.body.text_7')}</p>
           <li>&#8226; {t('what_we_do.body.text_8')}</li>
         </ul>
-        <p>{t('what_we_do.body.text_9')}</p>
+        <p className='bold'>{t('what_we_do.body.text_9')}</p>
+          <br />
+
         <div className='flex justify-center gap-20'>
           <ButtonDonate> {t('donate.button')}</ButtonDonate>
           <ButtonPartner />

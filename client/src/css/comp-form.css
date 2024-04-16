@@ -23,37 +23,63 @@ form {
   padding: 0 15px;
 }
 
+#form-get-involved > .error {
+  align-self: flex-end;
+}
 
 /* GET INVOLVED */
 /* =============== */
 #form-get-involved {
   display: grid;
-  grid-template-columns: 10% 10% 10% 10% 20% 10% 20%;
+  grid-template-columns: 20% 20% 60%;
+  grid-template-rows: 56px 16px 56px 16px 56px 24px 30px;
   width: 985px;
   height: 300px;
-  gap: 1rem;
+  /* gap: 1rem; */
 }
-#form-get-involved > #name,
-#company_name {
-  grid-column: 1 / 3;
+form * {
+  /* border: 1px solid black; */
 }
-#form-get-involved > #email,
-#company_role {
-  grid-column: 3 / 5;
+#form-get-involved > #name {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+#form-get-involved > #email {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+#form-get-involved > #company_name {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+#form-get-involved > #company_role {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
 }
 #form-get-involved > #IDdonation_type {
-  grid-column: 2 / 4;
-  width: 120%;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+  width: 70%;
+  justify-self: center;
 }
 
 #form-get-involved > #message {
-  grid-column: 5 / 8;
-  grid-row: 1 / 4;
+  grid-column: 3 / 4;
+  grid-row: 1 / 6;
 }
 #form-get-involved > #send {
-  grid-column: 7/8;
+  grid-column: 3 / 4;
   justify-self: end;
 }
+#form-get-involved > #message-sent {
+  grid-column: 3 / 4;
+  grid-row: 7/8;
+  justify-self: end;
+  height: 70px;
+  width: 154px;
+
+}
+
 .button-send {
   background-color: var(--color-main-0);
   color: var(--white-1);
@@ -66,17 +92,40 @@ form {
   border: 1px;
 }
 
+#form-get-involved > #error-name {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#form-get-involved > #error-email {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+#form-get-involved > #error-company-name {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+#form-get-involved > #error-company-role {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+
+
+
+
+
 /* FORM DONATE */
 /* =============== */
 #donate-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 32px 56px 16px 32px 56px 16px 32px 56px;
+  grid-template-rows: 16px 56px 16px 24px 56px 16px 24px 56px;
 }
 
 #donate-form > #personal-information {
   grid-column: 1 / 2;
   grid-row: 1/2;
+  align-self: flex-end;
 }
 #donate-name {
   grid-column: 1 / 2;
@@ -89,6 +138,7 @@ form {
 #select-currency {
   grid-column: 1 / 3;
   grid-row: 4 / 5;
+  align-self: flex-end;
 }
 #currency {
   grid-column: 1 / 2;
@@ -97,6 +147,7 @@ form {
 #every-month {
   grid-column: 1 / 3;
   grid-row: 7 / 8;
+  align-self: flex-end;
 }
 #subscription {
   grid-column: 1 / 2;
