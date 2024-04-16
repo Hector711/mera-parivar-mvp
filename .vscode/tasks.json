@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0", // esto es una cosa interna de vscode, me imagino que se refiere a la version de vscode 
+  
+  // TAREAS A EJECUTAR
+  "tasks": [
+
+    // // EJECUCIÓN DEL BACKEND "npm run dev"
+    // {
+    //   "label": "Start Backend",
+    //   "type": "npm",
+    //   "script": "dev",
+    //   "runOptions": {
+    //     // cada vez que se abre el visual estudio code
+    //     "runOn": "folderOpen"
+    //   }
+    // },
+
+
+    // EJECUCIÓN DEL CLIENTE "cd client && npm run dev"
+    {
+      "label": "Start Client",
+      "type": "shell",
+      "command": "cd client && npm run dev",
+      "runOptions": {
+        // cada vez que se abre el visual estudio code
+        "runOn": "folderOpen"
+      }
+    }
+
+  ]
+}

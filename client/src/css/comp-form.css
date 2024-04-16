@@ -1,0 +1,163 @@
+form input, select, button, textarea {
+  border: 2px solid var(--color-main-1);
+  border-radius: var(--border-s);
+  background-color: var(--white-1);
+  padding: 0 20px;
+}
+form textarea {
+  padding: 20px 20px;
+}
+form {
+  gap: .5rem;
+  height: 100%;
+  /* border: 2px solid var(--color-main-1); */
+}
+
+
+
+/* GET INVOLVED */
+/* =============== */
+#form-get-involved {
+  display: grid;
+  grid-template-columns: 10% 10% 10% 10% 20% 10% 20%;
+  width: 985px;
+  height: 300px;
+  gap: 1rem;
+}
+#form-get-involved > #name,
+#company_name {
+  grid-column: 1 / 3;
+}
+#form-get-involved > #email,
+#company_role {
+  grid-column: 3 / 5;
+}
+#form-get-involved > #IDdonation_type {
+  grid-column: 2 / 4;
+  width: 120%;
+}
+
+#form-get-involved > #message {
+  grid-column: 5 / 8;
+  grid-row: 1 / 4;
+}
+#form-get-involved > #send {
+  grid-column: 7/8;
+  justify-self: end;
+}
+.button-send {
+  background-color: var(--color-main-0);
+  color: var(--white-1);
+  width: 154px;
+  height: 40px;
+  border-radius: var(--border-l);
+}
+.button-send:hover {
+  background-color: var(--color-main-1);
+  border: 1px;
+}
+
+
+
+/* FORM DONATE */
+/* =============== */
+#donate-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 26px 58px 26px 58px 26px 58px ;
+  /* gap: 1rem; */
+}
+
+#donate-form > #personal-information {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+}
+#donate-name {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#donate-email {
+  grid-column: 2 / 3;
+  grid-row: 2/3;
+}
+#select-currency {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+}
+#currency {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+#every-month {
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+#subscription {
+  grid-column: 1 / 2;
+  grid-row: 6 / 7;
+}
+#donate-form > button {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+}
+
+
+
+
+
+
+
+
+
+/* FORM CONTACT  */
+/* =============== */
+#form-contact {
+  display: grid;
+  grid-template-columns: 50% 10% 40% ;
+  grid-template-rows: 26px 56px 26px 56px 190px 40px 40px;
+  width: 526px;
+  height: 500px;
+}
+#form-contact > #personal-information {
+  grid-column: 0 / 2;
+  grid-row: 1 / 2;
+
+}
+#form-contact > #contact_name {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+#form-contact > #contact_email {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+#form-contact > #purpose-consultation {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+#form-contact > #IDSubject_type {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+#form-contact > textarea {
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
+
+}
+#form-contact > button {
+  grid-column: 3 / 4;
+  grid-row: 6 / 7;
+}
+#message-sent {
+  grid-column: 3/4;
+  grid-row: 7/8;
+  justify-self: end;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+

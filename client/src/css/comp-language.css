@@ -1,0 +1,8 @@
+#language-selector {
+  border-radius: var(--border-s);
+  padding:  3px 10px;
+  left: 2px;
+  border: 1px solid #ccc;
+  background-color: var(--white-1); 
+}
+

@@ -1,0 +1,48 @@
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* ========= QUOTES ========= */
+#swiper-quotes {
+  width: 60%;
+  height: 70px;
+}
+
+/* ========= IMAGES ========= */
+#swiper-images {
+  width: 100%;
+  height: 400px;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 968px) {
+  .swiper-slide {
+    padding: 0;
+    height: 80%;
+  }
+  
+
+  .swiper-slide img {
+    
+    height: 70%;
+    
+  }
+
+  #swiper-quotes {
+    width: 90%;
+    height: 70px;
+  }
+}
