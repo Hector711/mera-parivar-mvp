@@ -42,7 +42,7 @@ export default function Footer() {
           </SocialLink>
 
           <NavLink className='nav-link' id='contact-footer' to='/contact'>
-            CONTACT US
+            {t('contact_us.header')}
           </NavLink>
         </div>
       </Section>

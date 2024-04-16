@@ -88,7 +88,7 @@ export default function Contact() {
               {/* <button type='submit' id='send'>
                 Send
               </button> */}
-              {messageSent && <p id='message-sent'>Message sent</p>}
+              {messageSent && <p id='message-sent'>{t('forms.message_sent')}</p>}
             </form>
           <img
             src={img_contact}
