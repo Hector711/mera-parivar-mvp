@@ -1,4 +1,4 @@
-//import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
 import Card from '@/components/Card';
 import ButtonPartner from '@/components/ButtonPartner';
@@ -9,7 +9,6 @@ import { useState, useEffect } from 'react';
 import card_1 from '../assets/card_1.jpeg';
 import card_2 from '../assets/card_2.jpeg';
 import CarouselImages from '../components/CarouselImages';
-// import FormContact from '../components/FormContact';
 import img_become from '../assets/img_become.jpg';
 import carousel_1 from '../assets/carousel_1.jpg';
 import carousel_2 from '../assets/carousel_2.jpg';
@@ -48,7 +47,7 @@ function scrollToSection() {
 }
 
 export default function GetInvolved() {
-  //const [t] = useTranslation();
+  const [t] = useTranslation();
   const [messageSent, setMessageSent] = useState(false);
 
   const {
@@ -80,10 +79,11 @@ export default function GetInvolved() {
   }, [messageSent]);
 
   const donationTypes = [
-    { IDdonation_type: 1, donation_name: 'Dinero' },
-    { IDdonation_type: 2, donation_name: 'Comida' },
-    { IDdonation_type: 3, donation_name: 'Material' },
-    { IDdonation_type: 4, donation_name: 'Otros' },
+    // { IDdonation_type: 0, donation_name: '- Select donation type -' },
+    { IDdonation_type: 1, donation_name: t('forms.money') },
+    { IDdonation_type: 2, donation_name: t('forms.food') },
+    { IDdonation_type: 3, donation_name: t('forms.material') },
+    { IDdonation_type: 4, donation_name: t('forms.others') },
   ];
 
   return (
@@ -95,50 +95,41 @@ export default function GetInvolved() {
         id='partner-section'
       >
         <div className='flex flex-col gap-6 justify-center items-center'>
-          <h1 className='small'>BECOME A PARTNER</h1>
-          <p >
-            Are you a company committed to eradicating social inequality?
-          </p>
-          <p >
-            Are you looking for a project that helps Indian boys and girls have
-            a decent life?
-          </p>
+          <h1 className='small'>{t('get_involved.body.title')}</h1>
+          <p>{t('get_involved.body.text_1')}</p>
+          <p>{t('get_involved.body.text_2')}</p>
           <p>
-            <span className='bold'>Meraparivar</span> develops its projects in
-            the rural community of <span className='bold'> Gurgaon</span>, south
-            of New Delhi. Our initiatives aim to improve the quality of life of
-            this community, through educational projects for young people and
-            boys and girls. In addition, we offer programs to end hunger in the
-            most humble communities and promote gender equality.
+            <span className='bold'>{t('get_involved.body.text_3.span')}</span>
+            {t('get_involved.body.text_3.p')}
           </p>
 
           <ul>
-            <p>
-              <span className='bold'>Your organization </span> can collaborate
-              with Meraparivar projects in different ways:
-            </p>
+            <p>{t('get_involved.body.text_4')}</p>
             <li>
-              &#8226; <span className='bold'>Financial contributions: </span>
-              through a one-time donation to promote one of the existing
-              projects or through periodic donations.
+              &#8226;
+              <span className='bold'>{t('get_involved.body.text_5.span')}</span>
+              {t('get_involved.body.text_5.p')}
             </li>
             <li>
-              &#8226; <span className='bold'>Material donations:</span>{' '}
-              Meraparivar is committed to the education of the most
-              disadvantaged boys and girls, so you can help ensure that the
-              facilities adapt to the training needs.
+              &#8226;
+              <span className='bold'>
+                {t('get_involved.body.text_6.span')}
+              </span>{' '}
+              {t('get_involved.body.text_6.p')}
             </li>
             <li>
-              &#8226; <span className='bold'>Food bank:</span> one of
-              Meraparivar's main objectives is to alleviate hunger in rural
-              areas of India. If you want to establish an agreement to supply
-              food for the most humble areas, it is a good way to collaborate.
+              &#8226;
+              <span className='bold'>
+                {t('get_involved.body.text_7.span')}
+              </span>{' '}
+              one of
+              {t('get_involved.body.text_7.p')}
             </li>
           </ul>
         </div>
         {/* <ButtonPartner /> */}
         <button id='button-partner' onClick={scrollToSection}>
-        <p className='bold'>BECOME A PARTNER</p>
+          <p className='bold'>{t('get_involved.button')}</p>
         </button>
       </Section>
 
@@ -151,30 +142,30 @@ export default function GetInvolved() {
         />
         <div className='flex justify-between w-[50%] '>
           <Card
-            header='Education for children'
+            header={t('cards.c_1.header')}
             img={card_1}
             imgName=''
-            label='Program'
+            label={t('cards.c_1.label')}
             color='blue'
-            hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+            hoverCardText={t('cards.c_1.hover')}
             link='/'
-            cardText='To build a better future for the children of Gurgaon.'
+            cardText={t('cards.c_1.text')}
           />
           <Card
-            header='Women Empowerment'
+            header={t('cards.c_2.header')}
             img={card_2}
             imgName=''
-            label='Program'
+            label={t('cards.c_2.label')}
             color='blue'
-            hoverCardText='Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum maxime in molestiae qui?'
+            hoverCardText={t('cards.c_2.hover')}
             link='/'
-            cardText='To help the community girls and young ladies became entrepreneurs.'
+            cardText={t('cards.c_2.text')}
           />
         </div>
       </Section>
 
       {/* FORMULARIO BECOME A PARTNER */}
-      <Section tail='flex justify-center w-full' id='form-get' >
+      <Section tail='flex justify-center w-full' id='form-get'>
         <form
           action='submit'
           id='form-get-involved'
@@ -184,25 +175,25 @@ export default function GetInvolved() {
             type='text'
             id='name'
             {...register('name')}
-            placeholder='Name'
+            placeholder={t('forms.name')}
           />
           <input
             type='email'
             id='email'
             {...register('email')}
-            placeholder='Email'
+            placeholder={t('forms.email')}
           />
           <input
             type='text'
             id='company_name'
             {...register('company_name')}
-            placeholder='Company'
+            placeholder={t('forms.company')}
           />
           <input
             type='text'
             id='company_role'
             {...register('company_role')}
-            placeholder='Company Role'
+            placeholder={t('forms.company_role')}
           />
 
           <select
@@ -210,6 +201,8 @@ export default function GetInvolved() {
             id='IDdonation_type'
             {...register('IDdonation_type')}
           >
+            <option value=''>{t('forms.company_role')} </option>
+
             {donationTypes.map(type => (
               <option key={type.IDdonation_type} value={type.IDdonation_type}>
                 {type.donation_name}{' '}
@@ -221,7 +214,7 @@ export default function GetInvolved() {
           <textarea
             id='message'
             {...register('message')}
-            placeholder='Message'
+            placeholder={t('forms.message')}
           />
 
           <button type='submit' className='button-send' id='send'>

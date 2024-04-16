@@ -34,7 +34,9 @@ form {
 }
 #form-get-involved > #IDdonation_type {
   grid-column: 2 / 4;
+  width: 120%;
 }
+
 #form-get-involved > #message {
   grid-column: 5 / 8;
   grid-row: 1 / 4;

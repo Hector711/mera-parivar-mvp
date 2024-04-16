@@ -1,4 +1,4 @@
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
 import FormDonate from '@/components/FormDonate';
 import img_donate from '../assets/img_donate.jpg';
@@ -7,7 +7,7 @@ import WideImage from '../components/WideImage';
 
 
 export default function Donate() {
-  // const [t] = useTranslation();
+  const [t] = useTranslation();
   return (
     <>
       <WideImage img={img_wide} alt='img_wide_alt'>

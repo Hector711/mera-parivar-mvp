@@ -1,4 +1,4 @@
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
 import ButtonDonate from '@/components/ButtonDonate';
 import ButtonPartner from '@/components/ButtonPartner';
@@ -32,50 +32,40 @@ const caroursel_imgs = [
   },
 ];
 export default function WhatWeDo() {
-  // const [t] = useTranslation();
+  const [t] = useTranslation();
   return (
     <>
       <CarouselImages images={caroursel_imgs} />
       {/* EDUCATION FOR CHILDREN PLANS */}
       <Section tail='flex flex-col gap-4' id='education-section'>
-        <h1 className='small'>EDUCATION FOR CHILDREN PLANS</h1>
-        <p>
-          Meraparivar apuesta por la educación como forma para construir un
-          futuro mejor para los niños y niñas de la comunidad rural de Gurgaon.
-        </p>
+        <h1 className='small'>{t('what_we_do.body.title')}</h1>
+        <p>{t('what_we_do.body.text_1')} </p>
         <ul>
-          <p className='bold'>¿Qué tipo de proyectos impulsa?</p>
+          <p className='bold'>{t('what_we_do.body.text_2')}</p>
           <li>
-            &#8226; Programas educativos para menores no escolarizados de entre
-            3 y 17 años.
+            &#8226; {t('what_we_do.body.text_3')}
           </li>
           <li>
-            &#8226; Programas de clases de refuerzo para menores de escuelas
-            públicas, por la desigualdad que supone,con respecto a la educación
-            privada.
+            &#8226; {t('what_we_do.body.text_3')}
           </li>
         </ul>
         <ul>
           <p className='bold'>
-            ¿Cuántos menores se benefician de estos programas actualmente?
+          {t('what_we_do.body.text_5')}
           </p>
           <li>
-            &#8226; Actualmente, dirigimos 3 escuelas con 1.250 niños y niñas a
-            los que puedes ayudar a cambiar su suerte, esta cifra esperamos
-            seguir incrementándola.
+            &#8226; {t('what_we_do.body.text_6')}
           </li>
         </ul>
         <ul>
-          <p className='bold'>¿Cómo puedes hacerlo?</p>
+          <p className='bold'>{t('what_we_do.body.text_7')}</p>
           <li>
-            &#8226; Es muy sencillo, si eres un particular aportando una pequeña
-            cantidad de dinero y si eres una organización, ponte en contacto con
-            nosotros y te diremos las formas que tienes de colaborar.
+            &#8226; {t('what_we_do.body.text_8')}
           </li>
         </ul>
-        <p>Un pequeño gesto puede suponer un gran cambio.</p>
+        <p>{t('what_we_do.body.text_9')}</p>
         <div className='flex justify-center gap-20'>
-          <ButtonDonate> NOW</ButtonDonate>
+          <ButtonDonate> {t('donate.button')}</ButtonDonate>
           <ButtonPartner />
         </div>
       </Section>

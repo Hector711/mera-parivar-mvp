@@ -2,7 +2,6 @@ import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Home from '@/pages/Home';
-import AboutUs from '@/pages/AboutUs';
 import WhatWeDo from '@/pages/WhatWeDo';
 import Donate from '@/pages/Donate';
 import Contact from '@/pages/Contact';
@@ -17,7 +16,6 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/aboutus' element={<AboutUs />} />
           <Route path='/whatwedo' element={<WhatWeDo />} />
           <Route path='/getinvolved' element={<GetInvolved />} />
           <Route path='/donate' element={<Donate />} />
