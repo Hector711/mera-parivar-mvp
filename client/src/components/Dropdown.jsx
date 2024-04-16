@@ -1,11 +1,10 @@
 import { IoIosArrowDown } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 
-const isActive = ({ isActive }) => `link ${isActive ? 'active' : ''}`;
 export default function Dropdown(props) {
   return (
     <div id='dropdown'>
-      <NavLink className='{isActive} nav-link' to={props.to}>
+      <NavLink className='nav-link' to={props.to}>
         <p>{props.header}</p>
         <IoIosArrowDown />
       </NavLink>

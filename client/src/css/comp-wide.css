@@ -1,0 +1,22 @@
+.img-wide {
+  /* background-color: var(--black-0); */
+}
+#wide-container {
+  position: relative;
+  padding: 10px 0;
+}
+#img_wide {
+  width: 100%;
+  border-radius: 0;
+  position: absolute;
+}
+#text-wide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.493);
+  display: flex;
+  align-items: center;
+  padding: 69px;
+  color: var(--white-1);
+}

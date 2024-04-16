@@ -1,31 +1,8 @@
-select {
-  background-color: aquamarine;
-  padding: 1rem;
-}
-
-
-
 #language-selector {
   border-radius: var(--border-s);
-  padding: 10px;
-  /* background-color: var(--white-2); */
-    /* Estilos generales del select */
-    padding: 8px; /* Padding para espacio interno */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 5px; /* Borde redondeado */
-    background-color: #f7f7f7; /* Color de fondo */
-    color: #333; /* Color del texto */
-    font-size: 20px; /* Tamaño de fuente */
-    width: 200px; /* Ancho del select */
-  
+  padding:  3px 10px;
+  left: 2px;
+  border: 1px solid #ccc;
+  background-color: var(--white-1); 
 }
-option {
-  color: aquamarine !important;
-  background-color: beige;
-}
-option {
-  /* Estilos individuales de cada opción */
-  background-color: #fff; /* Color de fondo */
-  color: #333; /* Color del texto */
-  font-size: 14px; /* Tamaño de fuente */
-}
+

@@ -17,31 +17,61 @@ html {
   word-wrap: break-word;
 }
 
-h1.small {
+h1 {
   font-family: 'Caveat Brush';
-  font-size: 42px;
-  font-weight: 400;
   text-shadow: var(--shadow-xs);
   text-align: center;
   margin-bottom: 7px;
 }
+/* TITLE L */
 h1.large {
   font-size: 68px;
 }
+/* TITLE M */
+h1.small {
+  font-size: 42px;
+}
+/* SUBTITLE */
 h2 {
   font-size: 26px;
   font-weight: 500;
   width: 100%;
   text-shadow: var(--shadow-xs);
+  /* font-weight: bold;
+  font-weight: -webkit-bold; 
+  font-weight: -moz-bold;
+  font-weight: -ms-bold; 
+  font-weight: -o-bold;  */
+
 }
+/* Sin prefijos */
+.mi-texto {
+  font-weight: bold;
+}
+
+/* Con prefijos */
+.mi-texto {
+  font-weight: bold;
+  font-weight: -webkit-bold; /* Safari, Chrome */
+  font-weight: -moz-bold; /* Firefox */
+  font-weight: -ms-bold; /* Internet Explorer */
+  font-weight: -o-bold; /* Opera */
+}
+
+
+
+
+/* EXTRA */
 h3 {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 500;
   width: 100%;
   text-shadow: var(--shadow-xs);
 }
 
-p {
+/* NORMAL TEXT BOLD*/
+p,
+span {
   font-size: 16px;
   line-height: 1.5;
   text-wrap: pretty;
@@ -49,10 +79,14 @@ p {
   padding-inline: auto;
   width: 100%;
 }
+/* NORMAL TEXT BOLD*/
 p.bold,
 span.bold {
-  font-weight: 900;
+  font-weight: 800;
+  text-shadow: 0 0 0.5px #aeaeaeed;
+  /* text-shadow: 2px 0 10px 0 #212121ed; */
 }
+/* CAPTION*/
 p.caption {
   font-size: 12px;
 }
@@ -63,13 +97,16 @@ ul {
 a {
   text-decoration: inherit;
 }
-button:hover {
-  background-color: var(--color-main-2);
+img {
+  border-radius: var(--border-m);
+  box-shadow: var(--shadow-m);
+  height: 100%;
+  object-fit: cover;
 }
-button {
-  /* background-color: black; */
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+

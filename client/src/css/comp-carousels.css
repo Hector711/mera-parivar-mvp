@@ -1,18 +1,13 @@
-/* #app {
-  height: 100%;
-} */
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* z-index: 0; */
+  padding: 10px 0;
 }
 
 .swiper-slide img {
-  background-color: black;
   display: block;
   width: 100%;
   height: 100%;
@@ -24,7 +19,6 @@
 #swiper-quotes {
   width: 60%;
   height: 70px;
-  /* z-index: 0; */
 }
 
 /* ========= IMAGES ========= */
@@ -32,4 +26,23 @@
   width: 100%;
   height: 400px;
   z-index: 0;
+}
+
+@media only screen and (max-width: 968px) {
+  .swiper-slide {
+    padding: 0;
+    height: 80%;
+  }
+  
+
+  .swiper-slide img {
+    
+    height: 70%;
+    
+  }
+
+  #swiper-quotes {
+    width: 90%;
+    height: 70px;
+  }
 }

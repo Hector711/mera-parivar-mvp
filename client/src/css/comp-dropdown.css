@@ -1,18 +1,13 @@
 #dropdown {
   display: flex;
-  justify-content:start;
+  justify-content: start;
   padding: auto;
   margin: auto;
   height: 3rem;
   position: relative;
   z-index: 1;
 }
-/* #dropdown:has(:hover) {
-  --rows: 1fr;
-  --rotate: rotate(-90deg);
-  background-color: var(--color-main-0);
-  color: var(--white-0);
-} */
+
 #dropdown:hover {
   --rows: 1fr;
   --rotate: rotate(-90deg);
@@ -20,10 +15,6 @@
   color: var(--white-0);
   z-index: 1;
 }
-/* #dropdown:has(:active) {
-  --rows:0fr;
-  --transition: .10s;
-} */
 
 #dd_content {
   /* bottom: 0; */

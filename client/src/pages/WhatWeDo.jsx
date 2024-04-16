@@ -1,18 +1,41 @@
 // import { useTranslation } from 'react-i18next';
 import Section from '@/components/Section';
-import ButtonDonate from '@/components/ButtonDonate'
+import ButtonDonate from '@/components/ButtonDonate';
 import ButtonPartner from '@/components/ButtonPartner';
 import CarouselImages from '@/components/CarouselImages';
+import carousel_1 from '../assets/carousel_1.jpg';
+import carousel_2 from '../assets/carousel_2.jpg';
+import carousel_3 from '../assets/carousel_3.jpg';
+import carousel_4 from '../assets/carousel_4.jpg';
+import carousel_5 from '../assets/carousel_5.jpg';
 
-
-
-
+const caroursel_imgs = [
+  {
+    src: carousel_1,
+    alt: '1',
+  },
+  {
+    src: carousel_2,
+    alt: '2',
+  },
+  {
+    src: carousel_3,
+    alt: '3',
+  },
+  {
+    src: carousel_4,
+    alt: '4',
+  },
+  {
+    src: carousel_5,
+    alt: '5',
+  },
+];
 export default function WhatWeDo() {
   // const [t] = useTranslation();
-
   return (
     <>
-      <CarouselImages />
+      <CarouselImages images={caroursel_imgs} />
       {/* EDUCATION FOR CHILDREN PLANS */}
       <Section tail='flex flex-col gap-4' id='education-section'>
         <h1 className='small'>EDUCATION FOR CHILDREN PLANS</h1>
@@ -51,8 +74,8 @@ export default function WhatWeDo() {
           </li>
         </ul>
         <p>Un pequeño gesto puede suponer un gran cambio.</p>
-        <div className='flex justify-center gap-10'>
-          <ButtonDonate />
+        <div className='flex justify-center gap-20'>
+          <ButtonDonate> NOW</ButtonDonate>
           <ButtonPartner />
         </div>
       </Section>
