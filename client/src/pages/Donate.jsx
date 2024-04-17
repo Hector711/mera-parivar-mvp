@@ -13,9 +13,7 @@ export default function Donate() {
         <div className='w-[640px]'>
           <h1 className='large flex'>{t('donate.header_page')}</h1>
           <p>
-            Thanks to your contribution, thousands of people will have a better
-            life. Let's continue building together a more just and supportive
-            world!
+          {t('donate.text')}
           </p>
         </div>
       </WideImage>
