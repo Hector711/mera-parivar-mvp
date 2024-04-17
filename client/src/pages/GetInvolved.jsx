@@ -157,7 +157,7 @@ export default function GetInvolved() {
             label={t('cards.c_2.label')}
             color='blue'
             hoverCardText={t('cards.c_2.hover')}
-            link='/'
+            link=''
             cardText={t('cards.c_2.text')}
           />
         </div>

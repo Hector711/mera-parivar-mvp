@@ -43,7 +43,10 @@ export default function Footer() {
           </SocialLink>
 
           <NavLink className='nav-link yellow-text' id='contact-footer' to='/contact'>
+            <p className='caption'>
+
             {t('contact_us.header')}
+            </p>
           </NavLink>
         </div>
       </Section>

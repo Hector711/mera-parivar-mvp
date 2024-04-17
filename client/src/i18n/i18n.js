@@ -139,7 +139,7 @@ export default i18n
           },
 
           contact_us: {
-            header: 'Contact Us',
+            header: 'Contact us',
           },
           forms: {
             name: 'Name',
