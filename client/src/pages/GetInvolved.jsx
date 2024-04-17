@@ -120,9 +120,8 @@ export default function GetInvolved() {
             <li>
               &#8226;
               <span className='bold'>
-                {t('get_involved.body.text_7.span')}
-              </span>{' '}
-              one of
+                {t('get_involved.body.text_7.span')} 
+              </span> 
               {t('get_involved.body.text_7.p')}
             </li>
           </ul>
