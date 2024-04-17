@@ -43,7 +43,7 @@ export default function WhatWeDo() {
         <ul>
           <p className='bold'>{t('what_we_do.body.text_2')}</p>
           <li>&#8226; {t('what_we_do.body.text_3')}</li>
-          <li>&#8226; {t('what_we_do.body.text_3')}</li>
+          <li>&#8226; {t('what_we_do.body.text_4')}</li>
         </ul>
         <ul>
           <p className='bold'>{t('what_we_do.body.text_5')}</p>

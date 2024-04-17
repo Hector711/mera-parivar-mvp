@@ -134,12 +134,16 @@ export default i18n
             button: 'BECOME A PARTNER',
           },
           donate: {
+            header_page: 'DONATE NOW',
             header: 'DONATE',
             button: 'NOW',
           },
 
           contact_us: {
             header: 'Contact us',
+          },
+          thank_you: {
+            header: 'THANK YOU FOR YOUR DONATION'
           },
           forms: {
             name: 'Name',
@@ -288,17 +292,21 @@ export default i18n
               },
               text_7: {
                 span: ' Banco de alimentos:',
-                p: 'uno de los principales objetivos de Meraparivar es aliviar el hambre en las zonas rurales de India. Si deseas establecer un acuerdo para suministrar alimentos a las áreas más humildes, es una buena manera de colaborar.',
+                p: ' uno de los principales objetivos de Meraparivar es aliviar el hambre en las zonas rurales de India. Si deseas establecer un acuerdo para suministrar alimentos a las áreas más humildes, es una buena manera de colaborar.',
               },
             },
           },
           donate: {
+            header_page: 'DONA AHORA',
             header: 'DONA',
             button: 'AHORA',
           },
 
           contact_us: {
             header: 'Contacto',
+          },
+          thank_you: {
+            header: 'GRACIAS POR TU DONACIÓN'
           },
           forms: {
             name: 'Nombre',

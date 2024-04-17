@@ -11,7 +11,7 @@ export default function Donate() {
     <>
       <WideImage img={img_wide} alt='img_wide_alt'>
         <div className='w-[640px]'>
-          <h1 className='large flex'>DONATE NOW</h1>
+          <h1 className='large flex'>{t('donate.header_page')}</h1>
           <p>
             Thanks to your contribution, thousands of people will have a better
             life. Let's continue building together a more just and supportive
