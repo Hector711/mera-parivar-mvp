@@ -77,7 +77,6 @@ form * {
   justify-self: end;
   height: 70px;
   width: 154px;
-
 }
 
 .button-send {
@@ -108,11 +107,6 @@ form * {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
 }
-
-
-
-
-
 
 /* FORM DONATE */
 /* =============== */
@@ -167,14 +161,12 @@ form * {
   grid-row: 3 / 4;
 }
 
-
-
 /* FORM CONTACT  */
 /* =============== */
 #form-contact {
   display: grid;
   grid-template-columns: 50% 10% 40%;
-  grid-template-rows: 56px 56px 56px 272px 36px ;
+  grid-template-rows: 56px 56px 56px 272px 36px;
   width: 526px;
   height: 500px;
 }

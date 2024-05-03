@@ -1,22 +1,18 @@
 import { useTranslation } from 'react-i18next';
-import flag_uk from '../assets/flag_uk.svg';
-import flag_spain from '../assets/flag_spain.svg';
 
 const LANGUAGES = [
   {
     label: 'Español',
     code: 'es',
-    alt: 'Spanish Language',
   },
   {
     label: 'English',
     code: 'en',
-    alt: 'English Language',
   },
 ];
 
 export default function LanguageSelector() {
-  const [t, i18n] = useTranslation();
+  const { i18n } = useTranslation();
   const onChangeLang = e => {
     const lang_code = e.target.value;
     i18n.changeLanguage(lang_code);
@@ -27,7 +23,7 @@ export default function LanguageSelector() {
       onChange={onChangeLang}
       id='language-selector'
     >
-      {LANGUAGES.map(({ code, label, flag, alt }) => (
+      {LANGUAGES.map(({ code, label }) => (
         <option key={code} value={code}>
           {label}
         </option>

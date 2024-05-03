@@ -47,7 +47,7 @@ function scrollToSection() {
 }
 
 export default function GetInvolved() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   const [messageSent, setMessageSent] = useState(false);
 
   const {
@@ -119,9 +119,7 @@ export default function GetInvolved() {
             </li>
             <li>
               &#8226;
-              <span className='bold'>
-                {t('get_involved.body.text_7.span')} 
-              </span> 
+              <span className='bold'>{t('get_involved.body.text_7.span')}</span>
               {t('get_involved.body.text_7.p')}
             </li>
           </ul>
@@ -176,7 +174,11 @@ export default function GetInvolved() {
             aria-invalid={errors.name ? 'true' : 'false'}
             placeholder={t('forms.name')}
           />
-          {errors.name && <p className='error' id='error-name'>{errors.name.message}</p>}
+          {errors.name && (
+            <p className='error' id='error-name'>
+              {errors.name.message}
+            </p>
+          )}
           <input
             type='email'
             id='email'
@@ -184,7 +186,11 @@ export default function GetInvolved() {
             aria-invalid={errors.email ? 'true' : 'false'}
             placeholder={t('forms.email')}
           />
-          {errors.email && <p className='error' id='error-email'>{errors.email.message}</p>}
+          {errors.email && (
+            <p className='error' id='error-email'>
+              {errors.email.message}
+            </p>
+          )}
           <input
             type='text'
             id='company_name'
@@ -192,7 +198,11 @@ export default function GetInvolved() {
             aria-invalid={errors.company_name ? 'true' : 'false'}
             placeholder={t('forms.company')}
           />
-          {errors.company_name && <p className='error' id='error-company-name'>{errors.company_name.message}</p>}
+          {errors.company_name && (
+            <p className='error' id='error-company-name'>
+              {errors.company_name.message}
+            </p>
+          )}
           <input
             type='text'
             id='company_role'
@@ -200,7 +210,11 @@ export default function GetInvolved() {
             aria-invalid={errors.company_role ? 'true' : 'false'}
             placeholder={t('forms.company_role')}
           />
-          {errors.company_role && <p className='error' id='error-company-role'>{errors.company_role.message}</p>}
+          {errors.company_role && (
+            <p className='error' id='error-company-role'>
+              {errors.company_role.message}
+            </p>
+          )}
 
           <select
             type='number'
@@ -223,10 +237,14 @@ export default function GetInvolved() {
             aria-invalid={errors.message ? 'true' : 'false'}
             placeholder={t('forms.message')}
           />
-          {errors.message && <p className='error' id='error-name'>{errors.message.message}</p>}
+          {errors.message && (
+            <p className='error' id='error-name'>
+              {errors.message.message}
+            </p>
+          )}
 
           <button type='submit' className='button-send' id='send'>
-          {t('forms.send')}
+            {t('forms.send')}
           </button>
           {messageSent && <p id='message-sent'>{t('forms.message_sent')}</p>}
         </form>

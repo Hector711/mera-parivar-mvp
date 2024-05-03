@@ -12,7 +12,7 @@ import SocialLink from './SocialLink';
 import Section from './Section';
 
 export default function Footer() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   return (
     <footer>
       <Section tail='flex w-full justify-between items-center'>
@@ -42,11 +42,12 @@ export default function Footer() {
             <img src={rrss_linkedin} className='img-rrss' alt='' />
           </SocialLink>
 
-          <NavLink className='nav-link yellow-text' id='contact-footer' to='/contact'>
-            <p className='caption'>
-
-            {t('contact_us.header')}
-            </p>
+          <NavLink
+            className='nav-link yellow-text'
+            id='contact-footer'
+            to='/contact'
+          >
+            <p className='caption'>{t('contact_us.header')}</p>
           </NavLink>
         </div>
       </Section>

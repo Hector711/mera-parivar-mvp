@@ -17,7 +17,7 @@
   --color-sec-1: #ffe390;
   --color-sec-2: #fff9e7;
 
-  --color-red: #EF3340;
+  --color-red: #ef3340;
 
   --border-s: 6px;
   --border-m: 10px;
@@ -79,7 +79,7 @@ footer {
   box-shadow: 0 0 0 0 #ffffff00 !important;
 }
 .yellow-text {
-  color:var(--color-sec-0) !important;
+  color: var(--color-sec-0) !important;
 }
 #contact-footer {
   color: var(--white-1);

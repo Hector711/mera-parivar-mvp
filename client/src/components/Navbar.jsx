@@ -7,7 +7,7 @@ import ButtonDonate from '@/components/ButtonDonate';
 import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   const aboutUsLinks = [
     { header: t('about_us.dd_1') },
     { header: t('about_us.dd_2') },

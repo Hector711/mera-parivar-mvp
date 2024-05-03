@@ -4,12 +4,14 @@ import { NavLink } from 'react-router-dom';
 import Label from './Label';
 
 export default function Card(props) {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className='card'>
       <div className='container-img-hover shadow'>
-        <div id='label-over' className={props.color}>{props.label}</div>
+        <div id='label-over' className={props.color}>
+          {props.label}
+        </div>
         <img src={props.img} alt={props.imgName} className='card-img' />
         <div className='hover-card'>
           <Label color={props.color}>{props.label}</Label>

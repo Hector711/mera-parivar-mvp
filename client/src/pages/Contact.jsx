@@ -8,7 +8,7 @@ import img_contact from '../assets/img_contact.jpeg';
 import ButtonRegular from '../components/ButtonRegular';
 
 export default function Contact() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   const [messageSent, setMessageSent] = useState(false);
 
   const {

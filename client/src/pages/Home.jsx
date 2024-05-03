@@ -16,7 +16,7 @@ import img_home from '../assets/img_home.jpg';
 import { useTranslation } from 'react-i18next';
 
 export default function Home() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   const caroursel_imgs = [
     {
       src: carousel_1,

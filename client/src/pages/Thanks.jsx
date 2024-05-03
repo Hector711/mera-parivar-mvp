@@ -10,10 +10,8 @@ import card_3 from '../assets/card_3.jpeg';
 import card_4 from '../assets/card_4.jpeg';
 import { useTranslation } from 'react-i18next';
 
-
-
 export default function Thanks() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   const carousel_quotes = [
     {
       quote: t('carousel_quotes.q_1'),
@@ -35,14 +33,14 @@ export default function Thanks() {
     <>
       <WideImage img={img_wide_thanks} alt=''>
         <h1 className='large flex w-[100%] justify-center'>
-        {t('thank_you.header')}
+          {t('thank_you.header')}
         </h1>
       </WideImage>
       <Section>
         <CarouselQuotes quotes={carousel_quotes} />
       </Section>
       <Section tail='flex w-full justify-between'>
-      <Card
+        <Card
           header={t('cards.c_1.header')}
           img={card_1}
           imgName=''

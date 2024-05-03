@@ -59,7 +59,6 @@
   justify-content: center;
   align-items: center;
   margin: 1rem;
-
 }
 #label > p {
   display: flex;
@@ -84,8 +83,7 @@
 }
 .blue {
   background-color: var(--color-main-1);
-    color: var(--white-1);
-
+  color: var(--white-1);
 }
 .yellow {
   background-color: var(--color-sec-0);

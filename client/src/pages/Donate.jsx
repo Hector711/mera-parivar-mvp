@@ -6,15 +6,13 @@ import img_wide from '../assets/img_wide.jpg';
 import WideImage from '../components/WideImage';
 
 export default function Donate() {
-  const [t] = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <WideImage img={img_wide} alt='img_wide_alt'>
         <div className='w-[640px]'>
           <h1 className='large flex'>{t('donate.header_page')}</h1>
-          <p>
-          {t('donate.text')}
-          </p>
+          <p>{t('donate.text')}</p>
         </div>
       </WideImage>
       <Section>

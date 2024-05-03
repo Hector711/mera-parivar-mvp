@@ -54,7 +54,7 @@ export default function WhatWeDo() {
           <li>&#8226; {t('what_we_do.body.text_8')}</li>
         </ul>
         <p className='bold'>{t('what_we_do.body.text_9')}</p>
-          <br />
+        <br />
 
         <div className='flex justify-center gap-20'>
           <ButtonDonate> {t('donate.button')}</ButtonDonate>

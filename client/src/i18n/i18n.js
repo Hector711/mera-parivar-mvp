@@ -137,14 +137,14 @@ export default i18n
             header_page: 'DONATE NOW',
             header: 'DONATE',
             button: 'NOW',
-            text: 'Thanks to your contribution, thousands of people will have a better life. Lets continue building together a more just and supportive world!'
+            text: 'Thanks to your contribution, thousands of people will have a better life. Lets continue building together a more just and supportive world!',
           },
 
           contact_us: {
             header: 'Contact us',
           },
           thank_you: {
-            header: 'THANK YOU FOR YOUR DONATION'
+            header: 'THANK YOU FOR YOUR DONATION',
           },
           forms: {
             name: 'Name',
@@ -301,14 +301,14 @@ export default i18n
             header_page: 'DONA AHORA',
             header: 'DONA',
             button: 'AHORA',
-            text: 'Gracias a tu aporte, miles de personas tendrán una vida mejor. ¡Sigamos construyendo juntos un mundo más justo y solidario!'
+            text: 'Gracias a tu aporte, miles de personas tendrán una vida mejor. ¡Sigamos construyendo juntos un mundo más justo y solidario!',
           },
 
           contact_us: {
             header: 'Contacto',
           },
           thank_you: {
-            header: 'GRACIAS POR TU DONACIÓN'
+            header: 'GRACIAS POR TU DONACIÓN',
           },
           forms: {
             name: 'Nombre',
