@@ -26,3 +26,6 @@ Start the server
 ## Otras Referencias
 
  - [Repositorio Data Science](https://github.com/solfontan/DesafioTripulaciones)
+ - [Presentación de LinkedIn](https://github.com/solfontan/DesafioTripulaciones)
+ - [Presentación del día 17 de abril](https://github.com/solfontan/DesafioTripulaciones)
+
