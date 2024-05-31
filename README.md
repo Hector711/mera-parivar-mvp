@@ -21,3 +21,8 @@ Start the server
 ```bash
   npm run dev
 ```
+
+
+## Otras Referencias
+
+ - [Repositorio Data Science](https://github.com/solfontan/DesafioTripulaciones)
