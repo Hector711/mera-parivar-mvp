@@ -1,5 +1,5 @@
 
-# Mera Parivar Web Page
+# Mera Parivar MVP
 
 
 
@@ -22,10 +22,21 @@ Start the server
   npm run dev
 ```
 
+## Authors
 
-## Otras Referencias
+# Frontend
+- [Héctor Guerra: @Hector711](https://www.github.com/octokatherine)
 
- - [Repositorio Data Science](https://github.com/solfontan/DesafioTripulaciones)
- - [Presentación de LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7186802359304372226/)
- - [Presentación del día 17 de abril](https://www.youtube.com/watch?v=lQl2L6P5V_o)
+
+# Backend
+- [Cristina Gómez: @cgomezlop95](https://www.github.com/octokatherine)
+- [Iván Menéndez Tenorio: @ivanin3](https://www.github.com/octokatherine)
+
+
+## Other References
+
+ - [Data Science Repository](https://github.com/solfontan/DesafioTripulaciones)
+ - [LinkedIn Presentation](https://www.linkedin.com/feed/update/urn:li:activity:7186802359304372226/)
+ - [Presentation on April 17th](https://www.youtube.com/watch?v=lQl2L6P5V_o)
+
 
