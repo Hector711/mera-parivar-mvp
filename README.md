@@ -21,7 +21,7 @@ Start the server
   npm run dev
 ```
 # Authors
-### Full Stack Team
+## Full Stack Team
 #### Frontend
 - Héctor Guerra: [@Hector711](https://www.github.com/octokatherine)
 #### Backend
