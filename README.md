@@ -8,7 +8,7 @@
 
 
 
-
+## Run
 Install dependencies
 
 ```bash
@@ -43,9 +43,10 @@ Start the server
 - Carlos Gonzalez de Opazo : [@astaroth86](https://github.com/astaroth86)
 
 
+
+
  #### You may find documentation, rules and recomendations proyect on this Notion Page
 
  - [Instrucciones Proyecto](https://hector-guerra.notion.site/Instrucciones-Proyecto-d12d4d71f81a4ab8ae6bc536db0ea5b0)
-## Run
 
 
