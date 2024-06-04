@@ -25,12 +25,12 @@ Start the server
 ## Authors
 
 # Frontend
-- [Héctor Guerra: @Hector711](https://www.github.com/octokatherine)
+- Héctor Guerra: [@Hector711](https://www.github.com/octokatherine)
 
 
 # Backend
-- [Cristina Gómez: @cgomezlop95](https://www.github.com/octokatherine)
-- [Iván Menéndez Tenorio: @ivanin3](https://www.github.com/octokatherine)
+- Cristina Gómez:[@cgomezlop95](https://www.github.com/octokatherine)
+- Iván Menéndez Tenorio: [@ivanin3](https://www.github.com/octokatherine)
 
 
 ## Other References
