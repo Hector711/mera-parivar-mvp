@@ -22,9 +22,9 @@ Start the server
 ```
 # Authors
 ## Full Stack Team
-##### Frontend
+### Frontend
 - Héctor Guerra: [@Hector711](https://www.github.com/octokatherine)
-##### Backend
+### Backend
 - Cristina Gómez López: [@cgomezlop95](https://www.github.com/octokatherine)
 - Iván Menéndez Tenorio: [@ivanin3](https://www.github.com/octokatherine)
 
