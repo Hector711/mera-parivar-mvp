@@ -37,7 +37,7 @@ Start the server
 - Adrián Martinez 
 
 ## Data Science Team
-- Sol Fontán González : [@solfontan]([https://github.com/solfontan])
+- Sol Fontán González : [@solfontan](https://github.com/solfontan)
 - Luna Flores : [@lunaft](https://github.com/lunaft)
 - Jaime Mayordomo : [@jmayordomom](https://github.com/jmayordomom)
 - Carlos Gonzalez de Opazo : [@astaroth86](https://github.com/astaroth86)
