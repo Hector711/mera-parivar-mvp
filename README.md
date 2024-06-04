@@ -29,12 +29,12 @@ Start the server
 - Iván Menéndez Tenorio: [@ivanin3](https://www.github.com/octokatherine)
 
 ## Cibersecurity Team
-- Mihai Bogdan Mardale: [@bogdaniam]([https://github.com/bogdaniam])
+- Mihai Bogdan Mardale: [@bogdaniam](https://github.com/bogdaniam)
 - Gema Montejano Serrano : [@Gema-Montejano](https://github.com/Gema-Montejano)
-- Mariana Guitierrez : [@]([bogdaniam])
+- Mariana Guitierrez 
 - Jorge Vidales Bernardos : [@JorgeV032](https://github.com/JorgeV032)
-- Antonio Fernandez Conte : [@]([bogdaniam])
-- Adrián Martinez : [@]([bogdaniam])
+- Antonio Fernandez Conte 
+- Adrián Martinez 
 
 ## Data Science Team
 - Sol Fontán González : [@solfontan]([https://github.com/solfontan])
