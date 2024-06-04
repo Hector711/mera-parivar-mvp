@@ -29,7 +29,7 @@ Start the server
 
 
 # Backend
-- Cristina Gómez:[@cgomezlop95](https://www.github.com/octokatherine)
+- Cristina Gómez: [@cgomezlop95](https://www.github.com/octokatherine)
 - Iván Menéndez Tenorio: [@ivanin3](https://www.github.com/octokatherine)
 
 
